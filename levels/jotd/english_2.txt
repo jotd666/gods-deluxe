@@ -1,0 +1,15 @@
+w1_start_message = the temple ii
+w1_giant_jump_advice = if someone could bring me the giant jump...
+w2_time_your_kills_advice = time your kills to get bonus
+w2_key_up_advice = the door key is up there
+w2_shortcut = short cut
+w2_put_wine_on_altar = put the wine by the altar
+w3_candle_advice = find the candle to progress
+w3_avoid_excessive_force_advice = avoid excessive force
+w3_keep_up_levers_up_advice = keep up levers up to get teleport
+w3_study_advice = the study is locked from the inside, but has two exits
+w3_find_lever_advice = find the lever for this door
+w3_lost_room = a lost room
+w3_study_message = the study
+w3_spike_advice = this button allows to destroy rightmost spikes under the bridge
+

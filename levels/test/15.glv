@@ -1,0 +1,183 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level3 >
+ < copperbar_class gods.game.copperbar.Classic3 >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 16 >
+  < nb_cols 17 >
+  < row blocking_wall_5 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_8 >
+  < row gray_wall_6 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_7 >
+  < row blocking_wall_5 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_8 >
+  < row gray_wall_6 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_7 >
+  < row platform_4 gray_wall_2 gray_wall_2 gray_wall_2 gray_wall_2 gray_wall_2 gray_wall_2 gray_wall_2 gray_wall_2 gray_wall_2 gray_wall_2 gray_wall_2 gray_wall_2 gray_wall_2 gray_wall_2 gray_wall_2 gray_wall_2 >
+  < row gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_8 wall_2 wall_2 wall_2 wall_2 carve_vertical_shade blocking_wall_1 gray_wall_3 gray_wall_3 gray_wall_3 >
+  < row gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 blocking_wall_2 wall_22 wall_6 wall_6 wall_6 carve_vertical_half_shade blocking_wall_5 gray_wall_4 gray_wall_4 gray_wall_4 >
+  < row gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_8 wall_22 wall_1 wall_1 wall_1 vertical_carve gray_wall_6 gray_wall_3 gray_wall_3 gray_wall_3 >
+  < row gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_7 wall_22 wall_12 wall_12 wall_12 vertical_carve blocking_wall_5 blocking_wall_2 blocking_wall_2 blocking_wall_2 >
+  < row wall_24 wall_2 carve_vertical_shade carve_vertical_shade wall_2 blocking_wall_2 top_panel blocking_wall_2 wall_22 wall_13 wall_13 wall_13 vertical_carve blocking_wall_2 top_panel gray_wall_6 gray_wall_2 >
+  < row wall_22 wall_6 carve_vertical_half_shade carve_vertical_half_shade wall_6 blocking_wall_1 bottom_panel blocking_wall_1 wall_22 window_top window_top platform_3 platform_4 platform_2 bottom_panel blocking_wall_5 gray_wall_3 >
+  < row wall_2 carve_top_left carve_t_junction carve_t_junction carve_top_right blocking_wall_1 gray_wall_1 gray_wall_7 wall_22 null null wall_8 carve_vertical_shade blocking_wall_5 gray_wall_4 gray_wall_4 gray_wall_4 >
+  < row wall_1 vert_right_carve wall_24 wall_2 vert_left_carve wall_8 wall_2 wall_2 wall_22 null null wall_9 carve_vertical_half_shade blocking_wall_3 blocking_wall_3 wall_2 wall_2 >
+  < row wall_12 vert_right_carve wall_22 wall_13 vert_left_carve wall_9 wall_6 wall_6 wall_6 null null wall_12 vertical_carve blocking_wall_3 blocking_wall_3 wall_6 wall_6 >
+  < row wall_1 vert_right_carve wall_22 wall_1 vert_left_carve wall_1 wall_1 wall_1 wall_1 null null wall_1 vertical_carve blocking_wall_3 blocking_wall_3 wall_1 wall_1 >
+  < row platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 6 >
+  < OBJECT
+   < name key >
+   < visible yes >
+   < x 354 >
+   < y 128 >
+   < frame_set trap_door_key_gold >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 398 >
+   < y 128 >
+   < frame_set gem >
+  >
+  < OBJECT
+   < name amonst >
+   < visible yes >
+   < x 54 >
+   < y 208 >
+   < frame_set attract_monster >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 16 >
+   < y 168 >
+   < frame_set spear >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 36 >
+   < y 168 >
+   < frame_set spear >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 28 >
+   < y 152 >
+   < frame_set fire_ball >
+  >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 4 >
+  < CONTROL_OBJECT
+   < name thief >
+   < x 360 >
+   < y 128 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name player_start >
+   < x 16 >
+   < y 192 >
+   < width 32 >
+   < height 48 >
+   < type Restart >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name trig >
+   < x 238 >
+   < y 200 >
+   < width 32 >
+   < height 32 >
+   < type Enemy_Trigger >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name w3_spitting_head_3 >
+   < x 302 >
+   < y 112 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 0 >
+  < OBJECT_ASSOCIATION
+   < type Trigger_Monster >
+   < nb_objects 2 >
+   < object trig thief >
+  >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 2 >
+  < HOSTILE_WAVE_PARAMETERS
+   < location w3_spitting_head_3 >
+   < class_name gods.game.characters.hostiles.SpittingHeadLevel3 >
+   < frame_set_name spitting_head >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 18 >
+   < direction Right >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation yes >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location thief >
+   < class_name gods.game.characters.hostiles.GroundThiefWalk >
+   < frame_set_name ground_monster_1 >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 1 >
+   < direction Left >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+ >
+>

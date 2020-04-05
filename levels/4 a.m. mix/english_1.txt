@@ -1,0 +1,10 @@
+w1_return_3_items = return three items to the crypt
+w1_levers_advice = experiment with levers
+w1_hidden_switches = look for hidden switches
+w1_armoury = the armoury
+w1_treasure_room = the treasure room
+w2_hidden_room = a hidden room
+w2_crypt = the crypt
+w2_teleport_room = the teleport room
+the door to the armoury =
+the door to the treasure room =

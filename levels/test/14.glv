@@ -1,0 +1,183 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level3 >
+ < copperbar_class gods.game.copperbar.Classic3 >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 20 >
+  < nb_cols 19 >
+  < row blocking_wall_1 grate blocking_wall_1 grate blocking_wall_1 grate blocking_wall_1 ladder_6 blocking_wall_1 grate blocking_wall_1 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_7 wall_4 wall_1 >
+  < row gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_8 ladder_6 blocking_wall_5 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 platform_4 platform_2 >
+  < row gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_8 ladder_6 gray_wall_6 gray_wall_3 gray_wall_8 wall_24 wall_2 wall_2 wall_2 wall_2 blocking_wall_5 gray_wall_3 gray_wall_8 >
+  < row gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_8 ladder_6 blocking_wall_1 grate blocking_wall_1 wall_26 wall_13 wall_13 wall_13 wall_13 wall_8 wall_2 wall_2 >
+  < row blocking_wall_2 wall_24 wall_2 wall_2 carve_vertical_shade carve_vertical_shade wall_2 ladder_6 blocking_wall_5 gray_wall_3 gray_wall_8 wall_20 ladder_4 wall_12 window_top wall_12 window_top wall_12 window_top >
+  < row gray_wall_8 wall_5 wall_6 wall_6 carve_vertical_half_shade carve_vertical_half_shade wall_6 ladder_7 gray_wall_6 gray_wall_4 gray_wall_7 wall_22 ladder_4 carve_top_left horiz_carve horiz_carve horiz_carve horiz_carve horiz_carve >
+  < row blocking_wall_2 ladder_6 wall_1 carve_top_left carve_t_junction carve_t_junction carve_top_right ladder_4 blocking_wall_1 grate blocking_wall_1 wall_20 ladder_4 vert_right_carve brick_wall_3 brick_wall_3 brick_wall_3 brick_wall_3 brick_wall_3 >
+  < row gray_wall_8 ladder_6 wall_13 vert_right_carve wall_24 wall_2 vert_left_carve ladder_4 gray_wall_6 gray_wall_4 gray_wall_7 wall_22 ladder_4 platform_3 platform_4 platform_4 platform_4 platform_4 platform_4 >
+  < row blocking_wall_2 ladder_6 wall_12 vert_right_carve wall_20 wall_12 vert_left_carve ladder_4 blocking_wall_5 gray_wall_3 gray_wall_8 wall_20 ladder_4 blocking_wall_5 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 >
+  < row gray_wall_8 ladder_6 wall_1 vert_right_carve wall_20 wall_1 vert_left_carve wall_1 blocking_wall_1 grate blocking_wall_1 wall_26 ladder_4 gray_wall_6 gray_wall_8 wall_24 blocking_wall_5 gray_wall_4 gray_wall_4 >
+  < row blocking_wall_2 ladder_6 wall_13 platform_3 platform_4 platform_4 platform_4 platform_4 platform_2 gray_wall_3 gray_wall_8 wall_20 ladder_4 blocking_wall_5 gray_wall_8 blocking_wall_3 blocking_wall_5 gray_wall_3 gray_wall_3 >
+  < row gray_wall_8 ladder_6 wall_12 blocking_wall_5 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_7 wall_22 ladder_4 wall_8 wall_2 wall_2 wall_2 wall_2 wall_2 >
+  < row blocking_wall_2 ladder_6 wall_1 gray_wall_6 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_8 wall_20 ladder_4 wall_9 wall_6 wall_6 wall_6 wall_6 wall_6 >
+  < row gray_wall_8 ladder_6 wall_13 wall_8 wall_2 wall_2 block wall_2 wall_2 wall_2 block wall_26 ladder_4 wall_12 wall_12 wall_12 wall_12 wall_12 wall_12 >
+  < row blocking_wall_2 ladder_6 wall_12 wall_9 wall_6 wall_6 side_closed_door_top wall_4 wall_1 wall_1 side_closed_door_top wall_1 ladder_4 wall_1 wall_1 wall_1 wall_1 wall_1 ladder_4 >
+  < row gray_wall_8 ladder_6 wall_13 wall_13 wall_13 wall_13 side_closed_door_mid wall_4 wall_13 wall_13 side_closed_door_mid wall_13 ladder_4 wall_13 wall_13 wall_13 wall_13 wall_13 ladder_4 >
+  < row blocking_wall_2 wall_4 wall_12 wall_12 wall_12 wall_12 side_closed_door_bottom wall_4 wall_12 wall_12 side_closed_door_bottom wall_12 wall_1 wall_12 wall_12 wall_12 wall_12 wall_12 ladder_4 >
+  < row platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 platform_4 ladder_5 >
+  < row gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_3 gray_wall_8 ladder_6 >
+  < row blocking_wall_2 wall_24 wall_2 wall_2 gray_wall_6 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_4 gray_wall_7 wall_24 ladder_6 >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 0 >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 5 >
+  < CONTROL_OBJECT
+   < name player_start >
+   < x 110 >
+   < y 224 >
+   < width 34 >
+   < height 48 >
+   < type Restart >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name nme >
+   < x 272 >
+   < y 240 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name spike_1 >
+   < x 120 >
+   < y 128 >
+   < width 20 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name spike_2 >
+   < x 166 >
+   < y 128 >
+   < width 20 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name spiket_2 >
+   < x 56 >
+   < y 224 >
+   < width 32 >
+   < height 32 >
+   < type Enemy_Trigger >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 0 >
+  < OBJECT_ASSOCIATION
+   < type Trigger_Monster >
+   < nb_objects 2 >
+   < object spiket_2 spike_2 >
+  >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 3 >
+  < HOSTILE_WAVE_PARAMETERS
+   < location nme >
+   < class_name gods.game.characters.hostiles.GroundMonster1 >
+   < frame_set_name ground_monster_1 >
+   < fire_type Straight >
+   < appearing_delay None >
+   < health_points 1 >
+   < direction Left >
+   < attack_distance Always >
+   < speed Slow >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation yes >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location spike_1 >
+   < class_name gods.game.characters.hostiles.SpikeUpDown >
+   < frame_set_name spike >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 1 >
+   < direction Right >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation yes >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location spike_2 >
+   < class_name gods.game.characters.hostiles.SpikeUpDown >
+   < frame_set_name spike >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 1 >
+   < direction Right >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+ >
+>

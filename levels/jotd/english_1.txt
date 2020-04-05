@@ -1,0 +1,16 @@
+w3_door_advice = a lever has been misplaced
+w1_reward_pain = the reward for the pain
+w1_treasure_room_message = treasure room
+w1_advice_2 = dare to suffer for bonus
+w1_advice_1 = jotd first attempt at original levels
+w1_teleport_advice = beware of falling objects ...
+w2_pot_advice = return a pot to the stores
+w1_hidden_passage = a hidden passage
+w2_teleport_room = welcome to the teleport room
+w3_bolt_hint_1 = you'll have a hard time ...
+w3_bolt_hint_2 = ... without the lightning bolt
+w3_other_treasure_room = yet another treasure room
+w3_world_key_advice = world key is out of reach
+w1_off_the_ledge = off the right ledge ...
+w1_treasure_key_room = the treasure key room
+w1_challenge = challenge

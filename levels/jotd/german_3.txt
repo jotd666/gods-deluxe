@@ -1,0 +1,10 @@
+w1_jail_advice_1 = du wurdest inhaftiert weil du den drachen getoetet hast
+w1_jail_advice_2 = einige mithaeftlinge besitzen waffen
+w1_jail_advice_3 = stell die hebel zurueck um fallen zu schliessen
+w2_the_pit = die grube
+w2_teleport_room = teleport room
+w3_useless_corridor = a useless corridor ?
+w1_weapons_removed = weapons removed + fine 50000 gold
+w3_pull_quickly_advice = reset levels quickly for bonus
+w1_let_sentence_begin = let the sentence begin
+w1_flask_advice = bring down water to the thirsty

@@ -1,0 +1,13 @@
+w1_advice_1 = glaube nicht alles was du liest
+start_message = die unterwelt
+w1_advice_3 = du findest den schluessel in dem raum der fallen
+w1_advice_2 = ich wuerde hier nicht runter springen
+w1_use_trap_key_wisely = benutze deinen fallenschluessel weise
+w2_pull_hard_left = vorsicht, zieh stark links
+w2_bring_tools = bringe dem alchemisten seine werkzeuge
+w2_forever_downwards = fuer immer nach unten
+w2_treasure_room = schatzraum
+w2_alchemist_close = der raum des alchemisten ist nahe, aber versteckt
+w3_no_more_puzzles = keine weiteren raetsel, finde nur noch den schluessel
+w3_thieves_get_keys = diebe haben schluessel
+w3_last_advice = hinter dieser tuer liegt die unsterblichkeit

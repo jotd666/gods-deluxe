@@ -1,0 +1,15 @@
+w1_treasure_section = treasure section
+w1_start_message = below the underworld
+w1_pit_advice = i wouldn't go down there
+w2_shortcut = shortcut
+w2_leap_of_faith = the leap of faith
+w2_you_dont_need_door_key = you don't need the door key anymore
+w2_fallback_solution = fallback solution
+w2_release_the_birds = release the birds
+w3_no_more_puzzles = not so many tricky puzzles and then find the key
+your potion has been removed =
+your bomb has been removed =
+you need the spear to progress =
+w3_final_hint = behind this door lies immortality again
+w3_treasure_room = treasure room
+w2_treasure_room = treasure room

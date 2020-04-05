@@ -1,0 +1,17 @@
+w1_jail_advice_1 = vous etes en prison pour avoir tue le dragon
+w1_jail_advice_2 = certains detenus ont des armes
+w1_jail_advice_3 = remonter le levier pour fermer les trappes
+w1_jail_advice_4 = votre cellule. Rien a faire sinon de la muscu...
+w1_weapons_removed = armes confisquees + amende de 50000 pieces
+w2_part_3_advice = preparez vous a un beau combat
+w2_the_pit = la fosse
+w2_teleport_room = salle teleport
+w3_shortcut = raccourci
+w3_useless_corridor = un couloir inutile ?
+w3_pull_quickly_advice = relever les leviers rapidement pour du bonus
+w1_let_sentence_begin = debut de la peine
+w1_flask_advice = descendez de l'eau a ceux qui ont soif
+welcome to your cell = bienvenue dans votre cellule
+the door finally opens = la porte finit par s'ouvrir
+don't steal government property = ne volez pas l'etat svp
+w1_find_the_gold_key = trouvez la cle en or

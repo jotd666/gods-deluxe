@@ -1,0 +1,663 @@
+***********************************************************************
+
+AND HERE IS THE WALKTHROUGH!
+It's "only" 99% complete! If you find out or know more, please tell me:
+phenomen@gmx.de
+
+GODS
+
+Learn the levels before going for the bonuses. It's not always a good idea to 
+collect valuable items as it tends to make the monsters much more aggressive. 
+Sometimes it pays to lose a life before entering a new level to fool the 
+computer into thinking you're not that good a player, this means the next 
+stage will be easier. 
+(JOTD: that's bullshit: monsters don't adapt to your bonuses, the game just helps the
+bad player with "help bonuses": extra lives/energy when you're low and about to lose,
+that's all, and badly cracked
+versions were super-hard which gave this false "super-smart" impression. Help bonuses are
+not that helpful since if you have 0 life at level 1, you won't make it to the end anyway)
+
+It is important in this game to choose the right weapons at the shop.
+here is a full listing of the weapons and their dis/advantages:
+
+                        STOPS ON         STOPS ON
+WEAPON        POWER     MONSTERS?         WALLS?
+~~~~~~        ~~~~~     ~~~~~~~~~         ~~~~~~
+Knife           1         Yes              Yes
+Shuriken        2         No               Yes
+Mace            3         Yes              Yes
+Fireball        5         Yes              Yes
+Hunter          5         Yes              No
+Spear           6         No               No
+Axe             12        No               No
+Time Bomb       20        No               Yes  (*)
+Lightning Bolt  25        No               No   (*)
+
+(*): not available in shops but only on special occasions, and can
+be avoided.
+Ligthning Bolt can only be seen at the end of level 1.
+Time bomb is seen at level 3 and 4, but avoid it since it hurts the player,
+removes magic axes/hunters and can be avoided without losing bonuses if game
+is played right.
+
+The game helps you if you don't have enough power on your weapons with the following table:
+
+level 1: no help
+level 2: if weapon power < 14, adds 14/8 = 1 to the weapon power. ex if 2 fireballs you get power 11
+level 3: if weapon power < 22, adds 22/8 = 2 to the weapon power. ex if 2 fireballs you get power 12
+level 4: if weapon power < 34, adds 34/8 = 4 to the weapon power. ex if 2 fireballs you get power 14
+
+
+MONSTERS
+
+All the monsters encountered in Gods have attributes that define their 
+weaknesses, strengths and behaviour. The hit point "HP" attribute sets how 
+many times a monster must be hit before it dies. A weak monster would have 
+perhaps 10 hit points where a stronger creature could have 250 or more. As you 
+progress thru the game you will notice that the monsters become more 
+intelligent. This means that they will be more effective at carrying out their 
+objectives to steal treasure, kill or avoid you. It's not wise to attack 
+thieves as they're usuall helpful. 
+
+WEAPONS
+
+Weapons also have attributes which define their behaviour and effective- ness. 
+The weapons hit point score determines how powerful it is. For example, to 
+kill a monster with 20 hit points would require 20 throws of a one hit point 
+weapon (a knife for example) or 4 throws of a five hit point weapon (like a 
+fireball). Weapons which go past walls are generally more effective. Overall, 
+the value of the weapon reflects its usefulness. 
+
+POTIONS
+
+Correct use of potions can be helpful in completing many sections in Gods. You 
+can normally only carry three items so don't buy to many potions in the shop, 
+leave room for other objects necessary for solving puzzles. 
+
+POWER POTIONS
+
+These are used to increase the effectiveness of weapons. Buying or picking up 
+a power potion increases the damage done by all of your weapons. The same 
+effect can be achieved by getting multiples of the same weapon. Considering 
+power potions effect all the weapons, they are obviously a far more economical 
+way of increasing weapon hit points than buying or picking up multiples of the 
+same weapon. 
+
+EXTRA LIVES
+
+Additional lives are found in treasure rooms but they can also be awarded for 
+clever play and scoring points. Extra lives can also be given to a player that 
+is doing badly. 
+
+SOLVE
+
+LEVEL 1 - WORLD 1
+
+The first world of the game is used to enable to get the player used to the 
+control method and solve some puzzles which are really easy. 
+
+The first key you'll need is the one to open the treasure room. 
+
+The world key is found in the treasure room and opens the door at the end of 
+the world. For a shortcut, reset levels one and two to move block one. This 
+will reveal a water crystal and power-up and teleport you. 
+
+How To Find The Second Puzzle: 
+
+  1.Blow up the trap with lever four and then pull lever three to reveal an 
+iron treasure chest. 2.Reset lever four and pull lever five to get a fire 
+crystal. 3.Pull lever seven within two minutes from the game start to make 
+platform two move. 4.Press hidden switch one to get fire crystal. 5.Finding 
+these four puzzles will mean that you can find the final part of the puzzle in 
+World Two. 
+
+LEVEL 1 - WORLD 2
+
+Get the key on the left of the screen to open the trap door on the right. First 
+of all go over the top of the platforms until you reach the last platform which 
+is too high. return to the far left, press the hidden button and a jump potion 
+will appear. Go back to the right and jump to the highest platform, then jump right
+again to an invisible platform for gold coins, and jump down right to get the gold mask
+and health potion. Return left (but be careful): the first killed monkey will reveal a 
+trap, the second a shield (make sure it's left of the trap and the last monkey 
+reveals a gem.
+Visit the platforms above (dash to the starburst) and activate the secret button.
+Now collect the shield and go down on you right.
+Let yourself fall all the way down and kill the monkeys (those close to the 
+teleporter gem) with the shield as they are hard to kill. Then you can go back 
+to the top and collect the vase & extra weapon there. For the gem it's the best
+to pull the lever on the right and then on the left, or you don't get the teleport
+gem and thus the second vase and thus the special bonus at the stores.
+
+Collect the vase and take it to the stores at the bottom of the map, snatch 
+the room key on the way. Get the world key from stores to exit on the right.
+Since you have pushed all the secret buttons, you don't have to visit the treasure
+room since all buttons open trap doors and you can collect the integrality of the
+treasure: extra life, money, chest and chest key.
+
+Take the 2 different vases from the store and it will reveal a powerup at the 
+end of the level!
+Buy Shurikens and Normal Arc at the shop. 
+
+How To Enter The Treasure Room: 
+
+  1.Kill the monsters on the ledge on the right of lever three to recieve a 
+trap door key. this will let you close the trap door above lever nine by 
+pulling lever four. You will then be able to jump down and open the treasure 
+room door. OR 2.Push all four hidden switches to open the trap doors which form 
+the base of the treasure room. All treasure will then fall thru onto the floor 
+beneath the room. 
+
+LEVEL 1 - WORLD 3
+
+Pull switch two to close the trap doors and blow up the spike in the pit. Get 
+the giant jump to go up the trap doors. 
+
+Alternatively, you can wait for two minutes and a teleport crystal will appear 
+to move you up, although you will not get the special bonus. Get the key on 
+the top left platform to open the trap door to the right. 
+
+Go up the ladder which leads to the towers. Go up the ladders to the bridge 
+and jump across the platforms to the left (even though you can't see where you 
+jump) to collect 2 keys a several gems!(you can get the key on the left 
+alternatively
+by the teleporter but you won't get the gems! =go right and collect the teleport 
+key. Open the door by pulling lever eleven and this will teleport you to the 
+platform
+on the far left of the map). 
+Go right and pull lever seven and drop down through the trap door. 
+Pull lever eight to teleport you to the top door on the right. Pull lever nine 
+to enter the treasure room and collect the lightening bolt. Pulling lever ten 
+will open the door and take you back. (If you let yourself fall down -as long as 
+you 
+have the shield- you will get a speed bonus!) Collect the world key and go down 
+the 
+ladder and when you reach the bottom platform you will recieve a trap door 
+key. 
+Pull lever twelve and go down to defeat the centurion protecting the 
+temple. 
+
+Go up the ladder to the temple and enter the door to exit the level. In the 
+shop you should buy the Magic Axe and spend the rest of your money on Power 
+Potions. 
+
+How To Enter The Treasure Room: 
+
+Kill the wave of monsters which appear to the left of lever three. They will 
+give you a trap key. Reset lever three, which will then give you a shield when 
+you pull lever four to protect you when you drop through the trap door to the 
+treasure room. 
+
+To Move Block One: 
+
+You have to get to this point with more than two lives, more than 80,000 
+points and within 140 seconds from the start of this world. 
+
+
+DEFEATING THE END OF LEVEL GUARDIAN
+
+The Centurion is the easiest of the bosses. Watch the Centurion as he throws 
+fireballs and note the point where they bounce the highest. This is the place 
+you should stand to kill the Boss without getting hit. Move backwards and 
+forwards at the same time as the Centurion, keeping the same relative position 
+in order to avoid being hit. 
+
+SPECIAL BONUSES
+
+Kill the Centurion without collecting the lightening bolt to recieve a gold 
+treasure chest. 
+
+********************************************************************************
+LEVEL 2 - WORLD 1 (The Temple)
+
+Push secret lever on the right. Then go left and right (through trap door which 
+is 
+now open). Go to the right but only so far that you can see the second trap at 
+the 
+right edge of your screen and go a little bit back to the left. Let the Thief 
+steal
+the shield. Try to kill him on the left edge of the platform. You will be able 
+to 
+collect it and pass the trap. Then wait until the shield "turns off" and pull 
+the lever.
+A thief will appear: you must remain at the far right position! The thief will 
+get the 
+key on the left. Then wait until he's right in front of you and kill him 
+(otherwise
+the key will be lost in the trap!).
+After collecting all the treasure you can continue to the left. Be careful when 
+you return
+from the top through the "chimney". Stop at the edn of the ladder, there are new 
+monsters 
+down there!
+In the gem room you get the teleportergem by pulling the door lever several 
+times!
+When you go further down, try not to jump into the "caves" on the left. They are 
+kind of traps
+as new monsters appear but they don't reveal anything (gems or diamonds). So 
+avoid this pain 
+in the ass.
+
+
+LEVEL 2 - WORLD 2
+
+Don't change the angel of your weapon so don't take the "intensive weapon throw" 
+at the 
+beginning of this level.
+Go down the first ladder on your right and enter the room on the left. If you 
+are fast 
+enough you'll get a speed bonus there.
+Then go up to the right and collect the first chalice. Then continue your 
+journey to the right.
+You'll come to a pit. Let yourself fall down and open the right trapdoor 
+(there's a trap underneath 
+the left trap door! Collect the second chalice.
+Continue to the right and go down platform by platform by pulling the levers 
+each time before 
+you go down to the next. Go right and up and collect the third chalice. This 
+will reveal a key!
+The go into the room and leave the chalices there. When you leave the room 
+you'll get a treasure bonus
+for leaving the chalices behind. Climb down the first ladder on your left and 
+use the teleporter gem.
+It will return you to the door in the pit. Enter the room and collect the 
+treasure.
+Now you can finish the level and buy a shield since there's a huge speed bonus
+and the shield helps not being killed and go fast through part II of world 3!
+The shield is quite cumbersome in the first part with all the items to bring from
+one room to another, but it pays in the second "action" part.
+
+LEVEL 2 - WORLD 3
+
+Immediately go to the left or you'll be "trapped" in the corner.
+There is nothing special in the first part of this level. The ideal order to the 
+the 4 rooms in the
+corridor on you right is Room 2 - 3 - 4 - 3 - 1
+After finishing the mosaic you come to the second part of this level, more difficult
+because a lot of monsters attack you.
+
+Activate shield at once and run in all monsters / snake pots: this will save you
+time for the speed bonus puzzle.
+
+Use first key on the lever on the far right to release the hidden platform. Use 
+the second key for
+the hidden door in the middle (speed bonus waiting down there but hard to 
+get unless you followed my advice and activated the shield!!!). Then jump over
+the closed trapdoors. Get candle on the right (use moving platform), then get 
+key on the left and let
+yourself fall down through the trap door in the middle of the platform your now 
+standing (this will
+reveal the key for the room with the extra-life on the right!).
+
+Return ALL levers to the 'up' position in this world, then 2 of the 3 spikes guarding
+the cross will disappear to let you through. 
+
+Just after taking the cross, if you reach up the ladder in 300 seconds (hence the shield
+part!) you'll be rewarded by a huge speed bonus: 1 or 2 lives and fire chrystals. Worth it!!
+(if you think you're late, just skip the cross and the bonus room to reach the bonus, and get
+them later)
+
+Bring candle to the chapel and take both the stolen giant gem of the dragon and 
+the two remaining 
+candles. Bring the cross to the chapel and you'll receive the treasure key for 
+the other two candles. Drop the 2 candles.
+Enter the treasure room above you.
+
+Defeat the end of level guardian
+Put the giant gem as far right as possible in the final room. The dragon won't go past the gem 
+and you can kill him without getting hurt at all (without the gem the boss is very difficult)
+
+********************************************************************************
+LEVEL 3 - WORLD 1 (The Labyrinth)
+
+Pull the first lever and get the starburst bonus to kill the bats. 
+Go down the first ladder and after killing the thief hurry when you go down. And 
+monster appears and
+follows you. The best way to kill it is to go to the right end of the platform 
+at the end of the ladder
+(don't go left!). It might hurt you but reveals a power up after beeing killed!
+Go down into every corner without pulling any levers! You'll have to return but 
+the idea is to kill all the
+monsters as long as you have the spear and not the mace (the spear has power 6, 
+the mace only 3!).
+Return to the beginning of the level to the far left and you'll get a trap door 
+key.
+Now go to the far right. A ladder going up appears. Don't climb up (a secret 
+block moves above you
+opened by the trap door key; if you don't move to the right 2 monsters will jump 
+upon you).
+Then you'll find a "double room" on the right: You enter by the left trap door, 
+pull the lever and 
+hurry --} you've got 5 seconds to destroy the hive by shooting through the door 
+with your spears. 
+But attention: when you already collected the time bomb you have to shoot from 
+the left corner of the
+room or you'll hurt yourself with the bomb! If you don't have keep right in 
+order to max no. of spears hitting the hive.
+5secs should be sufficient! Then leave the room before a trap appears!
+Go to the room where the hive was, pull lever once and then just go to the 
+right, the block will move
+a second time! Now you can enter the corridor and collect your first set of 
+maces.
+Then go down the ladder on your left.
+Get the time bomb and kill the thieves by throwing bombs at them from the 
+ladder. Destroy the block with 
+the mace and get the diamonds. 
+Now you can climb the ladder going up. Here you'll get your second set of mace 
+and the treasure key
+(don't use this key until you collected everything in this level --} the 
+treasure room is the last
+room in this level!). The teleporter gem takes you down to the left where you 
+killed all monsters
+before.
+
+Using the door key: pull right lever first then left!
+Climb up the ladder on your left up to the top (This way the monsters can't 
+shoot at you and you can 
+safely kill the bat on the ceiling). Then go to the top (left) and 3 gems appear 
+above you.
+The gem in the middle beams you to a safe room where you collect a gold bowl for 
+which you get
+a teleport key later on your way back.
+The right gem beams you to a room full of bats. The only thing you get here is 
+bonus gem so you should only enter with the bird or a shield. Dashing to the teleport
+gem also helps but you have to be super-fast!
+
+The left gem beams you into a trap. In this room the only thing you can find are 
+2 hives and no bonuses.
+Going back you get the teleporter key and enter the room next to it. Here you 
+get a weapon power up and
+a second treasure key. This key is of no use as you already have one but you get 
+a special bonus for
+it before entering the treasure room.
+
+Now you can enter the treasure room (but don't enter the treasure room unless 
+you have finished this 
+world ('cause world ends here!). This room is a bit tricky as it's full of 
+monsters. But on one of the 
+platforms above you there is a "kill-everything-skull" which will help you 
+defeat the monsters. So shoot
+with your mace at the stone and  get it. Then keep left in this room as the 
+monsters appear from
+the right hand side.
+
+You will get the room key if you bring your second treasure key to the 
+entrance of the room (you need the room key for). After pulling the lever 
+several times the key appears. Inside let the thief steal another key for you, 
+attract him with the potion (be careful he doesn't take the gem instead of 
+the key!) and you'll get some treasures plus x-life!
+
+This was a big world, eh?!!! You can go super-quickly through the level by just opening the shortcut
+and going to the end of the level, but you will miss most of the bonuses and get less maces.
+
+SHOP:
+
+At the end of this level you can buy a shield if you want to be sure to be successful in the treasure key puzzle.
+You can buy axes, that you'll get a bargain for since you collected a lot of maces.
+
+
+LEVEL 3 - WORLD 2
+
+Go upwards and don't worry too much about all the monsters (there are 2 energy 
+power ups!).
+Before you jump to the platform with the first lever make sure you can partially 
+see the thief 
+on your screen. Then pull the lever and he'll be killed (and can't jump upon you 
+later when you
+enter the room coming from below.
+When the hint tells you "Reach top with max energy", use your shield climb 
+ladder, jump on first paltform
+on your left, pull lever and continue climbing to the top. Alternately, without shield: manage
+not to be hurt and avoid the energy shield at the bottom of the ladder. Climb, and when hurt, go
+down to restore health.
+Alternately, you can play properly: climb the ladder and activate the second lever to prevent the monster
+from following you / shooting you.
+
+Pick up trap door key.
+Climb down the first ladder, pull lever until trap is destroyed and pick up fire 
+gem. The doors beams you
+to a doorway where you leave the gem. Don't pull any levers here: just go to 
+your right. The trapdoor
+opens, you recieve a shield to let you fall into the treasure room safely. Back 
+at the doorway pull right
+lever and pick up potion. Climb downwards: now there are several ways to get the 
+second gem. Every
+way you do it works, so don't worry. You can destroy the trap with the lever at 
+the door, so you will get
+the gem with the help of the thieves or without (without them it will cause you 
+less damage!).
+Don't forget to close the trap door before you cross it, you might fall down.
+Go up and then right. If you have not been to the treasure room: pull the levers 
+down from left to right.
+Move right and the block will move. Follow the corridor into the treasure room.
+If you have already been in the treasure room you just need the following 
+constellation of the 3 levers 1st needs to be in up-position, 2nd and 3rd down 
+(be careful that the
+monster in the gem's chamber doesn't fall down on you), but you won't be able to
+press the secret button that enables the super-treasure bonus in the treasure room of
+world 3
+
+Now you can leave this world.
+
+
+LEVEL 3 - WORLD 3
+
+Don't pull any of the levers until you reach the platform and be careful: each 
+time you 
+move back to the left a trap appears. 
+First of all go down to the pit and pick up energy power up and flask. Then go 
+right, up to the platform
+(don't care about monsters and pull last lever at the platform. Now you can kill 
+the monsters and collect
+the second vessel.
+Pull the left lever at the platform twice. The top trap door opens and the 
+bottom trap door closes.
+Pull the hidden lever before you fall through the trap door. Move left and pull 
+lever to get a bonus life!!!
+Then move right and you'll get a speed bonus!
+There's a combination of levers that allow you to get the fire chrystal next to the beehive (TODO)
+
+Go to the far right and pull lever. Now you get the trap door key for the 2 
+vessels. Go left and pull lever
+but be quick because you only have 15 seconds to get the key! When you've 
+reached the top quickly go
+to the right (to prevent monsters fall on you) and pick up shield to kill them. 
+But keep enough time for
+the shield otherwise you won't survive the necessary fall from the platform.
+No be careful: don't use the door on the right (teleport key) as this is the end 
+of the world!
+Go left and use the treasure key first. And don't hurry in the treasure: pull 
+the hidden switch and
+an enormous treasure chest appears (that if you activated the secret switch in the previous world)
+
+Now you can enter the teleporter door to...
+defeat the end of level guardian:
+This one is easy as well. Just watch the Bull when he jumps. It might be 
+necessary you walk right and he
+jumps above you to your left. This guardian is different as he can turn around 
+and move back.
+By the way:The fireball of the guardian only causes damage with the center core.
+Looks nice when he's dead, eh?!!!!
+
+Buy axes in the shop if not already done.
+
+
+********************************************************************************
+LEVEL 4 - WORLD 1 (The Underworld)
+
+If you move quickly up to the top the energy power up will be released. If you 
+don't need it it's
+better to move slowly and keep an eye on the monsters.
+Don't listen to the hint "I wouldn't go down there" and jump into the pit (gives 
+you special bonus!).
+But be careful: e.g. if you die and have to cross the pit a 2nd time the 
+platform will be gone
+and it's not safe anymore!
+Go down the ladder and destroy wall. After destroying the wall pull lever to use 
+the full effect of the
+"kill-everything-skull" gadget. Then return to your right and climb ladder to 
+get the 2 keys. 
+Continue with your journey further down but don't enter the small "cave" on the 
+left. 2 Monsters will appear
+too fast and they will run into you! But you can use the thief to get the 
+diamond lying there.
+Move left and jump from platform to platform to reach the top to pick up 2 power 
+ups. Don't try to climb
+down as this causes damage. You have to jump right and then climb down both 
+ladders. At the end of the
+2nd ladder you have to let yourself fall to the right to reach the platform 
+below as your still too high
+above the ground.
+Enter the room with the door key and pull the levers only once to close those 
+platforms you need to get
+higher. There you'll find a time bomb with which you can destroy the trap which 
+hinders you to
+get the world key. Be careful on your way down you have to "Jump" down sidewards 
+as a direct fall
+will be too high. Reaching the top you get another trap door key for using your 
+first one so wisely.
+Now enter the secret chamber on the left, pick up the treaseres and the key and 
+move to the top.
+To reach the energy power up and the treasure you have to destroy the top of the 
+2 stones 
+and the top 4 of the 5 stones. Only this allows a safe crossing and return.
+
+
+LEVEL 4 - WORLD 2
+
+Be careful with your weapon in this level. Several times you have the 
+opportunity to pick up
+a mace. Try to keep the axe. On the one hand it will take longer to destroy stones
+using only fireballs, on the other hand
+you won't have problems with fighting monsters (and they are quite strong in 
+this level!).
+
+But at some point in level 3 you will be forced to pick up the spear, so since the last
+shop of the game is now, I suggest you get the spear now so you get back the money for the axes
+and can buy lives, fireballs, hunters...
+
+Just be careful if you rely on fireballs to destroy blocks: you have to let
+the familiar be killed and the end of the world or you will be stuck (familiar shoots
+fireballs and won't destroy the blocks required to get the lamp).
+
+Move up first. Go to top platform. You can switch the lever standing far right 
+but as you can over
+the trap on your way back as well you don't need to care about that. Get the key 
+and energy power up
+and go down again. Enter the door and move quickly to the top. Try to get the 
+first monster as fast as
+possible as it reveals a "starburst". You need to kill these 
+monsters fast as they hinder you
+to get all the treasure. You have to destroy the stones on your right as long as 
+you are on the platform.
+From below it's not possible and you won't get the key you need for the small 
+chest one of the monsters
+reveals. Pick up the golden oil lamp (and read what it says!). Leave the 
+treasure room and now you can
+follow the corridor to your right.
+In the corridor kill the monsters coming from your left first as this will leave 
+you more time for those
+coming from the right (as they are harder to kill!). Then pull the lever and 
+you'll release the bird
+in exchange for the oil lamp. Now you have more fire power!
+If you have the mace be careful when moving right and new monsters appear. Don't 
+destroy more than one 
+stone on your right hand side or you won't be able to get higher. Jump on top of 
+the stones and climb the
+ladder. Pick up the treasure key. Enter the door and go left and all the way 
+down. First pull hidden
+lever first to enter the treasure room! Kill thief as long as he's captured. 
+He's strong and not easy
+to kill. Released he'll follow you!
+Then go back to the top and move over destroyable stones. Attention: when you 
+reach the ladder 2 fast
+and strong monsters will appear! At the bottom of the ladder you'll get the 
+first of the alchemist's tools.
+Move down and enter the chamber on your right. Move right until you can only see 
+a part of the second tool.
+If you can see both the tool and the golden mask it can happen that the thief 
+takes the masks. But you need
+all 3 tools to get the bonus. Jump to the platform where the first lever in this 
+room is. Don't pull it and 
+don't jump higher or you're not safe from the gun shooting from the right. Go to 
+the top, collect the potion,
+destroy the trap and go down to the first lever in that room. Pull it and it 
+will say "be careful that 
+thief can help". Leave the potion there and move right. It will take a short 
+while and the thief comes with 
+the second tool. Kill him and take the tool. Leave the room.
+(if you're stuck because you killed the thief too soon or the thief takes the mask,
+just wait, and pull lever: the wall will move and you can get hold of the mortar)
+
+If you have too many items (e.g. shield plus 2 tools plus chest key!) reaching 
+the trap door just put it on 
+top of it, pull the lever and it will fall down with you (you can't return back 
+up!!!). 
+Go all the way down, keep left, destroy stones and killed monster at far left 
+reaveals door key.
+Move back up, open door, move left without destroying any stone, climb to the 
+top, collect the treasure. Now
+you can destroy the stones and collect the third tool. Leave the room (all the 
+stones to your right need to
+be destroyed otherwise you can't leave the room.
+Go down and right. When you reach the hint you need all 3 tools to get the trap 
+door key. Open the secret
+door and climb up. There you'll get the world key for the tools (without the 
+tools I think you get
+the world key at that point you get the trap door key).
+Leave this world!
+
+
+LEVEL 4 - WORLD 3
+
+Here you have to pick up the spear. Climb to the end of the ladder but don't 
+jump on the platform.
+A thief will get the treasure key for you and is easily killed with one shot. 
+Pull lever once to
+cover the trap and a second time to open the door.
+Press hidden switch. move to edge of platform and kill monsters coming from 
+left. Go down and
+left, then through door on your right. Move left until you see the thief and 
+kill him. Then pull the 
+lever in the middle to get the trap door key. Then open trap door on your left 
+by pushing the levers
+on the right up and the lever on the left down. Jump into the pit. Before you 
+hit the floor you get a
+shield. Now you can collect the treasure. Leave the room and take the next door 
+on your right. You are
+now teleported into a secret room. 
+
+Well: if you got the mace from the thief, you'll want to increase weapon power to
+be able to destroy the blocks easily and get the axes but don't. Instead, climb up
+to the start, push the secret lever again and get the axes. You might 
+think it's annoying to jump
+several times to get the axes with the fireball and give up; but it's worth it as they are 2 times 
+stronger than spears
+and the final guardian is REALLY hard to kill. Now you can go down again (but 
+don't fall right into the pit, 
+keep right when you get down!!!). Now that you have the axes, triple their power by
+collecting the weapon power up (your axes are even stronger now for the 
+final guardian) and the world key!
+On your way to the end of this world close the trap door with the left lever 
+(otherwise this fatal fall will kill you).
+
+NOW YOU ENCOUNTER THE FINAL GUARDIAN:
+Here are no more tricks possible (like the gem with the dragon) and you will 
+definitely lose several lives.
+But I think you had the opportunity to collect more than 10 or 15 so far.
+The best position to kill this guardian is to jump onto the first platform and 
+keep and the far left edge.
+At any other place the monster coming out of his head will get you and kills you 
+at once. There you will be hurt
+by the 2 small fireballs coming out of his head but they cause the smallest 
+damage. You can try to experiment
+to jump on the top platform when the snake-like monster is shot to avoid the 
+fireballs and return to the other
+platform when the new "snake" comes. But it's difficult and while jumping up and 
+down you can't shoot.
+
+SO GOOD LUCK WITH YOUR JOURNEY AND THE FINAL GUARDIAN!
+Killing the guardian means immortality (i.e. you get 10 bonus 
+lives!!!!!!!!!!!!!!!!!!!!!!!)
+
+The Spoiler Centre / edited by JOTD 

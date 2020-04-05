@@ -1,0 +1,11 @@
+w3_chapel_print = the chapel
+w3_candle_avice = find the candle
+w3_illuminate_study = illuminate the study to end the world
+w3_cross_chapel = cross to the chapel
+w3_study_print = the study
+w3_return_levers_hint = return levers to get cross
+w1_thief_advice = if left alone, thieves can help
+w2_start_message = the temple of the gods
+w2_advice_chalice_key = the chalices reveal a key
+w3_repair_advice = repair the mosaic to please the gods
+w2_advice_1 = take the chalices to the ship room

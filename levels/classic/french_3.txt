@@ -1,0 +1,16 @@
+w1_advice_1 = la massue aide a trouver la cle du monde
+w1_bomb_advice = la bombe detruit les pieges et les ruches
+w1_first_message = vous venez d'entrer dans le labyrinthe
+w1_advice_end = observez le plafond de la salle du tresor
+w1_bat_room_advice = bienvenue dans la piece des chauve-souris
+w1_bee_room_advice = bienvenue dans la piece des abeilles
+w1_entrance_theif_lair = le repaire des voleurs
+w1_potion_advice = la potion ne peut pas etre sortie de cette piece
+w1_treasure_room = salle du tresor
+your potion has been removed = votre potion vous a ete retiree
+your bomb has been removed = votre bombe vous a ete retiree
+five seconds to exit room = cinq secondes pour quitter la piece
+w2_health_advice = atteindre le haut avec le max d'energie donne une cle
+w3_bring_vessels_advice = amenez les vases pour aller plus haut
+w3_lever_advice = actionner le levier de droite rapidement pour du bonus
+get the key in fifteen seconds = prenez la cle en quinze secondes

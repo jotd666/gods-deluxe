@@ -1,0 +1,215 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level2 >
+ < copperbar_class gods.game.copperbar.Classic3 >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 16 >
+  < nb_cols 12 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row platform_2_left platform_3 platform_2_right ladder_5 platform_2_left platform_2_right wall_1 platform_2_left platform_3 platform_2_right wall_1 wall_1 >
+  < row wall_1 wall_1 wall_1 ladder_5 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 ladder_5 ladder_5 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 ladder_5 ladder_5 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 ladder_5 ladder_5 wall_1 top_window wall_1 wall_1 ladder_5 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 ladder_5 ladder_5 wall_1 bottom_window wall_1 wall_1 ladder_5 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 ladder_5 platform_left platform_middle platform_middle platform_right wall_1 ladder_5 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 ladder_5 wall_1 wall_1 wall_1 wall_1 wall_1 ladder_5 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 carve_square_top_left carved carved carved carved_and_wall wall_1 ladder_5 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 carve_square_vertical_1 grate grate grate carve_square_vertical_2 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 2 >
+  < OBJECT
+   < name open_trap >
+   < visible yes >
+   < x 174 >
+   < y 112 >
+   < frame_set lever >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 152 >
+   < y 96 >
+   < frame_set throwing_star >
+  >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 5 >
+  < CONTROL_OBJECT
+   < name player_start >
+   < x 138 >
+   < y 32 >
+   < width 32 >
+   < height 48 >
+   < type Restart >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name nme_1 >
+   < x 24 >
+   < y 48 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name nme_2 >
+   < x 12 >
+   < y 208 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name nme_3 >
+   < x 268 >
+   < y 48 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name nme_4 >
+   < x 2 >
+   < y 128 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 0 >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 4 >
+  < HOSTILE_WAVE_PARAMETERS
+   < location nme_3 >
+   < class_name gods.game.characters.hostiles.GroundMonster1 >
+   < frame_set_name ground_monster_1 >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 1 >
+   < direction Left >
+   < attack_distance Always >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation yes >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height High >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location nme_1 >
+   < class_name gods.game.characters.hostiles.GroundMonster1 >
+   < frame_set_name ground_monster_1 >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 1 >
+   < direction Right >
+   < attack_distance Always >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation yes >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height High >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location nme_2 >
+   < class_name gods.game.characters.hostiles.GroundMonster1 >
+   < frame_set_name ground_monster_1 >
+   < fire_type Directional >
+   < appearing_delay Normal >
+   < health_points 1 >
+   < direction Right >
+   < attack_distance None >
+   < speed Fast >
+   < shoot_speed Normal >
+   < shoot_frequency Fast >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 2 >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location nme_4 >
+   < class_name gods.game.characters.hostiles.FiringHeadMouth >
+   < frame_set_name firing_head >
+   < fire_type Straight >
+   < appearing_delay None >
+   < health_points 18 >
+   < direction Right >
+   < attack_distance None >
+   < speed Fast >
+   < shoot_speed Slow >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+ >
+>

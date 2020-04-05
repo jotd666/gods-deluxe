@@ -1,0 +1,438 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.classic.GodsClassicLevel4 >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level4 >
+ < copperbar_class gods.game.copperbar.None >
+ < hostile_damage_divisor 1 >
+ < shield_level 1 >
+ < TILE_GRID
+  < nb_rows 20 >
+  < nb_cols 23 >
+  < row null null wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 >
+  < row null null wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 >
+  < row stalact_11 stalact_11 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 >
+  < row stalact_2 stalact_2 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 wall_13 >
+  < row stalact_11 stalact_11 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 >
+  < row stalact_2 stalact_2 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 >
+  < row wall_5 wall_5 wall_14 wall_14 wall_14 wall_6 wall_9 wall_18 wall_6 wall_9 wall_18 wall_6 wall_9 wall_18 wall_9 wall_10 wall_14 wall_14 wall_14 wall_14 wall_8 stone_22 stone_19 >
+  < row wall_16 wall_16 wall_13 wall_13 wall_13 wall_18 stone_22 stone_19 stone_19 stone_19 stone_19 stone_19 stone_19 stone_19 wall_7 wall_13 wall_13 wall_13 wall_13 wall_13 wall_8 stone_23 stone_13 >
+  < row wall_14 wall_14 wall_14 wall_14 wall_14 wall_9 stone_7 stone_21 stone_13 stone_13 stone_13 stone_13 stone_13 stone_13 wall_12 wall_16 wall_16 wall_16 wall_16 wall_16 wall_11 stone_7 stone_6 >
+  < row wall_13 wall_13 wall_15 wall_15 wall_15 wall_6 stone_23 stone_12 stone_16 stone_5 stone_6 stone_16 stone_6 stone_16 wall_6 iron_panel_top wall_6 wall_18 iron_panel_top wall_7 wall_8 stone_23 stone_16 >
+  < row wall_14 wall_14 wall_13 wall_13 wall_13 wall_18 stone_7 stone_8 stone_5 stone_6 stone_5 stone_5 stone_16 stone_2 wall_6 framed_panel_bottom wall_7 wall_8 framed_panel_bottom wall_6 stone_22 block_5 stone_10 >
+  < row wall_13 wall_13 wall_14 wall_14 wall_14 wall_9 stone_23 stone_12 stone_16 block_5 stone_10 stone_5 stone_18 stone_6 wall_12 side_door_top wall_17 wall_16 wall_7 wall_8 stone_12 wall_7 wall_8 >
+  < row wall_14 wall_14 wall_15 wall_15 wall_15 wall_18 stone_7 stone_8 stone_6 stone_20 stone_12 stone_16 stone_4 stone_2 stone_20 closed_door_top stone_8 stone_19 stone_19 stone_19 stone_8 stone_20 stone_19 >
+  < row wall_13 wall_13 wall_14 wall_14 wall_14 wall_9 stone_23 stone_12 stone_5 stone_15 block_1 platform_8 stone_10 stone_17 stone_6 closed_door_mid stone_8 framed_wood_top_left framed_wood_top framed_wood_top framed_wood_top framed_wood_top framed_wood_top_right >
+  < row wall_14 wall_14 wall_13 wall_13 wall_13 wall_6 stone_7 stone_8 stone_16 stone_16 stone_20 stone_1 stone_12 stone_5 stone_16 closed_door_bottom stone_8 framed_wood_left_2 wood_1 wood_1 wood_1 wood_1 framed_wood_right_2 >
+  < row wall_13 wall_13 wall_14 wall_14 wall_14 wall_18 stone_23 stone_12 stone_6 stone_2 stone_15 stone_13 stone_11 stone_2 block_1 block_2 block_2 block_2 block_2 block_2 block_2 block_2 platform_8 >
+  < row block_4 block_4 wall_15 wall_15 wall_15 wall_9 stone_7 stone_8 stone_16 stone_6 stone_16 stone_2 stone_16 stone_6 wall_12 wall_16 wall_16 wall_16 wall_16 wall_16 wall_16 wall_16 wall_18 >
+  < row stalact_11 stalact_11 wall_13 wall_13 wall_13 wall_6 stone_23 stone_12 stone_6 block_1 wall_5 wall_5 wall_5 wall_5 block_5 wall_10 wall_13 wall_13 wall_13 wall_6 wall_6 iron_panel_top wall_9 >
+  < row stalact_2 stalact_2 wall_14 wall_14 wall_14 wall_18 stone_7 null null wall_18 wall_17 wall_16 wall_16 wall_16 wall_16 wall_14 wall_14 wall_14 wall_14 wall_7 wall_8 framed_panel_bottom wall_6 >
+  < row stalact_11 stalact_11 wall_15 wall_15 wall_15 wall_9 stone_23 null null wall_9 wall_10 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_15 wall_16 wall_16 wall_15 wall_18 >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 11 >
+  < OBJECT
+   < name w3_open_boss_door >
+   < visible yes >
+   < x 516 >
+   < y 192 >
+   < frame_set lever >
+  >
+  < OBJECT
+   < name w3_lives_bonus >
+   < visible no >
+   < x 620 >
+   < y 176 >
+   < frame_set gold_bag >
+  >
+  < OBJECT
+   < name w3_last_advice >
+   < visible yes >
+   < x 580 >
+   < y 200 >
+   < frame_set advice >
+  >
+  < OBJECT
+   < name boss_coin_1 >
+   < visible no >
+   < x 210 >
+   < y 240 >
+   < frame_set coin >
+  >
+  < OBJECT
+   < name boss_coin_2 >
+   < visible no >
+   < x 270 >
+   < y 216 >
+   < frame_set coin >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 564 >
+   < y 160 >
+   < frame_set axe >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 558 >
+   < y 172 >
+   < frame_set axe >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 570 >
+   < y 169 >
+   < frame_set axe >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 538 >
+   < y 162 >
+   < frame_set axe >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 552 >
+   < y 158 >
+   < frame_set axe >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 512 >
+   < y 209 >
+   < frame_set increase_wp_full >
+  >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 20 >
+  < CONTROL_OBJECT
+   < name w3_boss_door >
+   < x 488 >
+   < y 192 >
+   < width 16 >
+   < height 48 >
+   < type Side_Door >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name _unnamed_ >
+   < x 164 >
+   < y 288 >
+   < width 176 >
+   < height 32 >
+   < type Foreground_Block >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name w3_ten_lives_zone >
+   < x 208 >
+   < y 120 >
+   < width 222 >
+   < height 16 >
+   < type Misc >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name temp_start >
+   < x 550 >
+   < y 192 >
+   < width 32 >
+   < height 48 >
+   < type Restart >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name w3_key_fall_start >
+   < x 736 >
+   < y 80 >
+   < width 32 >
+   < height 16 >
+   < type Moving_Block_Start >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name w3_key_fall_end >
+   < x 736 >
+   < y 128 >
+   < width 32 >
+   < height 16 >
+   < type Moving_Block_End >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss_fix_scroll_top_left >
+   < x 160 >
+   < y 96 >
+   < width 32 >
+   < height 32 >
+   < type Misc >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name w3_close_boss_door >
+   < x 428 >
+   < y 192 >
+   < width 30 >
+   < height 40 >
+   < type Bonus >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss >
+   < x 208 >
+   < y 296 >
+   < width 80 >
+   < height 80 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss_restart >
+   < x 414 >
+   < y 224 >
+   < width 32 >
+   < height 48 >
+   < type Restart >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss_worm_head_1 >
+   < x 238 >
+   < y 144 >
+   < width 20 >
+   < height 16 >
+   < type Misc >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss_worm_head_2 >
+   < x 262 >
+   < y 112 >
+   < width 20 >
+   < height 16 >
+   < type Misc >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss_worm_head_3 >
+   < x 304 >
+   < y 136 >
+   < width 30 >
+   < height 24 >
+   < type Misc >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss_worm_head_4 >
+   < x 322 >
+   < y 232 >
+   < width 32 >
+   < height 24 >
+   < type Misc >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss_worm_head_5 >
+   < x 414 >
+   < y 232 >
+   < width 20 >
+   < height 16 >
+   < type Misc >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss_worm_head_6 >
+   < x 442 >
+   < y 200 >
+   < width 20 >
+   < height 16 >
+   < type Misc >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss_worm_head_7 >
+   < x 438 >
+   < y 144 >
+   < width 30 >
+   < height 24 >
+   < type Misc >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss_worm >
+   < x 230 >
+   < y 176 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss_worm_head_8 >
+   < x 408 >
+   < y 104 >
+   < width 32 >
+   < height 32 >
+   < type Misc >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss_worm_head_9 >
+   < x 224 >
+   < y 0 >
+   < width 20 >
+   < height 16 >
+   < type Misc >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 1 >
+  < OBJECT_ASSOCIATION
+   < type Lever_Door >
+   < nb_objects 2 >
+   < object w3_open_boss_door >
+   < object w3_boss_door >
+  >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 2 >
+  < HOSTILE_WAVE_PARAMETERS
+   < location boss >
+   < class_name gods.game.characters.hostiles.BossLevel4 >
+   < frame_set_name boss_head >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 100 >
+   < direction Right >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+   < objective_balance 100 >
+   < count 1 >
+   < OBJECT_DROPPED
+    < instance_name ? >
+    < class_name ? >
+    < hostile_name ? >
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle -4 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location boss_worm >
+   < class_name gods.game.characters.hostiles.BossLevel4Worm >
+   < frame_set_name boss_worm_head >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 1000 >
+   < direction Right >
+   < attack_distance None >
+   < speed Very_Fast >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+   < objective_balance 100 >
+   < count 1 >
+   < OBJECT_DROPPED
+    < instance_name ? >
+    < class_name ? >
+    < hostile_name ? >
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 270 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 13 >
+    < SEGMENT
+     < type To_Location >
+     < duration 0 >
+     < location boss_worm_head_1 >
+    >
+    < SEGMENT
+     < type To_Location >
+     < duration 0 >
+     < location boss_worm_head_2 >
+    >
+    < SEGMENT
+     < type To_Location >
+     < duration 0 >
+     < location boss_worm_head_3 >
+    >
+    < SEGMENT
+     < type To_Location >
+     < duration 0 >
+     < location boss_worm_head_4 >
+    >
+    < SEGMENT
+     < type To_Location >
+     < duration 0 >
+     < location boss_worm_head_5 >
+    >
+    < SEGMENT
+     < type To_Location >
+     < duration 0 >
+     < location boss_worm_head_6 >
+    >
+    < SEGMENT
+     < type To_Location >
+     < duration 0 >
+     < location boss_worm_head_7 >
+    >
+    < SEGMENT
+     < type To_Location >
+     < duration 0 >
+     < location boss_worm_head_8 >
+    >
+    < SEGMENT
+     < type To_Location >
+     < duration 0 >
+     < location boss_worm_head_3 >
+    >
+    < SEGMENT
+     < type To_Location >
+     < duration 0 >
+     < location boss_worm_head_5 >
+    >
+    < SEGMENT
+     < type To_Location >
+     < duration 0 >
+     < location boss_worm_head_4 >
+    >
+    < SEGMENT
+     < type To_Location >
+     < duration 0 >
+     < location boss_worm_head_9 >
+    >
+    < SEGMENT
+     < type Flee >
+     < duration 0 >
+    >
+   >
+  >
+ >
+>
+>

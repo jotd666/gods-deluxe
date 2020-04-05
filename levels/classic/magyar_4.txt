@@ -1,0 +1,12 @@
+w1_advice_1 = ne hidd el mindig, amit írva látszstart_message = az alvilág
+w1_advice_3 = a csapdák szobája rejti a kulcsot
+w1_advice_2 = én nem mennék oda le
+w1_use_trap_key_wisely = használd a csapóajtó kulcsot bölcsen
+w2_pull_hard_left = óvatosan nyomd balra
+w2_bring_tools = hozd az alchimistának a felszerelését
+w2_forever_downwards = folyamatosan lefelé
+w2_treasure_room = kincses kamra
+w2_alchemist_close = az alchimista szoba a közelben van de elrejtve
+w3_no_more_puzzles = nincs több trükk, csak a kulcsot találd meg
+w3_thieves_get_keys = a tolvajok ragadták el a kulcsot
+w3_last_advice = e mögött az ajtó mögött lakozik a halhatatlan

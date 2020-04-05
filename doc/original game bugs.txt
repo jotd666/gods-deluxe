@@ -1,0 +1,73 @@
+I noticed some bugs or "features" in the original game:
+
+- the "your bomb has been removed" message in the shortcut at classic level 3 displays but does not remove the
+  bomb, so, if you use the shortcut you don't have to kill the beehive, and you keep your bomb in the next world
+  (unless you lose a life in this world): which allows to kill most of the spikes if you want.
+  Buying "increase weapon power" effectively increases the bomb power (2 to 4 starbursts ejected during the explosion,
+  and the explosion effects higher, which is funny since it certainly required a lot of work for so little people
+  noticing and using the high-power bomb, normally only seen at level 4-1 if you fail to get the world key and it falls in the traps).
+  Nevertheless, when you buy hunters, the hunters replace the fireballs, which
+  IMHO is a huge bug since bomb and hunter normally replace the magic axe (I think that's because bomb cannot
+  normally make its way to the shop, and thus cannot be sold back)
+  -> if you don't have maces as primary weapon you are stuck in the very beginning of level 4 because you cannot
+  break the block where the key resides (because you have no fireballs).
+  This is why the bomb is actually removed in my remake, which loses accuracy to fix a bug.
+  But I found it remarkable that powerups actually affect bomb too, because the power-bomb normally occurs
+  once in the game, at level 4 (trap room) if you let the world key fall into the spike. They added the extra
+  projectiles when bomb explodes only for this little level. What a sense of detail!
+  
+- When starting from level 3 or 4 with a password and buying only fireballs and the familiar,
+  the familiar does not shoot the fireball since you would be completely unarmed, but it attacks
+  the enemies by raiding on them. As soon as you take a weapon (spear, hunter), it ceases to
+  attack and sticks to your X coordinate, while shooting fireballs.
+  Very few people saw it because you're not supposed to start level 3 or 4 with only fireballs
+  and the familiar unless you really like challenge, that's why I find it really interesting
+  that the Bros took time to code that behaviour. I didn't.
+  
+- If you start level 4 from a password without fireballs and without maces, you're stuck in
+  the first room because you cannot get the door key on the breakable block.
+  That's a minor problem since you just have to hit the ESC key and restart with proper weapons.
+  
+- In level 3 world 2, there's a "hidden" ladder just before the gem-stealing thief. HOL map show this ladder, original
+  game does not. That's a mystery (or maybe was fixed in other versions)... I have put the ladder back.
+
+- At the end of level 2, increase weapon power (half) potion is worth 20000. If you start the game with a password from
+  level 3, or reach the shop of level 3 world 1, this potion is worth 17500 only! => I left it at 17500.
+  
+- if you still own the familiar at level 4 world 2 and you don't have the maces and prefer using the fireballs to break
+  the blocks, you are stuck when it comes to break a wall behind which a part of the puzzle is located, because the
+  familiar shoots the fireballs, and it shoots too high to break the blocks. You have to get your familiar
+  killed before that (not too difficult), or you'll be stuck. In the remake, I added a nice feature that fixes that:
+  when you crouch and no enemy is in sight, the familiar locks on your position for several seconds, which leaves you
+  the time to shoot blocks with the fireball: you are not stuck anymore
+
+- in the shop, when you have bought a powerful weapon with a lot of power-ups and your money is near zero, the game
+  should show weapons of the same category you could buy with the half-price refund of your current weapons but it doesn't.
+  My implementation shows all buyable weapons (not of very notable interest, but a notable difference)
+
+- opened face doors of level 4 are not relevant with closed face doors: the graphics are the ones of level 3 !!!
+  I have fixed this because it looked wierd
+- from twizzle (Gods expert player): when i get to my 10 >12th time around, it will start adding into
+  the your score all the symbols into it? when it reaches 320.000 + not just numbers, ie $,
+  pots gold crystals etc etc. Of course this won't happen in the remake. The only risk is that the score
+  overflows from the score frame :)
+ 
+- when you drop a shield or a starburst during a fight with a boss, it does nothing until the boss is killed.
+  Then the bonus actually appears (and is totally useless since the level is then complete). I think they forgot
+  to remove power-ups in higher bosses (done at least at level 1). In my remake, the bonus is dropped but is
+  not pickable until the boss has been killed.
+
+- Shop: I have added the feature to be able to use the potential money from weapons resale to buy weapons from the shop.
+  That explains why even when gold is 0 you are still able to buy some weapons (but you'd lose money as reselling them
+  is always at half the buy price)
+  
+Differences between versions:
+
+I noticed several differences between the Amiga version and, say, the Sega version. As Sega version is newer and the
+changes seem to be wise, I've decided to use the Sega mods, even if I dislike the console versions.
+
+- level 1 world 2: the first ladder is longer in the Sega version, thus allowing to jump directly right on the platform
+- level 1 world 3: the giant jump pit is shallower in the Sega version, thus avoiding to stay stuck in the pit if the
+  giant jump effect wears off and you're still in the pit (never met anyone who let that happen, but I guess a console
+  player could get caught :) )
+  

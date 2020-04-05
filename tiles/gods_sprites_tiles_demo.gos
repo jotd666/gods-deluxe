@@ -1,0 +1,4118 @@
+< GFX_PALETTE
+ < nb_frame_sets 203 >
+ < FRAME_SET
+  < name spike >
+  < type enemy >
+  < nb_frames 4 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 114 >
+   < width 16 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 17 >
+   < source_y 114 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 34 >
+   < source_y 114 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 51 >
+   < source_y 114 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name altar >
+  < type background_item >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 68 >
+   < source_y 114 >
+   < width 48 >
+   < height 32 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name ground_thief >
+  < type enemy >
+  < nb_frames 9 >
+  < GFX_FRAME
+   < source_x 297 >
+   < source_y 248 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 330 >
+   < source_y 248 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 363 >
+   < source_y 248 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 396 >
+   < source_y 248 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 429 >
+   < source_y 248 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 462 >
+   < source_y 248 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 495 >
+   < source_y 248 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 528 >
+   < source_y 248 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 561 >
+   < source_y 248 >
+   < width 32 >
+   < height 32 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name carved_dark >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_right_wall_end >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 33 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name dark_wall_5 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 66 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name left_platform_1 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 99 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name platform_1 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 132 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name right_platform_1 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 165 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name blocking_wall_left >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 198 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name blocking_wall_right >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 231 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name l_stone_wall_left_shade >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 264 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name l_stone_wall_right_shade >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 297 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name left_platform_2 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 330 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name platform_2 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 363 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name right_platform_2 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 396 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_ramp >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 429 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_ramp_with_pillar >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 462 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name simple_ramp >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 495 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_shade_ramp >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 528 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_shade_ramp_wall >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 561 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name l_stone_wall_left >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 594 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name l_stone_wall_right >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 627 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name stone_multicolor_1 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 660 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name stone_multicolor_2 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 693 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name stone_multicolor_3 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 726 >
+   < source_y 607 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name open_door >
+  < type open_face_door >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 490 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name wall_head_down >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_right_carved_corner >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 33 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name mid_pillar_2 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 66 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bottom_pillar >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 99 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name right_wall_end_tile >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 132 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_window >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 165 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name up_face_closed_door_1 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 198 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name up_face_closed_door_2 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 231 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_pillar_no_bg >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 264 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name closed_door_up >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 297 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name stained_stone_wall >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 330 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name vertical_carve_left >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 363 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name open_door_up >
+  < type background_tile >
+  < nb_frames 2 >
+  < GFX_FRAME
+   < source_x 396 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 429 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name moving_platform >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 462 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name mid_window >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 495 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name mid_face_closed_door_1 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 528 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name mid_face_closed_door_2 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 561 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_ramp_wall >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 594 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name closed_door_mid >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 627 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name carved_top_corner >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 660 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name up_center_carved >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 693 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name open_door_mid >
+  < type background_tile >
+  < nb_frames 2 >
+  < GFX_FRAME
+   < source_x 726 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name right_square_drawing >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 759 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name left_wall_square_drawing >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 792 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name left_wall_brick >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 825 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name right_wall_square_drawing >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 858 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name right_wall_square_drawing_2 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 891 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name demo_platform_3 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 924 >
+   < source_y 573 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_rooftop >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name rooftop >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 33 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name open_trap >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 66 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name wall_1 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 99 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name dark_wall_1 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 132 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name dark_wall_2 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 165 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_wall_1 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 198 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name wall_2 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 231 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name dark_wall_3 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 264 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name dark_wall_4 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 297 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_roof >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 330 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name roof >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 363 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name blank >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 396 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name ladder >
+  < type ladder >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 429 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name dark_wall_end >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 462 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name transparent >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 495 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_wall_end_2 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 528 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name wall_end_left >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 561 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_wall >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 594 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name wall_end_right >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 627 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_tiled_walltop >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 660 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name tiled_walltop >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 693 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name thick_wall >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 726 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_square_drawing >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 759 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name semi_shade_square_drawing >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 792 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name grate >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 825 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_right_square_drawing >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 858 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name left_square_drawing >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 891 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name demo_platform_1 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 924 >
+   < source_y 539 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name flying_monster_1 >
+  < type enemy >
+  < nb_frames 3 >
+  < GFX_FRAME
+   < source_x 99 >
+   < source_y 182 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 132 >
+   < source_y 182 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 165 >
+   < source_y 182 >
+   < width 32 >
+   < height 32 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name half_energy >
+  < type stamina >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 4000 >
+   < alias health >
+   < description restores%20energy >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name increase_wp_medium >
+  < type bonus >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 17 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 6000 >
+   < alias power%20potion >
+   < description increases%20weapon%20power >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name increase_wp_full >
+  < type bonus >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 34 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 12000 >
+   < alias ? >
+   < description increases%20weapon%20power >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name full_energy >
+  < type stamina >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 51 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 8000 >
+   < alias health >
+   < description restores%20energy >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name starburst >
+  < type bonus >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 68 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 10000 >
+   < alias ? >
+   < description destruction >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shield >
+  < type bonus >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 85 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 20000 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name invincibility >
+  < type bonus >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 102 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 5000 >
+   < alias shield >
+   < description invulnerability >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name extra_life >
+  < type bonus >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 119 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 20000 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name freeze >
+  < type bonus >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 136 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 4000 >
+   < alias magic%20potion >
+   < description freeze >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name giant_jump >
+  < type bonus >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 153 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias magic%20potion >
+   < description giant%20jump >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name weapon_arc_standard >
+  < type bonus >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 170 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 1000 >
+   < alias weapon%20arc >
+   < description standard >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name weapon_arc_intense >
+  < type bonus >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 187 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 1000 >
+   < alias weapon%20arc >
+   < description intense >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name weapon_arc_wide >
+  < type bonus >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 204 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 1000 >
+   < alias weapon%20arc >
+   < description wide >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name knife >
+  < type bonus >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 221 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 2500 >
+   < alias ? >
+   < description power%201 >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name fire_ball >
+  < type bonus >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 238 >
+   < source_y 0 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 12500 >
+   < alias ? >
+   < description power%205 >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name gold_chest >
+  < type chest >
+  < nb_frames 2 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 19 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 17 >
+   < source_y 19 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 3000 >
+   < alias treasure%20chest >
+   < description gold >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name steel_chest >
+  < type chest >
+  < nb_frames 2 >
+  < GFX_FRAME
+   < source_x 34 >
+   < source_y 19 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 51 >
+   < source_y 19 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 2000 >
+   < alias treasure%20chest >
+   < description steel >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name iron_chest >
+  < type chest >
+  < nb_frames 2 >
+  < GFX_FRAME
+   < source_x 68 >
+   < source_y 19 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 85 >
+   < source_y 19 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 1000 >
+   < alias treasure%20chest >
+   < description iron >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name lever >
+  < type activable >
+  < nb_frames 2 >
+  < GFX_FRAME
+   < source_x 102 >
+   < source_y 19 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 119 >
+   < source_y 19 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name secret_button >
+  < type activable >
+  < nb_frames 4 >
+  < GFX_FRAME
+   < source_x 136 >
+   < source_y 19 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 153 >
+   < source_y 19 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 170 >
+   < source_y 19 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 187 >
+   < source_y 19 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name advice >
+  < type bonus >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 38 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name chicken >
+  < type stamina >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 17 >
+   < source_y 38 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 650 >
+   < alias food >
+   < description restores%20energy >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bread >
+  < type stamina >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 34 >
+   < source_y 38 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 1300 >
+   < alias food >
+   < description restores%20energy >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name apple >
+  < type stamina >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 51 >
+   < source_y 38 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 1000 >
+   < alias food >
+   < description restores%20energy >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name gold_mask >
+  < type money >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 68 >
+   < source_y 38 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 1440 >
+   < alias gold%20mask >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name necklace >
+  < type money >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 85 >
+   < source_y 38 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 1000 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name coin >
+  < type money >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 102 >
+   < source_y 38 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 720 >
+   < alias gold%20plate >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shopkeeper_token >
+  < type bonus >
+  < nb_frames 5 >
+  < GFX_FRAME
+   < source_x 119 >
+   < source_y 38 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 136 >
+   < source_y 38 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 153 >
+   < source_y 38 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 170 >
+   < source_y 38 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 187 >
+   < source_y 38 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias shop%20potion >
+   < description summons%20the%20shopkeeper >
+   < animation_type FOREVER >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bottom_ramp >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 624 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bottom_ramp_with_pillar >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 33 >
+   < source_y 624 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bottom_simple_ramp >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 66 >
+   < source_y 624 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bottom_shade_ramp >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 99 >
+   < source_y 624 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bottom_shade_ramp_wall >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 132 >
+   < source_y 624 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name dark_brick_wall >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 165 >
+   < source_y 624 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_brick_wall >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 198 >
+   < source_y 624 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name brick_wall >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 231 >
+   < source_y 624 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name left_wall_end_carved >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 264 >
+   < source_y 624 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name right_wall_end_carved >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 297 >
+   < source_y 624 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name left_wall_end_brick >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 330 >
+   < source_y 624 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name skull >
+  < type pickable >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 17 >
+   < source_y 57 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias the%20kings%20skull >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name urn >
+  < type pickable >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 34 >
+   < source_y 57 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name pot_5 >
+  < type pickable >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 51 >
+   < source_y 57 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 30000 >
+   < alias ceramic%20pot >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name attract_monster >
+  < type pickable >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 68 >
+   < source_y 57 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias potion >
+   < description attracts%20monsters >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name gold_bag >
+  < type money >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 85 >
+   < source_y 57 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 720 >
+   < alias bag%20of%20gold >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name pot_6 >
+  < type pickable >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 102 >
+   < source_y 57 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ceramic%20pot >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name small_gold_bag >
+  < type money >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 119 >
+   < source_y 57 >
+   < width 16 >
+   < height 15 >
+  >
+  < PROPERTIES
+
+   < value 360 >
+   < alias bag%20of%20gold >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name ground_monster_2 >
+  < type enemy >
+  < nb_frames 9 >
+  < GFX_FRAME
+   < source_x 297 >
+   < source_y 215 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 330 >
+   < source_y 215 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 363 >
+   < source_y 215 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 396 >
+   < source_y 215 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 429 >
+   < source_y 215 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 462 >
+   < source_y 215 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 495 >
+   < source_y 215 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 528 >
+   < source_y 215 >
+   < width 32 >
+   < height 32 >
+  >
+  < GFX_FRAME
+   < source_x 561 >
+   < source_y 215 >
+   < width 32 >
+   < height 32 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name stone_platform >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 33 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bottom_window >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 66 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name low_face_closed_door_1 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 99 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name low_face_closed_door_2 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 132 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bottom_ramp_wall >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 165 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name closed_door_low >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 198 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name vertical_carve_right >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 231 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name mid_pillar_1_no_bg >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 264 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name open_door_low >
+  < type background_tile >
+  < nb_frames 2 >
+  < GFX_FRAME
+   < source_x 297 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 330 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bicolor_wall_1 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 363 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bicolor_wall_2 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 396 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bottom_pillar_2 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 429 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name carved_shade >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 462 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name carved_corner_left >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 495 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name carved >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 528 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name carved_corner_right >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 561 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name left_platform_3 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 594 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name right_platform_3 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 627 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bottom_pillar_no_bg >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 660 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_altar >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 693 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bottom_altar >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 726 >
+   < source_y 590 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name trap_door_key_iron >
+  < type key >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 76 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name armoury_key >
+  < type key >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 17 >
+   < source_y 76 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias armoury%20key >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name trap_door_key_gold >
+  < type key >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 34 >
+   < source_y 76 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name door_key >
+  < type key >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 51 >
+   < source_y 76 >
+   < width 16 >
+   < height 15 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name treasure_key >
+  < type key >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 68 >
+   < source_y 76 >
+   < width 16 >
+   < height 15 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name world_key >
+  < type key >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 85 >
+   < source_y 76 >
+   < width 16 >
+   < height 15 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name gold_chest_key >
+  < type key >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 102 >
+   < source_y 76 >
+   < width 16 >
+   < height 14 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name steel_chest_key >
+  < type key >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 119 >
+   < source_y 76 >
+   < width 16 >
+   < height 14 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name iron_chest_key >
+  < type key >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 136 >
+   < source_y 76 >
+   < width 16 >
+   < height 14 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name ox >
+  < type enemy >
+  < nb_frames 3 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 368 >
+   < width 32 >
+   < height 24 >
+  >
+  < GFX_FRAME
+   < source_x 33 >
+   < source_y 368 >
+   < width 32 >
+   < height 24 >
+  >
+  < GFX_FRAME
+   < source_x 66 >
+   < source_y 368 >
+   < width 32 >
+   < height 24 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_ladder >
+  < type ladder >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_stone_wall_1 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 33 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_stone_wall_2 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 66 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_stone_wall_3 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 99 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name right_wall_end >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 132 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name dark_right_wall_end >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 165 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name dark_right_wall_end_2 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 198 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name dark_wall_roof >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 231 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name closed_trap >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 264 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_ladder_1 >
+  < type ladder >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 297 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name shade_ladder_2 >
+  < type ladder >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 330 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_left_stone_monster >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 363 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_right_stone_monster >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 396 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name wall_head_up >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 429 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_pillar >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 462 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name mid_pillar_1 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 495 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name moving_platform_2 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 528 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name wall_tiles >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 561 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_ladder >
+  < type ladder >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 594 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name door_marble_top_1 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 627 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name door_marble_top_2 >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 660 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bottom_left_stone_monster >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 693 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name bottom_right_stone_monster >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 726 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name square_drawing >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 759 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name gray_window_top >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 792 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name gray_window_bottom >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 825 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name gray_window_mid >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 858 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name top_left_square_drawing >
+  < type background_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 891 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name demo_platform_2 >
+  < type foreground_tile >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 924 >
+   < source_y 556 >
+   < width 32 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name water_chrystal >
+  < type money >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 95 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 1800 >
+   < alias water%20chrystal >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name fire_chrystal >
+  < type money >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 17 >
+   < source_y 95 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 2250 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name diamond_3 >
+  < type money >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 34 >
+   < source_y 95 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 1250 >
+   < alias diamond >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name diamond_4 >
+  < type money >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 51 >
+   < source_y 95 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 135 >
+   < alias chrystal >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name teleport_gem >
+  < type teleport_gem >
+  < nb_frames 7 >
+  < GFX_FRAME
+   < source_x 68 >
+   < source_y 95 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 85 >
+   < source_y 95 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 102 >
+   < source_y 95 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 119 >
+   < source_y 95 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 136 >
+   < source_y 95 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 153 >
+   < source_y 95 >
+   < width 16 >
+   < height 16 >
+  >
+  < GFX_FRAME
+   < source_x 170 >
+   < source_y 95 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias teleport%20stone >
+   < description ? >
+   < animation_type FOREVER >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name gem >
+  < type money >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 187 >
+   < source_y 95 >
+   < width 16 >
+   < height 15 >
+  >
+  < PROPERTIES
+
+   < value 240 >
+   < alias jewel >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name diamond_2 >
+  < type money >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 204 >
+   < source_y 95 >
+   < width 16 >
+   < height 15 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name wall_axe >
+  < type background_item >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 221 >
+   < source_y 95 >
+   < width 23 >
+   < height 27 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name wall_knife >
+  < type background_item >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 245 >
+   < source_y 95 >
+   < width 14 >
+   < height 27 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name wall_hammer >
+  < type background_item >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 260 >
+   < source_y 95 >
+   < width 22 >
+   < height 27 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name gold_cross >
+  < type pickable >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 283 >
+   < source_y 95 >
+   < width 16 >
+   < height 16 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+>

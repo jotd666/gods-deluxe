@@ -1,0 +1,174 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level1 >
+ < copperbar_class gods.game.copperbar.Classic1 >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 12 >
+  < nb_cols 22 >
+  < row blocking_wall_right dark_wall_5 dark_wall_3 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 blocking_wall_right dark_wall_2 wall_2 wall_2 wall_2 wall_2 >
+  < row blocking_wall_right dark_wall_2 shade_wall_1 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 blocking_wall_right dark_wall_2 wall_2 wall_2 blocking_wall_left wall_1 >
+  < row blocking_wall_right platform_1 platform_1 platform_1 platform_1 platform_1 platform_1 platform_1 platform_1 platform_1 platform_1 platform_1 platform_1 platform_1 platform_1 platform_1 right_platform_1 dark_wall_2 wall_2 wall_2 blocking_wall_left wall_1 >
+  < row blocking_wall_right dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_2 wall_2 wall_2 blocking_wall_left wall_1 >
+  < row blocking_wall_right dark_wall_3 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 wall_2 wall_2 blocking_wall_left wall_1 >
+  < row blocking_wall_right shade_wall_1 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 blocking_wall_left wall_1 >
+  < row blocking_wall_right shade_wall_1 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 blocking_wall_left wall_1 >
+  < row thick_wall shade_wall_1 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 blocking_wall_left wall_1 >
+  < row closed_door_up shade_wall_1 carved_top_corner up_center_carved up_center_carved up_center_carved up_center_carved up_center_carved up_center_carved up_center_carved up_center_carved up_center_carved up_center_carved up_center_carved up_center_carved up_center_carved top_right_carved_corner wall_2 up_face_closed_door_1 up_face_closed_door_2 blocking_wall_left wall_1 >
+  < row closed_door_mid shade_wall_1 vertical_carve_right brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall vertical_carve_left wall_2 mid_face_closed_door_1 mid_face_closed_door_2 blocking_wall_left wall_1 >
+  < row closed_door_low shade_wall_1 vertical_carve_right brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall brick_wall vertical_carve_left wall_2 low_face_closed_door_1 low_face_closed_door_2 blocking_wall_left wall_1 >
+  < row left_platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 right_platform_2 shade_wall_1 >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 9 >
+  < OBJECT
+   < name xxx >
+   < visible yes >
+   < x 564 >
+   < y 113 >
+   < frame_set lever >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 66 >
+   < y 96 >
+   < frame_set fire_ball >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 76 >
+   < y 96 >
+   < frame_set fire_ball >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 58 >
+   < y 96 >
+   < frame_set fire_ball >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 58 >
+   < y 80 >
+   < frame_set lightning_bolt >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 84 >
+   < y 80 >
+   < frame_set throwing_star >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 74 >
+   < y 80 >
+   < frame_set throwing_star >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 88 >
+   < y 96 >
+   < frame_set throwing_star >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 76 >
+   < y 64 >
+   < frame_set throwing_star >
+  >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 3 >
+  < CONTROL_OBJECT
+   < name player_start >
+   < x 56 >
+   < y 128 >
+   < width 32 >
+   < height 48 >
+   < type Restart >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss >
+   < x 484 >
+   < y 80 >
+   < width 48 >
+   < height 96 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name exit >
+   < x 592 >
+   < y 128 >
+   < width 32 >
+   < height 48 >
+   < type Face_Door >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 2 >
+  < OBJECT_ASSOCIATION
+   < type Lever_Door >
+   < nb_objects 2 >
+   < object xxx >
+   < object exit >
+  >
+  < OBJECT_ASSOCIATION
+   < type Face_Door_Location >
+   < nb_objects 3 >
+   < object exit >
+   < object exit >
+   < object zzzzz >
+  >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 1 >
+  < HOSTILE_WAVE_PARAMETERS
+   < location boss >
+   < class_name gods.game.characters.hostiles.BossLevel1 >
+   < frame_set_name boss >
+   < fire_type None >
+   < appearing_delay Normal >
+   < health_points 398 >
+   < direction Left >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation yes >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+   < objective_balance 100 >
+   < count 1 >
+   < OBJECT_DROPPED
+    < instance_name ? >
+    < class_name ? >
+    < hostile_name ? >
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+ >
+>
+>

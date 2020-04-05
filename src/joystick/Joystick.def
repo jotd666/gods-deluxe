@@ -1,0 +1,6 @@
+EXPORTS
+Java_joystick_Joystick_getButtons
+Java_joystick_Joystick_getNumDevs
+Java_joystick_Joystick_getXPos
+Java_joystick_Joystick_getYPos
+Java_joystick_Joystick_getZPos

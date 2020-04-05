@@ -1,0 +1,3 @@
+start_message = kein java code benoetigt
+key_advice = benutze den teleporter wenn du keinen schluessel hast
+first_advice = dieses level zeigt die kraft des editors

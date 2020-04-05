@@ -1,0 +1,25 @@
+#!/bin/sh
+
+function f_message
+{
+echo "-> $1"
+}
+
+f_message "compile the java object"
+
+javac Joystick.java
+destdir=../../bin/joystick
+mkdir -p $destdir
+mv Joystick.class $destdir
+
+#f_message "generate header file for native methods (may be done once)"
+#javah -jni Joystick
+
+f_message "compile the .c file"
+
+gcc -enable-stdcall-fixup -Wall -shared -I"$JDK_HOME"/include -I"$JDK_HOME"/include/win32 Joystick.c Joystick.def -o ../../bin/joystick.dll -lwinmm
+
+#f_message "execute the example"
+#java pack.Joystick
+
+f_message "done"

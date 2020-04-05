@@ -1,0 +1,13 @@
+w1_advice_1 = don't always believe what you read
+start_message = the underworld
+w1_advice_3 = the room of traps contains the key
+w1_advice_2 = I wouldn't go down there
+w1_use_trap_key_wisely = use your trap key wisely
+w2_pull_hard_left = careful, pull hard left
+w2_bring_tools = bring the alchemist his tools
+w2_forever_downwards = forever downwards
+w2_treasure_room = treasure room
+w2_alchemist_close = the alchemists room is close but hidden
+w3_no_more_puzzles = no more puzzles, just find the key
+w3_thieves_get_keys = thieves get keys
+w3_last_advice = behind this door lies immortality

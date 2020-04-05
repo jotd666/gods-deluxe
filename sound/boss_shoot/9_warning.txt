@@ -1,0 +1,2 @@
+all samples in this directory must have the same format (stereo, 22050Hz, 16 bits) or else all samples but the last one
+will be played incorrectly due to the shared audio stream

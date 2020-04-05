@@ -1,0 +1,6 @@
+w3_hidden_passage = egy rejtett átjáró
+first_advice = kersd az arany kulcsot, hogy tovább juss
+advice_return_a_pot_2 = találj egy másik amfórát különleges jutalomért
+w3_advice_2 = segít legyõzni az õrtw3_advice_1 = a villámcsapás ...
+w1_start_message = a városadvice_return_a_pot = vigyél vissza egy edényt a raktárba
+treasure_room_w2_trigger = kincses kamra

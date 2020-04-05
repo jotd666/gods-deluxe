@@ -1,0 +1,12 @@
+w1_advice_1 = the mace will help to find the gold key
+w1_bomb_advice = bombs destroy traps and hives
+w1_first_message = you have entered the labyrinth
+w1_advice_end = watch the ceiling in the treasure room
+w1_bat_room_advice = welcome to the bat room
+w1_bee_room_advice = welcome to the bee room
+w1_entrance_theif_lair = entrance to the thiefs lair
+w1_potion_advice = potion can't be taken from this room
+w1_treasure_room = treasure room
+w2_health_advice = reach the top with max energy for a key
+w3_bring_vessels_advice = bring the vessels to get higher
+w3_lever_advice = pull lever on right quickly for bonus

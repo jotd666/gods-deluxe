@@ -1,0 +1,114 @@
+                         GODS DELUXE
+                        -------------
+
+How to submit a bug:
+
+- First, please read below before writing me about a bug. It is very likely to be on either of
+  the lists below
+- If the bug is not on the list, please report it
+- If you witness any difference of behaviour with the original (example: difference in the puzzles),
+  don't hesitate to report it. The exception being the monster AI,  because it is different from the
+  original (I don't have the code!), but monsters involved in puzzles should not make the puzzle any
+  different, even if original game seems to have a much more configurable A.I (probabilities, primary and
+  secondary objectives, objective balance/probabilities, complex flying monsters A.I and Bezier trajectories...)
+- Now that Kroah wrote the excellent Gods Level Viewer, there are no real secrets unrevealed in the game anymore:
+  http://bringerp.free.fr/RE/
+
+Contact me at: jotd (at) orange.fr
+
+
+TOTEST:
+
+
+High-priority To Do
+ 
+- jump: shift + button 2 (in the options / enhance the documentation)
+- joystick DLL 32/64 bit
+- the ability to fully configure graphics (I'd like to play full-screen at 1920x1080 4:3 or at least at 4:3 with unstretched graphics)
+- in the original game you could hold down+left/right to dismount from a ladder (fall)
+  you may want to check that feature out and whether you implement it.
+- I just tried this remake. I was using the keyboard and found a small problem. I could not turn sideways
+  in the top of ladders to throw knives like in the original DOS or Amiga version. I had to jump off the ladder.
+- if you run the 'Windowed No Intro Doubled' game batch, it seems to apply some sort of
+  graphics filter even if you set the graphics to Original, not as much as Scale2x,
+  but it is still noticable, I don't know if that was your intention or not.
+- level 3: 1 star remake: 8 hits to kill monsters, orig: 5
+- original 17 fps framerate option for the ones who think that the remake is too smooth
+- original game: shield in shop l2w3?
+- HeroWeaponSet: rval -= ((rval>>1) - (rval>>2));, rval=15 should substract less, check disassembled code again
+- snakes (level 2) sometimes stuck in walls (easy to reproduce in level 2-1, bonus section, or up the chimney)
+- Can you please add support for the original PC Speaker sounds?
+
+Not reproduced (to be confirmed):
+
+- Tooltips/info for power pots in shop frequently incorrect/misleading.
+  For example L2W3 shop at start displays price of 6k for 50% power pot when actual cost 17.5k. Another example is the shop at the end of L2/start of L3,
+  where the costs for 50% and 100% power pots are displayed as 6k and 10k respectively.
+  I know from the readme that you've done a lot of shuffling around with the prices of the power pots - just need the tooltips to be updated.
+  (Love the new shop icon graphics btw, really big improvement from previous )
+- in the reworked version the player sprite during stairs climb has a sprite with the back inverted horizontally... the black shade flashes to the wrong side.
+- classic level 2 world 3: AI: monster jumping on platforms has not exactly the correct trajectory (same as above)
+- If you fall off a ledge you can throw a weapon and the hero stops in the air 
+  for a moment, maybe something for you to pick up.
+  but aren't the weapons thrown when his arm comes down?	
+- level 2? In the screen shots you will notice that cupboard is out of place. This was fine in 0.5
+- fall on bump on the ceiling is too fast?
+
+Medium/Low-priority To Do:
+
+- full screen mode in Windows 10 sometimes remains black (was fixed for Windows 7, damn!)
+- increase weapon power potions prices vary:
+  l1w3 start : 6000  -
+  l1w3 end   : 6000  -
+  l2 (passwd): 20000 -
+  l2w2 end   : 20000 32500
+  l3 (passwd): 17500
+  l4 (passwd): 17500
+- add torch in 4am mix (thief lair) like Atari ST version has
+- w1l3 speed bonus 210 & 280, spawn spikes on jump to 2nd part
+- complete JOTD levels walkthrough
+- editor: create new level: crash depending on MP3/music configuration
+- able to change keyboard keys
+- shield halo not centered on hero anymore
+- flying AI: too far: target hero again
+- die with 0 lives: sometimes no game over (not systematic)
+- Ultron: in the reworked version the player sprite during stairs climb has a sprite with the back inverted horizontally... the black shade flashes to the wrong side.
+- if dies when taking an object, the object is lost (can be blocking)
+- take object when thief aims to it: no aim reset until object is dropped again
+- fade uniformity problem (letters, windows)
+- Also the menu\highscore change way to fast
+- ultron: Don't the knifes go to deep into the enemy (look like collision is in the center), this is mostly aesthethic.
+- ultron: The same seems to happen vertically, with witches, and if it's too high or too low, the knife will trespass them without killing.
+- ultron: When you fall of a platform, by walking off the edge, it moves horizontally, as if it had jumped, i think in the game you just fell down.
+- Ultron: Are you sure also the animation of the movememt isn't a bit to fast... it's very small... but the impression in me is that the animation is always a bit too fast... (not the movement by pixels on screen)
+- Ultron: Does the engine support the png's alpha mapping or just does masking? It'd be useful for real shadows on the items (opposed to the current full black), maybe a flickering light overlay radius on the candles, and would even allow antialiasing all moving sprites to the background on the fly (if GFX worked\redone)  ;) 
+- editor: add trigger association: assoc not redrawed
+- platform + ladder: no fall (jotd level 1 end)
+- jerky when scrolling on ladders
+- can cross walls sometimes (l1 w3 near teleport door between spikes)
+- boss level 3 decent screen shake
+- add "object to avoid" in parameters (textfield) to get rid of specifics for classic level 4
+- classic level 2 world 2: AI: gem monster jumps, does not fall
+- unarmed familiar should attack monsters horizontally not vertically
+- some nice alpha blended glows next to explosion and item takings.
+  
+Minor To Do:
+
+- increase power of bomb -> higher explosion and stars (test at level 4)
+- magic axe/bomb/hunter shot and no other weapon, hero is still trying to shoot
+ (but who would select such lousy weapon combination ?)
+- exploding particles for boss level 1
+- AI: test 5: monster does not jump on hero until reached wall (AI limitation)
+- editor: (replace code-driven stuff): shop editor and shopkeeper token association + shopkeeper direction + shop Y/N in beginning of a level
+- editor: default weapons for temporary start
+- editor: if no class for level & copperbar then looping exception
+- changing locale during the game is not working 100%
+- in the PC version, when waiting in the main menu for some time, there would run a
+  demo of the levels. (some recordings of play).
+
+  Amiga version addresses (SPS 666):
+  
+  C97.B player health
+  67C7F.B current enemy health
+  $284.W: difficulty level 0,1,2,3,4
+  

@@ -1,0 +1,208 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level2 >
+ < copperbar_class gods.game.copperbar.None >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 19 >
+  < nb_cols 17 >
+  < row texture texture_edge_2 texture_edge_2 texture_edge_2 texture_edge_2 texture_edge_2 texture_edge_2 texture_edge_2 texture_edge_2 texture_edge_2 wall_8 texture_edge_2 wall_8 texture_edge_2 wall_8 texture_edge_2 wall_8 >
+  < row wall_8 platform_left platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_right >
+  < row texture under_platform under_platform under_platform under_platform under_platform under_platform under_platform under_platform under_platform under_platform under_platform under_platform under_platform under_platform under_platform under_platform >
+  < row wall_8 wall_8 bicolor_wall_2 shade_wall_11 shade_wall_4 shade_wall_4 shade_wall_4 shade_wall_4 shade_wall_4 shade_wall_4 shade_wall_4 shade_wall_4 shade_wall_4 shade_wall_4 shade_wall_4 bicolor_wall_3 texture >
+  < row texture texture bicolor_wall_4 shdae_wall_5 shade_wall_9 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 bicolor_wall_1 wall_8 >
+  < row wall_8 wall_8 bicolor_wall_2 shdae_wall_5 shade_wall_2 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 bicolor_wall_3 texture >
+  < row texture texture bicolor_wall_4 carve_2_dark carve_2_shade carve_2 carve_2_top_right wall_1 carve_2_top_left carve_2 carve_2 carve_2 carve_2 carve_2 carve_2 bicolor_wall_1 wall_8 >
+  < row wall_8 wall_8 bicolor_wall_2 geom_pattern_shade geom_pattern_half_shade geom_pattern carve_2_vertical_2 wall_1 carve_2_vertical geom_pattern geom_pattern geom_pattern geom_pattern geom_pattern geom_pattern bicolor_wall_3 texture >
+  < row texture texture bicolor_wall_4 geom_pattern_shade geom_pattern_half_shade geom_pattern carve_2_vertical_2 wall_1 carve_2_vertical geom_pattern geom_pattern geom_pattern geom_pattern geom_pattern geom_pattern bicolor_wall_1 wall_8 >
+  < row wall_8 wall_8 bicolor_wall_2 geom_pattern_shade geom_pattern_half_shade geom_pattern carve_2_vertical_2 platform_left platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_right wall_8 >
+  < row texture texture platform_left platform_middle platform_right geom_pattern carve_2_vertical_2 under_platform_left under_platform under_platform under_platform under_platform under_platform under_platform under_platform under_platform texture >
+  < row wall_8 wall_8 bicolor_wall_2 under_platform under_platform_right geom_pattern_shade carve_2_vertical_2 wall_shade_12 stone_head stone_head wall_support stone_head stone_head shade_wall_4 shade_wall_4 bicolor_wall_3 wall_8 >
+  < row texture texture platform_left platform_middle platform_middle platform_right carve_2_vertical_2 wall_7 shade_wall_8 shade_wall_8 top_pillar_2 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 bicolor_wall_3 texture >
+  < row wall_8 wall_8 bicolor_wall_2 under_platform under_platform under_platform_right carve_2_vertical_2 wall_1 wall_1 wall_1 mid_pillar wall_1 carve_2_top_left carve_2 carve_2 bicolor_wall_1 wall_8 >
+  < row texture texture platform_left platform_middle platform_middle platform_middle platform_middle platform_middle platform_right wall_1 mid_pillar wall_1 carve_2_vertical geom_pattern geom_pattern bicolor_wall_3 texture >
+  < row wall_8 wall_8 bicolor_wall_2 under_platform under_platform under_platform under_platform under_platform under_platform_right shade_wall_5 mid_pillar wall_1 carve_2_vertical geom_pattern geom_pattern bicolor_wall_1 wall_8 >
+  < row texture texture bicolor_wall_4 shade_wall_11 shade_wall_4 shade_wall_4 shade_wall_4 shade_wall_4 shade_wall_8 shade_wall_5 mid_pillar wall_1 platform_left platform_middle platform_middle platform_right wall_8 >
+  < row wall_8 wall_8 bicolor_wall_2 shdae_wall_5 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 bottom_pillar wall_1 under_platform_left under_platform under_platform under_platform texture >
+  < row texture platform_left platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_right >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 8 >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 396 >
+   < y 168 >
+   < frame_set fire_ball >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 384 >
+   < y 168 >
+   < frame_set fire_ball >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 412 >
+   < y 168 >
+   < frame_set fire_ball >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 392 >
+   < y 152 >
+   < frame_set throwing_star >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 410 >
+   < y 152 >
+   < frame_set throwing_star >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 380 >
+   < y 152 >
+   < frame_set throwing_star >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 392 >
+   < y 144 >
+   < frame_set throwing_star >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 416 >
+   < y 144 >
+   < frame_set throwing_star >
+  >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 4 >
+  < CONTROL_OBJECT
+   < name player_start >
+   < x 386 >
+   < y 208 >
+   < width 32 >
+   < height 32 >
+   < type Restart >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name nme >
+   < x 340 >
+   < y 256 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name snake >
+   < x 252 >
+   < y 192 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name nme_trigger >
+   < x 212 >
+   < y 176 >
+   < width 32 >
+   < height 32 >
+   < type Enemy_Trigger >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 1 >
+  < OBJECT_ASSOCIATION
+   < type Trigger_Monster >
+   < nb_objects 2 >
+   < object nme_trigger >
+   < object nme >
+  >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 2 >
+  < HOSTILE_WAVE_PARAMETERS
+   < location nme >
+   < class_name gods.game.characters.hostiles.GroundMonster1 >
+   < frame_set_name ground_monster_1 >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 298 >
+   < direction Left >
+   < attack_distance Always >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height High >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+   < objective_balance 100 >
+   < count 1 >
+   < OBJECT_DROPPED
+    < instance_name ? >
+    < class_name ? >
+    < hostile_name ? >
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location snake >
+   < class_name gods.game.characters.hostiles.SnakePot >
+   < frame_set_name snake_head >
+   < fire_type Straight >
+   < appearing_delay Normal >
+   < health_points 8 >
+   < direction Right >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation yes >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+   < objective_balance 100 >
+   < count 1 >
+   < OBJECT_DROPPED
+    < instance_name ? >
+    < class_name ? >
+    < hostile_name ? >
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+ >
+>
+>

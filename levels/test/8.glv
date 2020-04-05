@@ -1,0 +1,213 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level1 >
+ < copperbar_class gods.game.copperbar.Classic1 >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 21 >
+  < nb_cols 16 >
+  < row blank blank blank blank blank blank blank blank blank blank rooftop rooftop rooftop rooftop rooftop rooftop >
+  < row blank blank blank blank blank blank blank blank blank blank roof roof roof roof roof roof >
+  < row blank blank blank blank blank blank blank blank blank blank tiled_walltop tiled_walltop tiled_walltop tiled_walltop tiled_walltop tiled_walltop >
+  < row blank blank blank blank blank blank blank blank blank blank dark_wall_end dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_right_wall_end_2 >
+  < row blank blank blank blank blank blank blank blank blank blank shade_wall_end_2 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 shade_right_wall_end >
+  < row blank blank blank blank blank blank blank blank blank blank wall_end_left wall_2 null null wall_2 wall_end_right >
+  < row blank blank blank blank blank blank blank blank blank blank wall_end_left wall_2 up_face_closed_door_2 up_face_closed_door_1 wall_2 wall_end_right >
+  < row rooftop blank blank blank blank blank blank blank blank blank wall_end_left wall_2 mid_face_closed_door_2 mid_face_closed_door_1 wall_2 wall_end_right >
+  < row tiled_walltop blank blank top_left_stone_monster blank blank blank top_right_stone_monster blank blank wall_end_left wall_2 low_face_closed_door_2 low_face_closed_door_1 wall_2 wall_end_right >
+  < row dark_right_wall_end_2 blank blank bottom_left_stone_monster blank blank blank bottom_right_stone_monster blank blank wall_end_left wall_2 left_platform_1 platform_1 right_platform_1 wall_end_right >
+  < row shade_right_wall_end top_left_stone_monster top_left_stone_monster top_ramp_with_pillar top_left_stone_monster blank top_right_stone_monster top_ramp_with_pillar top_right_stone_monster top_right_stone_monster wall_end_left wall_2 shade_stone_wall_2 dark_wall_1 dark_wall_1 dark_right_wall_end >
+  < row wall_end_right bottom_left_stone_monster bottom_left_stone_monster bottom_ramp_with_pillar bottom_left_stone_monster blank bottom_right_stone_monster bottom_ramp_with_pillar bottom_right_stone_monster bottom_right_stone_monster wall_end_left wall_2 null null wall_2 wall_end_right >
+  < row top_shade_ramp_wall top_ramp_with_pillar top_ramp top_ramp_with_pillar top_ramp top_ramp_with_pillar top_ramp top_ramp_with_pillar top_ramp top_ramp_with_pillar top_ramp_wall top_ladder up_face_closed_door_2 up_face_closed_door_1 wall_2 wall_end_right >
+  < row bottom_shade_ramp_wall bottom_ramp_with_pillar bottom_ramp bottom_ramp_with_pillar bottom_ramp bottom_ramp_with_pillar bottom_ramp bottom_ramp_with_pillar bottom_ramp bottom_ramp_with_pillar bottom_ramp_wall ladder mid_face_closed_door_2 mid_face_closed_door_1 wall_2 wall_end_right >
+  < row left_platform_2 platform_2 platform_2 platform_2 right_platform_2 closed_trap_transparent left_platform_2 platform_2 platform_2 platform_2 right_platform_2 shade_ladder low_face_closed_door_2 low_face_closed_door_1 wall_2 wall_end_right >
+  < row stone_multicolor_1 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_3 blank stone_multicolor_1 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_3 shade_ladder_2 left_platform_1 platform_1 right_platform_1 wall_end_right >
+  < row dark_right_wall_end_2 top_pillar_no_bg blank top_pillar_no_bg blank blank blank top_pillar_no_bg blank top_pillar_no_bg dark_wall_end shade_ladder_2 shade_stone_wall_2 dark_wall_1 dark_wall_1 dark_right_wall_end >
+  < row wall_end_right bottom_pillar_no_bg blank bottom_pillar_no_bg blank blank blank bottom_pillar_no_bg blank bottom_pillar_no_bg shade_wall_end_2 shade_ladder_1 shade_stone_wall_3 dark_wall_4 dark_wall_4 shade_right_wall_end >
+  < row left_platform_1 platform_1 platform_1 platform_1 right_platform_3 blank left_platform_3 platform_1 platform_1 platform_1 right_platform_1 shade_ladder top_window wall_2 top_ladder wall_end_right >
+  < row dark_right_wall_end_2 blank blank blank blank blank blank blank blank blank dark_wall_end shade_ladder_2 bottom_window wall_2 ladder wall_end_right >
+  < row wall_end_right blank blank blank blank blank blank blank blank blank left_platform_3 platform_1 platform_1 right_platform_1 shade_ladder wall_end_right >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 0 >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 5 >
+  < CONTROL_OBJECT
+   < name fm1 >
+   < x 96 >
+   < y 128 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name player_start >
+   < x 278 >
+   < y 176 >
+   < width 32 >
+   < height 48 >
+   < type Restart >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name trigger >
+   < x 232 >
+   < y 168 >
+   < width 32 >
+   < height 32 >
+   < type Enemy_Trigger >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name walk >
+   < x 152 >
+   < y 192 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name fm2 >
+   < x 62 >
+   < y 160 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 1 >
+  < OBJECT_ASSOCIATION
+   < type Trigger_Monster >
+   < nb_objects 3 >
+   < object trigger >
+   < object fm1 >
+   < object fm2 >
+  >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 3 >
+  < HOSTILE_WAVE_PARAMETERS
+   < location walk >
+   < class_name gods.game.characters.hostiles.GroundMonster1 >
+   < frame_set_name ground_monster_1 >
+   < fire_type None >
+   < appearing_delay Custom >
+   < tenth_of_seconds 50 >
+   < health_points 1 >
+   < direction Right >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 180 >
+    < vertical_oscillation_speed 4 >
+    < nb_segments 2 >
+    < SEGMENT
+     < type Frozen >
+     < duration 1000 >
+    >
+    < SEGMENT
+     < type To_Hero >
+     < duration 0 >
+    >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location fm2 >
+   < class_name gods.game.characters.hostiles.StoneMonster >
+   < frame_set_name stone_flying_monster >
+   < fire_type None >
+   < appearing_delay Custom >
+   < tenth_of_seconds 80 >
+   < health_points 1 >
+   < direction Left >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 180 >
+    < vertical_oscillation_speed 10 >
+    < nb_segments 2 >
+    < SEGMENT
+     < type Frozen >
+     < duration 1000 >
+    >
+    < SEGMENT
+     < type To_Hero >
+     < duration 0 >
+    >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location fm1 >
+   < class_name gods.game.characters.hostiles.StoneMonster >
+   < frame_set_name stone_flying_monster >
+   < fire_type None >
+   < appearing_delay Custom >
+   < tenth_of_seconds 50 >
+   < health_points 1 >
+   < direction Left >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 180 >
+    < vertical_oscillation_speed 10 >
+    < nb_segments 2 >
+    < SEGMENT
+     < type Frozen >
+     < duration 1000 >
+    >
+    < SEGMENT
+     < type To_Hero >
+     < duration 0 >
+    >
+   >
+  >
+ >
+>

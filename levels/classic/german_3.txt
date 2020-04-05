@@ -1,0 +1,12 @@
+w1_advice_1 = die keule wird dir helfen den goldenen schluessel zu finden
+w1_bomb_advice = bomben koennen fallen und bienenstoecke zerstoeren
+w1_first_message = du hast das labyrinth betreten
+w1_advice_end = schau zur decke im schatzraum
+w1_bat_room_advice = willkommen im fledermausraum
+w1_bee_room_advice = willkommen im bienenraum
+w1_entrance_theif_lair = eingang zum versteck der diebe
+w1_potion_advice = der trank kann nicht von diesem raum aus genommen werden
+w1_treasure_room = schatzraum
+w2_health_advice = erreiche das kopfende mit maximaler energie fuer einen schluessel
+w3_bring_vessels_advice = bring die gefaesse um hoeher zu kommen
+w3_lever_advice = schnell, zieh den hebel auf der rechten seite fuer einen bonus

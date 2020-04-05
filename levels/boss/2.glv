@@ -1,0 +1,163 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level2 >
+ < copperbar_class gods.game.copperbar.Classic1 >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 16 >
+  < nb_cols 10 >
+  < row platform_2_left platform_3 platform_3 platform_3 platform_3 platform_3 platform_3 platform_3 platform_3 platform_2_right >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row platform_2_left platform_3 platform_2_right wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 top_window wall_1 wall_1 ladder_5 wall_1 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 mid_window wall_1 wall_1 ladder_5 wall_1 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 bottom_window wall_1 wall_1 ladder_5 wall_1 >
+  < row wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 ladder_5 wall_1 >
+  < row wall_1 wall_1 carve_square_top_left carved carved carved carved_and_wall wall_1 ladder_5 wall_1 >
+  < row wall_1 wall_1 carve_square_vertical_1 grate grate grate carve_square_vertical_2 wall_1 wall_1 wall_1 >
+  < row platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 10 >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 28 >
+   < y 152 >
+   < frame_set spear >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 20 >
+   < y 160 >
+   < frame_set spear >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 44 >
+   < y 160 >
+   < frame_set spear >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 34 >
+   < y 128 >
+   < frame_set spear >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 16 >
+   < y 120 >
+   < frame_set fire_ball >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 48 >
+   < y 112 >
+   < frame_set fire_ball >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 32 >
+   < y 104 >
+   < frame_set fire_ball >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 54 >
+   < y 136 >
+   < frame_set fire_ball >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 20 >
+   < y 144 >
+   < frame_set magic_axe >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 36 >
+   < y 176 >
+   < frame_set magic_axe >
+  >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 2 >
+  < CONTROL_OBJECT
+   < name player_start >
+   < x 18 >
+   < y 192 >
+   < width 32 >
+   < height 48 >
+   < type Restart >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name boss >
+   < x 182 >
+   < y 96 >
+   < width 84 >
+   < height 96 >
+   < type Enemy >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 0 >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 1 >
+  < HOSTILE_WAVE_PARAMETERS
+   < location boss >
+   < class_name gods.game.characters.hostiles.BossLevel2 >
+   < frame_set_name boss_body >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 1998 >
+   < direction Right >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation yes >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+   < objective_balance 100 >
+   < count 1 >
+   < OBJECT_DROPPED
+    < instance_name ? >
+    < class_name ? >
+    < hostile_name ? >
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+ >
+>
+>

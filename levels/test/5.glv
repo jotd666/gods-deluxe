@@ -1,0 +1,249 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level2 >
+ < copperbar_class gods.game.copperbar.Classic2 >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 12 >
+  < nb_cols 13 >
+  < row shade_wall_3 shade_wall_4 shade_ladder_7 brick_wall_edge wall_1 wall_1 wall_1 wall_1 bottom_window wall_1 ladder_5 bicolor_wall_3 bicolor_wall_4 >
+  < row carve_2 carve_2 ladder_2 brick_wall_edge wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 ladder_5 bicolor_wall_1 bicolor_wall_2 >
+  < row geom_pattern geom_pattern dark_ladder_3 platform_2_left platform_3 platform_3 platform_2_right closed_trap block_1 closed_trap platform_left platform_right bicolor_wall_4 >
+  < row geom_pattern_half_shade geom_pattern dark_ladder_3 shade_wall_11 shade_wall_11 shade_wall_11 shade_wall_11 shade_wall_5 shade_wall_4 shade_wall_5 blocking_wall wall_8 bicolor_wall_2 >
+  < row platform_middle platform_right ladder_6 shade_wall_11 shade_wall_11 shade_wall_11 shade_wall_11 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_4 bicolor_wall_3 bicolor_wall_4 >
+  < row texture blocking_wall_shade shade_ladder_7 shade_wall_11 shade_wall_11 shade_wall_11 shade_wall_11 wall_1 top_window wall_1 wall_7 bicolor_wall_1 texture >
+  < row wall_8 blocking_wall_shade shade_ladder_7 shade_wall_11 shade_wall_11 shade_wall_11 shade_wall_11 wall_1 bottom_window wall_1 wall_1 bicolor_wall_3 texture_edge >
+  < row wall_8 blocking_wall_shade shade_ladder_7 shade_wall_11 shade_wall_11 shade_wall_4 shade_wall_9 wall_1 wall_1 wall_1 wall_1 bicolor_wall_1 texture >
+  < row wall_8 blocking_wall_shade shade_ladder_7 shade_wall_2 shade_wall_2 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 bicolor_wall_3 texture_edge >
+  < row wall_8 blocking_wall_shade shade_ladder_7 shade_wall_2 shade_wall_2 wall_1 wall_1 platform_left platform_right wall_1 wall_1 bicolor_wall_1 texture >
+  < row wall_8 blocking_wall_shade shade_ladder_7 shade_wall_2 shade_wall_2 wall_1 wall_1 blocking_wall under_platform_right shade_wall_9 wall_1 bicolor_wall_3 texture_edge >
+  < row wall_8 platform_left platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_right texture >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 3 >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 72 >
+   < y 88 >
+   < frame_set magic_axe >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 76 >
+   < y 48 >
+   < frame_set knife >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 66 >
+   < y 48 >
+   < frame_set knife >
+  >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 7 >
+  < CONTROL_OBJECT
+   < name nme >
+   < x 250 >
+   < y 56 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name player_start >
+   < x 64 >
+   < y 128 >
+   < width 32 >
+   < height 48 >
+   < type Restart >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name spike >
+   < x 186 >
+   < y 144 >
+   < width 18 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name spike_trigger >
+   < x 66 >
+   < y 72 >
+   < width 32 >
+   < height 32 >
+   < type Enemy_Trigger >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name nme_1 >
+   < x 318 >
+   < y 80 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name circle >
+   < x 170 >
+   < y 56 >
+   < width 94 >
+   < height 96 >
+   < type Misc >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name pot >
+   < x 254 >
+   < y 112 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 1 >
+  < OBJECT_ASSOCIATION
+   < type Trigger_Monster >
+   < nb_objects 2 >
+   < object spike_trigger >
+< object   spike >
+  >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 4 >
+  < HOSTILE_WAVE_PARAMETERS
+   < location spike >
+   < class_name gods.game.characters.hostiles.SpikeUpDown >
+   < frame_set_name spike >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 1 >
+   < direction Right >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location nme >
+   < class_name gods.game.characters.hostiles.GroundMonster1 >
+   < frame_set_name ground_monster_2 >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 1 >
+   < direction Left >
+   < attack_distance Always >
+   < speed Very_Fast >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation yes >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location nme_1 >
+   < class_name gods.game.characters.hostiles.FlyingMonster1 >
+   < frame_set_name flying_monster >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 28 >
+   < direction Left >
+   < attack_distance Always >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation yes >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot yes >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 90 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 1 >
+    < SEGMENT
+     < type Around_Location_Clockwise >
+     < duration 10000 >
+     < location circle >
+    >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location pot >
+   < class_name gods.game.characters.hostiles.SnakePot >
+   < frame_set_name snake_head >
+   < fire_type None >
+   < appearing_delay Normal >
+   < health_points 18 >
+   < direction Right >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation yes >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+ >
+>

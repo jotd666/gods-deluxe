@@ -1,0 +1,16 @@
+w1_start_message = le temple le retour
+w1_giant_jump_advice = si quelqu'un pouvait me passer le saut geant...
+w2_time_your_kills_advice = tuez les monstres avec timing
+w2_key_up_advice = la cle de la porte est la-haut
+w2_shortcut = raccourci
+w2_put_wine_on_altar = mettez du vin pres de l'autel
+w3_candle_advice = trouvez le chandelier pour avancer
+w3_avoid_excessive_force_advice = evitez tout abus de violence
+w3_keep_up_levers_up_advice = gardez les leviers hauts en haut pour le teleport
+w3_study_advice = l'etude est verrouillee de l'interieur mais a deux sorties
+w3_find_lever_advice = trouvez le levier pour cette porte
+w3_lost_room = une piece perdue
+w3_study_message = l'etude
+the armoury = l'armurerie
+skull = crane
+w3_spike_advice = ce bouton permet de detruire les piques a droite sous le pont

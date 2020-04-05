@@ -1,0 +1,3 @@
+start_message = no user java code required
+key_advice = use teleport if you don't have the key
+first_advice = this level proves the power of the editor

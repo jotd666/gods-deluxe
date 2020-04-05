@@ -1,0 +1,11 @@
+w3_chapel_print = die kapelle
+w3_candle_avice = finde die kerze
+w3_illuminate_study = klaere die studie um diese welt zu beenden
+w3_cross_chapel = kreuz in die kapelle
+w3_study_print = die studie
+w3_return_levers_hint = fuehre den hebel zurueck um das kreuz zu bekommen
+w1_thief_advice = wenn du nicht weiter kommst kann dir ein dieb helfen
+w2_start_message = der tempel der goetter
+w2_advice_chalice_key = der kelch enthuellt einen schluessel
+w3_repair_advice = repariere das mosaik um die goetter zu erfreuen
+w2_advice_1 = bring die kelche in den laderaum

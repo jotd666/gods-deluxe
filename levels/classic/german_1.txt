@@ -1,0 +1,8 @@
+w3_hidden_passage = eine versteckte passage
+first_advice = finden den goldenen schluessel um diese welt zu verlassen
+advice_return_a_pot_2 = finde eine andere vase fuer einen extra bonus
+w3_advice_2 = hilft dir den hueter zu besiegen
+w3_advice_1 = der blitzstrahl ...
+w1_start_message = die stadt
+advice_return_a_pot = bring eine vase ins lager zurueck
+treasure_room_w2_trigger = schatzraum

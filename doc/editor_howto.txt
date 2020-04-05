@@ -1,0 +1,131 @@
+How to create a new level:
+
+1) Use the palette editor to define basic frames to be used in the level (no need if you want to reuse one
+   of the existing 4 pre-defined palettes). This is discouraged as you can already create a lot of levels using the 4
+   existing palettes and this is a lot of artistic work.
+
+2) Run the level editor
+
+3) Enter level data (from scratch)
+
+- File -> New
+- select main palette (already defined, called gods_sprites_all)
+- select level palette (an exisiting level palette or a new one)
+- select class code (choose GodsGeneric at first)
+- select copperbar code
+- Level -> Resize to adjust size
+- skip to stage 5
+
+4) Enter level data (after import)
+
+- Level -> Import
+- select main palette (already defined, called gods_sprites_all)
+- select level palette (an exisiting level palette or a new one)
+- select an image you want to "import" by pattern recognition of the tiles of the image
+- use Level -> Edit to change characteristics (select class & copperbar code)
+
+5) Other objects edition
+
+- set/adjust level size with the "Level->Resize" option
+- put hero start location (player_start)
+- map doors, traps, with named control objects of the proper type (side_door, face_door, trap)
+- insert levers and secret buttons
+- insert visible bonuses
+- insert hidden bonuses
+- insert chest contents around the chests, as hidden
+- insert triggers
+- insert hostile locations
+- define hostile properties (& trajectory if needed, e.g. flying creatures)
+- insert some restart points
+- use the association editor to perform simple associations
+- code the complex associations & behaviour in a new class derived from "GodsLevel" using the protected API
+  methods
+
+Creating an image for import:
+
+I don't recommend creating levels with the editor from scratch. Best is to create an image with an external
+editor and import it.
+I use Paint Shop Pro. I set the grid to 32 x 16 (dimension of a 1x tile) and I select "Snap to grid". This way I
+can copy/paste pieces of other levels or the current level and it's still perfectly aligned. You can import more
+than once by checking "keep level data" option in the import window.
+You can also modify the image using the level editor, export it as png, rework it in your favorite picture
+editor, and import it once done.
+Be careful of "smart" paste features that blend/merge pasted image with destination. It has a tendency to corrupt borders.
+This often happens in 24-bit mode. Fortunately, there is an "ignore bad edge" option in import options.
+
+Associations:
+
+Used to associate objects/control objects together
+
+- Lever + Door: when lever is pulled, door/trap will be open (if closed) and closed (if open). Only works once.
+- Lever + Door + Key: same thing, but player must own the key. The key is then taken from the hero
+- Trigger + Hostile (*): when walking into a zone, creates associated hostiles.
+  Trigger & association can be created automatically by using "derive associated trigger" on hostile
+- Advice + Message (**): when advice is taken, display the message hint
+- Chest + Key: when passing on a chest, if player has key, key is taken and treasure appears
+- Lever + Monster kill (*): when activating the lever, associated hostiles are killed
+- Lever + Platform + key (**): same as Lever + Door + Key, but moves a platform instead
+- Teleport + Location: when taking a teleport gem, teleports to associated (restart) location
+- MovingBlock + Tile: associate a foreground tile with a moving block, set the moving time in milliseconds.
+    set a NEGATIVE moving time for blocks which go back and forth (sorry, this was the simplest way of doing it)
+- FaceDoor + Location: when entering a face door, teleports to the associated location
+- Bonus Trigger + Item owned: when walking into a zone with an object, steal the object and display another
+- Bonus Trigger + Item to display: when walking into a zone with an object, simply display an item
+- Bonus Trigger + Close Door: when walking into a zone, closes the door (beware of being stuck by doing this)
+
+- For more complex associations & behaviours,
+  you'll have to code a GodsLevel specific class (get rid of the GodsGenericLevel), but a lot of coding
+  can be saved and 90% of the level can be designed without coding
+
+Associations can be updated, deleted.
+
+(*) 1 to multiple association. Use control for multi-selection
+(**) association with properties: a popup to ask for a property appears after create/update
+     Lever + Platform (Moving block) requires move time (in ms).
+
+Locale:
+
+In the file "english_<level number>.txt", put the message & advice object names followed by "=" then the message
+to display in english. Same for other languages.
+
+Locale Examples:
+
+w1_enter_room = a secret passage
+w3_boss_advice = the lightning bolt ...
+
+Naming Rules:
+
+Level:
+
+- Level should have a "player_start" restart control block
+- Level may have a "temp_start" restart control block. If present, game starts from there (test purposes)
+  with some weapons
+- moving platforms/walls control blocks must have _start _end prefix and rather be tile-aligned
+- Level end is either a face door connected to itself or a manual trigger who calls level_end()
+- Boss hostile should be called "boss" so health display & other special stuff can be displayed
+- when activating a lever, the "you need the x key message" is displayed only if required key name
+  contains "world", "trap_door", "teleport", "treasure", "room", "door".
+- it's better to prefix objects by the number of the world: w1_door_key_1, w3_trap_lever, ... so they
+  can be located easily.
+    
+Palette:
+
+Creating a palette is "expert" work. It's easy but there are a lot of implicit naming rules.
+Better imitate other existing palettes...
+
+- if there are breakable blocks, blocks from tile map must be tagged as "breakable_block"
+  and the breaking block animation must be called "breakable_block" (check classic levels 3 & 4)
+- each palette must have a "advice" bonus
+- each palette must have a "lever" 2-framed tile
+- each palette must have a "secret_button" 4-framed tile
+- each palette must have weapons...
+- as a general advice, avoid to rename palette items without checking that some are not directly used
+  by the game classes (hostiles, projectiles, bonuses...)
+
+  Guidelines:
+  
+  - 1 or 2 speed bonus per world
+  - 1 or 2 score/lives bonus per world
+  - 1 or 2 help bonus (lives/health) per world
+  - some smart secret stuff
+  - enough restart points

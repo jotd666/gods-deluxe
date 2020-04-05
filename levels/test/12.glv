@@ -1,0 +1,96 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level2 >
+ < copperbar_class gods.game.copperbar.Classic2 >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 12 >
+  < nb_cols 10 >
+  < row bicolor_wall_5 bicolor_wall_5 bicolor_wall_5 bicolor_wall_5 bicolor_wall_5 bicolor_wall_5 bicolor_wall_5 bicolor_wall_5 bicolor_wall_5 wall_8 >
+  < row blocking_wall_shade shade_wall_11 shade_wall_4 wall_support shade_wall_4 wall_support shade_wall_4 shade_wall_4 shade_wall_4 bicolor_wall_1 >
+  < row blocking_wall_shade shdae_wall_5 shade_wall_8 top_pillar_2 shade_wall_5 top_pillar_2 shade_wall_5 shade_wall_8 shade_wall_8 bicolor_wall_1 >
+  < row platform_middle platform_right wall_6 mid_pillar shade_wall_2 mid_pillar shade_wall_2 top_window wall_1 bicolor_wall_1 >
+  < row bicolor_wall_5 under_platform_right shade_wall_2 mid_pillar shade_wall_2 mid_pillar shade_wall_2 mid_window wall_1 bicolor_wall_1 >
+  < row blocking_wall_shade shade_wall_11 half_shade_wall_9 mid_pillar shade_wall_2 mid_pillar shade_wall_2 mid_window wall_1 bicolor_wall_1 >
+  < row blocking_wall_shade shdae_wall_5 wall_1 mid_pillar shade_wall_2 mid_pillar shade_wall_2 bottom_window wall_1 block_1 >
+  < row shade_wall_11 shade_wall_8 wall_1 mid_pillar shade_wall_2 mid_pillar shade_wall_2 wall_1 above_door_left above_door_right >
+  < row shade_wall_2 wall_1 carve_2_top_left bottom_pillar_2 carve_2_shade bottom_pillar_2 carve_2_shade carve_2_top_right up_face_closed_door_2 null >
+  < row shade_wall_2 wall_1 carve_2_vertical head_altar_top geom_pattern_half_shade head_altar_top geom_pattern_half_shade carve_2_vertical_2 mid_face_closed_door_2 null >
+  < row shade_wall_2 wall_1 carve_2_vertical head_altar_bottom geom_pattern_half_shade head_altar_bottom geom_pattern_half_shade carve_2_vertical_2 low_face_closed_door_2 null >
+  < row platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 7 >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 252 >
+   < y 80 >
+   < frame_set spear >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 274 >
+   < y 80 >
+   < frame_set spear >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible no >
+   < x 274 >
+   < y 96 >
+   < frame_set fire_ball >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible no >
+   < x 256 >
+   < y 96 >
+   < frame_set fire_ball >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 268 >
+   < y 112 >
+   < frame_set magic_axe >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 268 >
+   < y 48 >
+   < frame_set increase_wp_full >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 254 >
+   < y 48 >
+   < frame_set increase_wp_full >
+  >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 1 >
+  < CONTROL_OBJECT
+   < name player_start >
+   < x 256 >
+   < y 128 >
+   < width 32 >
+   < height 48 >
+   < type Restart >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 0 >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 0 >
+ >
+>

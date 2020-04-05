@@ -1,0 +1,342 @@
+- fixed: 4am mix: shopkeeper arrives from right (through the wall)
+
+version 0-9 (27 december 2016): major update owing to Kroah game disassembly analysis
+
+- fixed: Scoring system huge bug: Not enough points awarded, not possible to reach 80000 at world 3 and open the secret room
+- fixed: adjusted enemies health points and relation between their health and the damage inflicted to the player when colliding
+- fixed: weapon damage bugfix: weapon power is now awarded to each weapon, not divided between the weapons (just like the real game) (in HeroWeaponSet.get_power())
+- fixed: weapon damage bugfix: depends on the difficulty level & added low-power help
+- fixed: weapon damage bugfix: weapon power increases much slower after 3rd weapon has been bought (HeroWeaponSet.get_power())
+- fixed: adjusted damage of boss missiles
+- fixed: level 4 boss: worm wasn't appearing as frequently as in the original game. Better now.
+- fixed: level 4 boss: when player was killed by the worm, the next worm keeps its reduced health if the player had 
+- fixed: increase weapon power half only adds 1 power to each weapon (it multiplied by 2 before, which was incorrect!) (in HeroWeaponSet.get_power())
+- fixed: increase weapon power full only adds 2 power to each weapon (it multiplied by 3 before, which was incorrect!) (in HeroWeaponSet.get_power())
+- fixed: FIRST_COLLISION_PERIOD changed to reflect the number of hits a traversing weapon can inflict when passing through an enemy (in HeroWeapon)
+- fixed: difficulty levels range from 0, 1 (when killing guardian from level 3), 2 (completed once), 3 (2nd time level 4), 4 (completed twice and above)
+- fixed: Shield now removed at the end of each level (just like the real game), only available in shop if player doesn't have it
+- fixed: 4am mix level: lever toggle platform back and forth (Thanks Leffman)
+- fixed: classic level 1 world 1: puzzle 1 with levers: spikes still exploded even when rightmost lever was down
+- fixed: classic level 1 world 1: fixed help bonuses (again!)
+- fixed: classic level 1 world 1: secret platform reset when falling
+- fixed: classic levels: restored original parameters on monsters (health, position, fire properties)
+- fixed: classic level 2-2: drop all chalices in treasure room level 2-2 after having forgotten one once: no treasure key: fixed.
+- fixed: chicken, apple, bread give 3,4,5 HP like the original now
+- improved: added "hard" & "very hard" mode (same difficulty as completed once or completed more than once)
+- fixed: shield in shop in mid-level shops (l3, l4) only if not shield already
+- fixed: music only also played sound
+- fixed: familiar health starts at 1000, power claws start at 4, buy power claws adds 2, take familiar when already has one adds 1000 HP + 1 power claws
+- improved: complete end sequence + restart the levels with increased difficulty
+- improved: shop: displays current weapon arc
+- fixed: copper effect: less colors/more pixelized when using "original" gfx 
+- editor: added key bindings (DEL to delete what's under the cursor, E to edit monster properties)
+
+version 0.8-D (october 2015):
+
+- fixed: sfx only mode: music was still playing in shop, hi-scores
+- fixed: health help bonuses did not work
+- fixed: 4 a.m. mix secret platform puzzle
+- fixed: 4 a.m. firing head was too high in the armoury
+- fixed: stop falling hissing sound when jump stops on a ladder
+- fixed: spike level 4 detection too wide: player was hurt whatever the jump
+- fixed: 4 a.m. mix start location
+- fixed: forgot the intro music module in the package
+- fixed: removed very small fall sound on every landing (was more noticeable without music playing)
+- fixed: full screen mode in Windows 7 (Thanks Hans Wurst)
+- fixed: less damage when jumping above level 4-type rotating spikes
+- fixed: when intro ran to the end, game locked up
+- improved: hiscore table depends on level set (long-time request)
+- improved: fire on bonus countdown skips countdown (can be long if there are many lives/bonuses)
+- improved: fixed bugs in JOTD levels / made them more playable
+- improved: walkthrough for JOTD levels (still in construction)
+- improved: added -double-display option to open a big 1280x960 window and scale2x the game into it
+
+version 0.8-C (7th august 2015): major update owing to Kroah Gods viewer & a long vacation & a lot of playtesting
+
+- fixed: last killed enemy of the wave releases the reward, not the latest created enemy of the wave 
+- fixed: fall hissing sound now stops properly (bug was there since the beginning)
+- improved: implemented the "fire in a 64x64 square" around player location (directional fire => add directional inaccurate)
+- fixed: shield protects from collision with monsters too
+- added: familiar health resplenish when the player picks up some energy
+- improved: thrown weapons are slightly slower. Not necessarily more difficult, since they inflict more damage like that.
+- fixed: familiar locks for serveral seconds on player y-pos when player crouches and no enemy is in sight
+- fixed: adjusted most objects in original levels / fixed some errors, not complete since it's a huge work and not
+  always worth it since most people won't notice the differences.
+- fixed: jump pressed: waits for jump released before triggering another jump (fixes ladder double jump effect) Hero.java 1855
+- added: forgotten help bonuses / adjusted conditions for triggering them along with speed bonuses
+- added: basic walkthrough for classic level (walkthrough for jotd levels to come)
+- updated music pack: some more mixes from www.amigaremix.com added
+- improved: flying enemies A.I. with configurable aggressivity, and used original game parameters to update classic levels
+- fixed: classic level 2 W1 bonus room now playable without invincibility
+- fixed: revamped jump behaviour: stops on ledges when possible (W2 bonus section now fully playable)
+- fixed: better spike & snake pot collision (was too difficult)
+- fixed: points on money items are computed from money value (value/8) (were in parameters, possibly incorrect)
+- fixed: Spelling on in-game info: "Crystal" vs "Chrystal"
+- fixed: score bonuses when starting game from L2/3/4: first extra life at 100000*(start_level+1), first fire chrystal at 100000*(start_level+2)
+- improved: fix bug with treasures in chests / hardcoded chest contents according to chest type
+- fixed: classic level L2W3: Chapel event trigger for candles -> treasure key. Possible to miss it by jumping over from the altar (again jump change), any chance of moving it one block to the left, where the hero impact with ceiling forces player to land?
+- fixed: classic level L2W2: Unusual behaviour of lone gem on second step from left in treasure room: Possible to jump on it without picking it up, have to move off and return to collect. Real minor but I notice it so often.
+- fixed: Shop: After buying an item that gets removed (say an extra life), if the player presses ctrl again without moving, the item that replaces it will be automatically bought instead of tooltip information first being displayed. Can lead to some wtf?!? moments.
+- fixed: classic level 3 boss: added restart (restarted earlier in the level)
+- fixed: pickable item exactly dropped on chest: was unable to pick it and could stay stuck
+- fixed: lockup on world end if no sound
+- fixed: snakes: were too easy to kill
+- improved: added taskbar icon
+- improved: snake animation & speed
+- improved: easier JOTD levels (still some work to do, though)
+- changed: moved most of document txt files in "doc" subdirectory
+- (editor) fixed: removed stupid even x-rounding in editor
+- (editor) improved: removed "chest/key" associations: simpler edition & game management of chests/keys
+- (editor) improved: added expression evaluator in level editor for x,y coordinates (uses exp4j-0.2.9)
+- (editor) improved: better "recent" menu in editor
+- (editor) improved: handle double click in editor for default behaviour (faster than contextual menu)
+
+Version 0.8-B (10 july 2011):
+ - fixed: tiles in Yasir tileset
+ - fixed: doors GFX in JOTD level 2
+ - fixed: missing snakes in JOTD level 2
+ - fixed: (globally) easier JOTD level 1
+ - fixed: better JOTD level 3
+ - fixed: avoid that monster wave appear with 0 delay (all monsters merged)
+ - fixed: invincibility sound playing on world completion
+
+Version 0.8 (05 september 2010):
+ - full jotd 4-level set now complete (and challenging enough :))
+ - reworked: ground enemy AI: fixes a lot of issues with jumps & attacks
+ - changed: level file format (smaller, faster loading)
+ - improved: 2-button control method (like the consoles)
+ - fixed: joystick controls now work during the game
+ - fixed: multiple-path moving blocks animation was sometimes jerky (l2 w3, l3 w1)
+ - fixed: spikes now share the same y relative position (much better looking)
+ - fixed: attacking monsters jump y speed was too slow (small/low jump)
+ - fixed: weapon arc intense had no angle
+ - fixed: wrong bonus trigger in 4am demo
+ - improved: (editor) right click on any object automatically selects it in association window
+   if open and item loaded in one of the lists
+ - improved: (editor) now possible to select boss music by "Properties" window
+ - improved: (editor) reset clock trigger (avoids coding a trigger just to call reset_clock())
+ - improved: (editor) unnamed items not showed anymore in associations
+ - improved: (editor) more unnamed control objects allowed: restart,reset_clock
+ - fixed: (editor) prevented user operation to clear a name on a must-be-named control object
+ 
+ Version 0.7a (01 march 2010):
+ - reworked: smoothed some level 4 graphics
+ - fixed: sector system was not working for small levels (not visible in available levels,
+   but for my test levels, altough could be noticed on the 4 a.m. mix level)
+ - fixed: sometimes bomb went into a manic repeat of the bouncing sound,
+   so it sounded like a crazy fly in a jar :) (reported by Qube)
+ - fixed: Windows 7 & Vista: full screen mode did not display anything at all (reported by spaeR)
+ - fixed: better screen bounds in windowed mode (reported by hit)
+ - fixed: text display when locale is "exotic" (I characters did not show up with Turkish locale)
+   (reported by Plankton)
+ - fixed: classic w1 l2 end: some small differences with the original
+ 
+ Version 0.7 (08 november 2009):
+ - improved: added mini level 4 (first world)
+ - improved: added -wh command line option to set window/screen height (can fix some problems with some resolutions or
+   window managers)
+ - improved: automatically selects the exit when no more money in shop
+ - improved: 4am demo (some stuff was missing, thanks Qube)
+ - improved: (editor): special bonus association (same as TriggerItemDisplay2 but with special bonus message. Avoids manual code)
+ - improved: level image import (can ignore bad first/last lines/columns of pixels of each tile)
+ - removed: shoot shield in the editor (was not used)
+ - fixed: command line argument parsing
+ - fixed: secret button + platform association was not working
+ - fixed: game crash when hero died
+ - fixed: jump was too slow on fast machines
+ - fixed: deprecated code (thanks to hit from EAB)
+ - fixed: level image import (only worked in monochrome)
+ - fixed: (editor): close door trigger stays active if door is closed
+ - fixed: on close/on open callbacks occur only once: avoid multiple "a hidden passage" messages
+ - fixed: classic level 1 world 1: last chance platform trigger only works when chest puzzle completed
+ - fixed: (editor) rotating spike from level 4 could not be set in waves (>1 spike)
+   
+ Version 0.6 (18 february 2009):
+ - improved: can run without sample files (no more sound exceptions)
+   or if sound is problematic on your machine (happened somewhere on some Linux box)
+ - improved: removed familiar when boss stage
+ - improved: full alternate tile/enemy set by Yasir 
+ - improved: selectable tilesets support (Yasir Giger-esque art can be selected)
+ - improved: name can by typed in with the keyboard in the hiscore section (requested by Ultron)
+ - improved: original graphics now uses original fonts (requested by Ultron)
+ - improved: added 4 am mix demo level
+ - improved: slighter longer jump distance
+ - fixed: in original graphics mode, the hero had a purple background (reported by Nick Hockin)
+ - fixed: localization error in jotd level 3
+ - fixed: weapon collision could totally miss some static enemies
+ - fixed: display priority problems: spike vs items & levers vs items (reported by Yasir)
+ - fixed: reset walk animation to "rest" when stop walking (reported by Ultron)
+ - fixed: menu / hiscore switching was too fast (reported by many people)
+ - fixed: control object resolution (spitting heads in classic level 2 were a tad too low)
+ - fixed: increase weapon power full item was free in level 1
+ - fixed: shopkeeper now comes like in the original. Hero turns back if required.
+ - fixed: crouch/duck was too slow (reported by Ultron)
+ - fixed: no/wrong points were awarded for mask/necklace/gold plate & chest opening
+ - fixed: missing score bonus in classic level 1 world 3
+ - fixed: enemies too weak / score too low in classic level 1 world 3, making some bonuses impossible to get
+ - fixed: status bar fonts not updated in real time when changing graphic options
+ - fixed: shopkeeper now appears from out of the screen and has better walk animation
+ - fixed: (editor): safer association window: no more "null" association which led to corrupt level file
+ - fixed: (editor): derive associated trigger deleted the nearest control object
+ - improved: (editor): allows to edit full object properties (not only name / visibility)
+ - improved: (editor): to have a draw line in between trigger and target(s) connected visually?
+ - improved: (editor): "swap left right" property added to palette so bosses display in the correct direction
+ - improved: (editor): when removing an object with an association, asks for confirmation, then also removes association (avoid problems on reload)
+
+ Version 0.5 (20 january 2008):
+ - improved: easier jotd levels 1 & 2 (were really too hard)
+ - improved: full jotd level 3
+ - improved: character selection
+ - improved: replaced Sega music tunes by superior SNES music tunes
+ - improved (editor): enemies images appear in the editor, with the correct direction (very convenient)
+ - improved: music in shop
+ - improved: added hiscores music
+ - improved: game over: waits fire pressed to fadeout like in the original game
+ - improved: enhanced graphics done by Yassin Bin Qaiser (credited in the intro too)
+ - fixed: classic & jotd levels level 2: possible disappearance of world key
+ - fixed: prevents to drop bonuses while boss is active (shield, starburst, freeze ...)
+ - fixed: when level 3 boss died while jumping, his battered body remained in the air.
+ - fixed: possible crash when displaying text (Brian Wheeler)
+ - fixed: french locale missing for jotd level 1
+ - fixed: sector set optimisation was not enabled: slowed the game down
+ - fixed: lowered in-game music volume (thanks to the excellent MP3Gain tool)
+ - fixed: no more start sound in shop
+ - fixed: could be stuck in classic level 4 trap room
+ - fixed: no more hiscore reset if empty name entered
+ - fixed: could be stuck in jotd level 2
+ - fixed: could use a shortcut in jotd level 1 and have insufficient weapons
+ - fixed: better music management
+ - fixed: familiar was in shop even when familiar already bought and alive
+
+ Version 0.4:
+ - fixed: localized intro text was wrong
+ - fixed: fadein in intro was buggy
+ - fixed: increased weapon power price at level 2 (classic world 2) changed from 6000 to 20000
+ - improved: completed jotd level 2
+ - improved: more accurate classic level 1-2
+ - improved: added more energy on jotd levels
+ - improved: end music
+ - improved: familiar armoured at start, and when weakened show "naked"
+ 
+ Version 0.3b (beta, 31 dec 2007):
+ - fixed: classic level 2 candle platform was no longer hidden at start: blocked the way
+ - fixed: "thief can help" advice (classic level 2) had been hidden for test purposes. Sorry.
+ - fixed: joystick support (kept working and not working depending on the releases: now really fixed)
+ - improved: hungarian locale (not complete due to lack of experience in unicode handling)
+ 
+ Version 0.3a (beta, 30 dec 2007):
+ - fixed: end of world meant also end of level !
+
+ Version 0.3 (beta, 30 dec 2007):
+ - fixed: classic level 2 world 3: last horizontal platform had to be waited for instead of being there
+ - fixed: fadeout problems after shop
+ - improved: better edition features
+ - improved: almost fully playable jotd level 2 (2 first worlds work)
+ 
+ Version 0.2a (beta, 05 dec 2007):
+ - fixed: Level 2, world 3, second door of four doors, where the skull is, something is blocking the way
+   (appeared in version 0.2)
+ - improved: fadeout/fadein when hero dies and on level load
+ - degraded: introduced a lot of regressions due to improvements to the editor and the game engine.
+   
+ Version 0.2 (beta, 27 nov 2007):
+ - improved: hiscores
+ - improved: implemented changes to match Sega level improvements (see readme about it)
+ - improved: shade on status bar fonts + better text display speed
+ - improved: in-game music
+ - improved: level/graphics cache for fast loading speed (turn it off with -no-level-cache switch)
+ - improved: jotd level 1 complete, jotd level 2 in progress (world 1 is playable)
+ - improved: fadein/fadeout when hero dies
+ - fixed: inventory + take ladder: inventory stuck
+ - fixed: try to go down on ladder whereas way is blocked: ugly "stomp" effect
+ - fixed: mask problem on money counter (original graphics)
+ - fixed: when hero dies in last boss, worm timer could appear right after (which could
+   make the game easier because of temporary invincibility)
+ - fixed: scale2x graphic bug
+ - fixed: l4 w1 gold plate stuck in wall when opening chest
+ - fixed: l2 w1 @ bonus section: monster missed the first jump
+ - fixed: some level 1 monsters did not yield points when killed
+ - fixed: huge memory leaks in sound engine & unterminated threads
+ 
+ Version 0.1 (first full beta, 03 nov 2007):
+ - improved (levels): all classic levels complete with all monsters from all levels
+ - improved (levels): custom level created from original level 1 graphics
+ - improved (levels): speed bonus on classic level 1 world 2
+ - improved (levels): added help & speed bonus on classic level 1 world 3
+ - improved (levels): added the 80000 points score bonus on classic level 1 world 3
+ - improved (levels): classic level 1 world 3 "diamonds on trap" puzzle is now 100% accurate
+ - improved: better hostile appearing sounds
+ - improved: ultra-smooth animation (flying hostiles, shoots, jumps)
+ - improved: huge improvements & bugfixes in the editor
+ - improved: item bounce sound
+ - improved: keys & special items bounce when appearing in screen
+ - improved: when invincible, shoots go through the hero instead of crashing on him
+ - improved: much better monster AI (required for classic levels 2 and higher)
+ - improved: option menu
+ - improved: can use original graphics, original+scale2x graphics, or manually-reworked graphics.
+ - improved: shoot impacts are better spread over the hostile surface
+ - improved: cross-through weapons damage more accurate
+ - improved: on world end, remove all alive obsolete monsters
+ - improved: hero crouches longer on a jump start
+ - fixed: issue with joystick
+ - fixed: jump from a ledge with a ceiling above is easier
+ - fixed: lateral move while falling did not take walls into account
+ - fixed: sometimes hostiles passed above holes/ladders without falling
+ - fixed: maximum 3 salvos in the screen for weapons (knives, spears, stars, fireballs...)
+ - fixed: passing near an already activated lever (when key not owned) with the key now activates.
+ - fixed: passing near an already activated button always call the button pressed code callback.
+ - fixed: glitch when hero dies (hero appears scattered all across the screen)
+ - fixed: weapon arc wide
+ - fixed: bonuses dropped by hostiles are better centered
+ - fixed: The "S" at the end of "GODS" on the title screen was incomplete
+ - fixed: directional hostile shoots were not accurate
+ - fixed: jump range (when landing on a upper platform)
+ - fixed: detection with moving blocks
+ - fixed: ground hostiles animation
+ - fixed: hostiles move during and besides the appearing animation
+ - fixed: better sound when climbing a ladder
+ - fixed: multi-jumping from a ladder if "up" remains pressed
+ - fixed: weapon throw - shot too early and spin in the opposite direction on one side
+ - fixed: item bounce
+ - fixed: throwing star price
+ - fixed: moving platform noise sometimes missing
+ - fixed: items bought in the shop such as shield, freeze ... can be dropped for later use
+ - fixed: better shoot key response while standing up
+ - fixed: money sound kept on playing in some cases after exiting shop
+ - fixed: weapons refund now at half the price, like the original
+ - fixed: starburst origin modified on player center
+ - fixed: fireball parabol (was too low) & power points (was 3)
+ - fixed: hero was sometimes blocked in ladder cling position
+ - fixed: wait until hero is standing on ground to summon the shopkeeper
+ - fixed: management of cling to ladder when jumping
+ - fixed: restart position policy
+ - fixed: object fall on ledges
+ - fixed: hero ladder climb animation
+ - fixed: monsters appearing sequence
+ 
+ Version 0.02:
+ - improved: first level complete
+ - improved: sfx & in-game music
+ - improved: smoother scrolling
+ - improved: editor
+ - improved: flying monsters trajectory improved
+ - improved: auto-filter of some alterned patterns in background/foreground tiles
+ - improved: fall/move during fall fixed
+ - improved: long crouch when hurt by a fall
+ - improved: demo can be skipped with CTRL key
+ - fixed: monsters not shooting if not on screen
+ - fixed: goes a little higher on the ladder
+ - fixed: cling on the ladder from the right when jumping
+ - fixed: fire during falling now allowed
+ - fixed: was too slow to turn & fire when attacked in the back
+ - fixed: multi-weapon trajectory
+ - fixed: fadeout/fadein teleport (player could move)
+ - fixed: open lever only with action when in BACK position
+ - fixed: description of items displayed while handling items
+ - fixed: added turn frame when jumping from a ladder
+ - fixed: fell to fast compared to the original
+ - fixed: jumping from stairs
+ - fixed: demo timing
+ 
+ Version 0.01 (march 2007):
+ - first world of first level

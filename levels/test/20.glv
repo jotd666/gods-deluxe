@@ -1,0 +1,51 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music levels\guardian.mp3 >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level1 >
+ < copperbar_class gods.game.copperbar.Classic1 >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 15 >
+  < nb_cols 19 >
+  < row l_stone_wall_right shade_ladder_2 wall_2 stone_multicolor_1 stone_multicolor_3 left_platform_2 platform_2 right_platform_2 right_square_drawing brick_wall brick_wall blocking_wall_left wall_1 wall_1 blocking_wall_right dark_wall_1 dark_wall_1 stone_multicolor_1 roof >
+  < row l_stone_wall_right shade_ladder_2 wall_2 shade_stone_wall_2 dark_wall_1 stone_multicolor_1 stone_multicolor_2 stone_multicolor_3 left_platform_2 platform_2 platform_2 wall_1 wall_1 blocking_wall_right dark_wall_1 shade_wall_1 wall_2 blocking_wall_left tiled_walltop >
+  < row l_stone_wall_right shade_ladder_2 wall_2 shade_stone_wall_3 dark_wall_4 dark_wall_1 dark_wall_1 dark_wall_1 stone_multicolor_1 stone_multicolor_2 stone_multicolor_2 blocking_wall_right dark_wall_1 dark_wall_1 shade_wall_1 wall_2 wall_2 stone_multicolor_1 bicolor_wall_1 >
+  < row l_stone_wall_right shade_ladder_2 wall_2 wall_2 wall_2 shade_stone_wall_3 dark_wall_4 dark_wall_4 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 shade_wall_1 wall_2 wall_2 wall_2 wall_2 blocking_wall_left l_stone_wall_left_shade >
+  < row l_stone_wall_right shade_ladder_2 carved_top_corner up_center_carved top_right_carved_corner carved_top_corner up_center_carved top_right_carved_corner carved_top_corner up_center_carved top_right_carved_corner carved_top_corner up_center_carved top_right_carved_corner wall_2 top_ladder wall_2 stone_multicolor_1 l_stone_wall_left >
+  < row l_stone_wall_right shade_ladder_2 vertical_carve_right grate carved_corner_left carved_corner_right grate carved_corner_left carved_corner_right grate carved_corner_left carved_corner_right grate vertical_carve_left wall_2 ladder wall_2 blocking_wall_left l_stone_wall_left >
+  < row platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 platform_2 right_platform_2 shade_ladder wall_2 stone_multicolor_1 l_stone_wall_left >
+  < row stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_3 shade_ladder_2 wall_2 blocking_wall_left l_stone_wall_left >
+  < row blocking_wall_right dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 shade_ladder_2 wall_2 stone_multicolor_1 l_stone_wall_left >
+  < row blocking_wall_right dark_wall_2 dark_wall_3 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 shade_ladder_1 wall_2 blocking_wall_left l_stone_wall_left >
+  < row blocking_wall_right dark_wall_2 shade_wall_1 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 ladder wall_2 stone_multicolor_1 l_stone_wall_left >
+  < row blocking_wall_right dark_wall_2 shade_wall_1 wall_2 wall_2 wall_2 top_left_square_drawing square_drawing square_drawing square_drawing top_right_square_drawing wall_2 wall_2 left_platform_2 right_platform_2 shade_ladder wall_2 blocking_wall_left l_stone_wall_left >
+  < row platform_1 platform_1 platform_1 right_platform_1 shade_stone_wall_1 wall_2 right_square_drawing brick_wall brick_wall brick_wall left_square_drawing wall_2 wall_2 stone_multicolor_1 stone_multicolor_3 shade_wall_1 wall_2 stone_multicolor_1 l_stone_wall_left >
+  < row blocking_wall_right dark_wall_5 dark_wall_1 dark_wall_1 shade_wall_1 wall_2 left_platform_1 platform_1 platform_1 platform_1 right_platform_1 dark_wall_1 platform_1 right_platform_1 dark_wall_1 shade_wall_1 wall_2 blocking_wall_left left_platform_2 >
+  < row blocking_wall_right dark_wall_2 dark_wall_3 dark_wall_4 shade_wall wall_2 shade_stone_wall_2 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 platform_1 right_platform_1 dark_wall_1 wall_2 wall_2 wall_2 stone_multicolor_1 stone_multicolor_1 >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 0 >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 1 >
+  < CONTROL_OBJECT
+   < name temp_start >
+   < x 274 >
+   < y 160 >
+   < width 32 >
+   < height 32 >
+   < type Restart >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 0 >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 0 >
+ >
+>
+>

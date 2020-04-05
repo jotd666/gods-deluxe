@@ -1,0 +1,12 @@
+w3_hidden_passage = un passage cache
+first_advice = trouvez la cle en or pour sortir de ce monde
+advice_return_a_pot_2 = trouvez un autre pot pour un bonus special
+w3_advice_2 = aide a battre le gardien
+w3_advice_1 = la foudre ...
+w1_start_message = la cite
+experiment with levers for bonus = essayez les leviers pour du bonus
+advice_return_a_pot = amenez un pot aux magasins
+treasure_room_w2_trigger = salle du tresor
+stores = magasins
+ceramic pot = pot en ceramique
+ceramic vase = vase en ceramique

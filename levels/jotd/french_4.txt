@@ -1,0 +1,15 @@
+w1_treasure_section = section des tresors
+w1_start_message = sous le monde souterrain
+w1_pit_advice = moi je ne descendrais pas
+w2_shortcut = raccourci
+w2_leap_of_faith = le saut de la foi
+w2_you_dont_need_door_key = vous n'avez plus besoin de la cle de porte
+w2_fallback_solution = solution de secours
+w3_no_more_puzzles = plus beaucoup de puzzles et trouvez la cle
+w2_release_the_birds = liberez les oiseaux
+your potion has been removed = votre potion a ete supprimee
+your bomb has been removed = votre bombe a ete supprimee
+you need the spear to progress = il faut la lance pour aller plus loin
+w3_final_hint = derriere cette porte se trouve encore l'immortalite
+w3_treasure_room = salle du tresor
+w2_treasure_room = salle du tresor

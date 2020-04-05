@@ -1,0 +1,365 @@
+< GFX_PALETTE
+ < nb_frame_sets 14 >
+ < FRAME_SET
+  < name player_front >
+  < type hero >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 198 >
+   < source_y 1 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name player_face_turn_right >
+  < type hero >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 231 >
+   < source_y 1 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name player_walks_right >
+  < type hero >
+  < nb_frames 8 >
+  < GFX_FRAME
+   < source_x 264 >
+   < source_y 1 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 297 >
+   < source_y 1 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 330 >
+   < source_y 1 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 363 >
+   < source_y 1 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 396 >
+   < source_y 1 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 429 >
+   < source_y 1 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 462 >
+   < source_y 1 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 495 >
+   < source_y 1 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name player_shoots_right >
+  < type hero >
+  < nb_frames 3 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 50 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 33 >
+   < source_y 50 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 66 >
+   < source_y 50 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name player_back >
+  < type hero >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 99 >
+   < source_y 50 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name player_climbs_right >
+  < type hero >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 132 >
+   < source_y 50 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name player_climbs_match >
+  < type hero >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 165 >
+   < source_y 50 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name player_climbs_left >
+  < type hero >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 198 >
+   < source_y 50 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name player_crouches_right >
+  < type hero >
+  < nb_frames 2 >
+  < GFX_FRAME
+   < source_x 231 >
+   < source_y 50 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 264 >
+   < source_y 50 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name player_jumps_right >
+  < type hero >
+  < nb_frames 3 >
+  < GFX_FRAME
+   < source_x 363 >
+   < source_y 50 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 396 >
+   < source_y 50 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 429 >
+   < source_y 50 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name player_shoots_from_ladder_right >
+  < type hero >
+  < nb_frames 3 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 99 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 33 >
+   < source_y 99 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 66 >
+   < source_y 99 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name player_jumps_shoots_right >
+  < type hero >
+  < nb_frames 3 >
+  < GFX_FRAME
+   < source_x 99 >
+   < source_y 99 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 132 >
+   < source_y 99 >
+   < width 32 >
+   < height 48 >
+  >
+  < GFX_FRAME
+   < source_x 165 >
+   < source_y 99 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name player_back_turn_right >
+  < type hero >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 330 >
+   < source_y 99 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+ < FRAME_SET
+  < name player_rests_after_shoot_right >
+  < type hero >
+  < nb_frames 1 >
+  < GFX_FRAME
+   < source_x 363 >
+   < source_y 99 >
+   < width 32 >
+   < height 48 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type CUSTOM >
+   < swap_left_right no >
+  >
+ >
+>

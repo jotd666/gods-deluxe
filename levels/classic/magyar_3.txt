@@ -1,0 +1,10 @@
+w1_advice_1 = a buzogány segít megtalálni az arany kulcsot
+w1_bomb_advice = a bomba a csapdákat és a kaptárakat is elpusztítjaw1_first_message = behatoltál a labirintusba
+w1_advice_end = nézz a mennyezetre a kincses kamrában
+w1_bat_room_advice = üdvöz légy a denevér fészekben
+w1_bee_room_advice = üdvöz légy a darázsfészekben
+w1_entrance_theif_lair = bejárat a tolvaj odúba
+w1_potion_advice = az italt nem lehet elvinni ebbõl a terembõl
+w1_treasure_room = kincses kamra
+w2_health_advice = érd el a tetõt maximális energiával egy kulcsértw3_bring_vessels_advice = hozd az edényt hogy magasabbra juss
+w3_lever_advice = húzd meg a kapcsolót jobbra jutalomért

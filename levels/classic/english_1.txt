@@ -1,0 +1,8 @@
+w3_hidden_passage = a hidden passage
+first_advice = find the gold key to exit this world
+advice_return_a_pot_2 = find another pot for special bonus
+w3_advice_2 = helps to defeat the guardian
+w3_advice_1 = the lightning bolt ...
+w1_start_message = the city
+advice_return_a_pot = return a pot to the stores
+treasure_room_w2_trigger = treasure room

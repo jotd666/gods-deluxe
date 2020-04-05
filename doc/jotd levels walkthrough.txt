@@ -1,0 +1,255 @@
+LEVEL 1
+
+WORLD 1
+
+Go up, activate lever on the right, then go up, and down the ladder on the left. Activate the lever, go right and pick up the key.
+Kill the spikes with the left lever
+Pick up the treasures in the room
+The monster that appear above the treasure room has the gold key. Pick it up and exit.
+
+HIDDEN PUZZLES
+
+1. At start, don't pick up the knife and go up/right: the secret chamber wall opens. (The monster hits you but you are rewarded for that). Pick up the knife afterwards
+
+2. 3-lever puzzle: looks like the one of the original level but slightly different: first pull the leftmost, then the rightmost and the one in the center to collect chest+key
+
+3. reach the top in 120 seconds and go right just below the exit: the wall opens and you get some bonus + a secret button. This button will get you giant jump in world 2
+
+
+WORLD 2
+
+Go right and up left. Kill the monster that brings starburst at the correct time to kill all flying monsters. Collect the key and go down.
+Proceed right, grab the trap door key on the platform. At the top of the ladder, proceed right and close the lever. Drop down, get the key, open the door.
+Go down: you see a teleport gem and 3 levers. Activate the rightmost lever to release the gem (else you get a spike/you don't get the gem). Get the pot.
+Get the other pot on the right. Return left, climb down the ladder (beware of harpies in the middle).
+Return the pots to the stores. Then proceed down to the teleport room or right to the exit.
+
+Teleport room contains 3 teleports:
+Left: teleports at the end of the level / the treasure room
+Center: get the key of the treasure room. Not very difficult but original: you have to avoid the monster chasing you and the falling
+teleport gems that will bring you back without the key.
+Right: small room where you are attacked by powerful & fast monsters. Activate the 2 levels quickly to close the traps, then go back
+to activate the rightmost lever to get a starburst and kill them.
+
+SHOP: like in the original levels, buy shurikens.
+
+HIDDEN PUZZLES
+
+1. Right after the start on the upper platform, a giant jump potion appears if you completed the puzzle 3 of world 1. Pick it up and continue up left, then up right:
+   a platform containing bonuses is up there.
+
+2. Just when picking treasures from hidden puzzle #1, a bunch of gold coins can be seen on the right, but unreacheable even with the giant jump. Continue in the level,
+   and when you reach the top of the big ladder, jump hard left: you land on the platform. Continue left to get the coins.
+
+3. When falling in the hole, don't close the trap door with the lever/key. Instead, drop but move left to get the key & a special bonus, then drop down to the teleport gem.
+   Climb up again and do the same thing again: instead of being stuck in the pit, you get a big bonus and the wall opens.
+
+4. In front of the pot room, kill the ox head and push the secret button. This allows the treasure chest of the treasure room to fall.
+
+5. In the pot room, grab the 2 similar pots for extra bonus.
+
+WORLD 3
+
+Go down and pick weapon arc intense. Kill the monsters.
+
+HIDDEN PUZZLES
+
+Close the 2 first pits, but jump down the 3rd one. You'll get a giant jump potion, jump and push the secret button.
+
+When you climb the ladder at some point you notice 4 spikes on the right. Go on the ledge just above them: an invincibility falls: get it and continue right: you reach a secret treasure room that connects with the rest of the level below.
+
+When you get the teleport key on the upper left, just drop down and you reach a platform with bonuses. One of them is an invincibility: drop down again in the spikes and activate secret button
+
+LEVEL 2
+
+SHOP: like in the original levels, buy fireballs, magic axes, and shurikens + increase weapon power.
+
+WORLD 1
+
+Pick up wide arc (optional: allows to easily kill the spitting mouths), proceed right to get the key. Go down. Activate lever.
+Climb down ladder (1) to get the key, and climb back up to door lever.
+Open door and enter left. Jump the spikes and go up to kill the snakes. Jump right on the platform from the top of the ladder (2).
+Kill monsters above, collect gem. Go down left and activate lever to open trap door.
+Go down. Kill monsters & collect 2nd gem. Go down left, kill firing head and collect door key (3).
+Return up, right, open door to the world exit. Two lamps above world exit are lit. You need to proceed further right to collect the third one.
+Go down, left past treasure room, up, kill thief, collect gem, return to exit.
+
+HIDDEN PUZZLES
+
+1. Go right instead of left and push secret button. Also instead of climbing down the ladder, just drop down for special bonus
+
+2. If you pushed the secret button from (1), there's a platform on the left, jump on it and jump again to get bonus (key from the chest below). Kill firing head to reveal another secret button.
+
+3. If you pushed the secret button from (2), the floor slides and you can go down to the treasure room puzzle. Kill the monsters and be sure to collect their gem. Continue right. When you reach the wall with the door above, a thief appears and moves towards you. Keep close to the wall and crouch (or the thief will explode on you on his way to the jump potion. When he has the jump potion, drop an item of your inventory to attract him. Kill him, get the giant jump, reach the upper door. Drop down the chimney. You return to (1), but now with the treasure key.
+
+4. Right after completing puzzle 3, at location (1), before the long jump effect wears off, jump up the small ladder where you came from at the start of the level. Returning there awards you 2 fire chrystals and a teleport back to the treasure room door.
+
+WORLD 2
+
+Kill the snakes and jump up. Kill the guard when he walks on the trap door to collect giant jump potion and proceed up. If you fail to collect the potion, just wait and a teleport gem will appear.
+Pick up the chalice. Go up & right to the door (2), enter.
+Climb up, kill both snakes, get key and chalice (3), go down & left
+
+Climb down the other ladder and get key on the left. Return right and open the door (4).
+Go down, get the teleport key, go down to door (5) (watch snake just below the ladder)
+
+Climb up and left to the end of the world. Open door, kill monsters, get the last chalice. Go down,
+drop the chalices near the altar to get the world key (6). Go up, right, drop past the treasure room,
+fight monsters, climb up, exit world.
+
+HIDDEN PUZZLES
+
+1. At world start, jump on the ledge from the ladder instead of going down. When you go down with the ladder to kill snakes you receive a special bonus.
+
+2. Continue right after the door, and jump up: you get a special bonus just for doing that.
+
+3. Activate the secret button before climbing, then get the chalice first: a platform goes down and you are able to climb the ladder for a shortcut/bonus area. Go left, drop down to end of the world.
+   You can now either proceed to the left door and finish the world, or go down and get the bonuses below.
+
+4. Reset the lever when opening the door (or use secret 3). Falling down right after the door gives you invincibility. Just go right past the spikes and get the bonuses.
+
+5. Reach this part in 200 seconds since the start of the world for a huge speed bonus. Use invincibility bonus to achieve this without risks/fall down to gain speed.
+
+6. Instead of going left, return at the door back from where you arrived. You'll receive the treasure key.
+
+WORLD 3
+
+Part I: climb down and kill firing head. Grab the invincibility and drop down. If you have weapon intense, you cannot kill
+the spitting mouths (yet). Go to the armoury, get the weapons and standard arc. The other door communicates with the rest of
+the rooms. Bring the piece puzzles to the main wall, bring the globe to the globe room to get a piece of puzzle, bring the herbs
+to the library to get another piece of puzzle. Once you get all 4 pieces you get the key to part II.
+
+TBD TBD TBD
+
+Kill the flying monsters (there are a lot of them). Then climb down the ladder and activate the lever to kill the spikes below.
+
+HIDDEN PUZZLES
+
+1. Alternately of being a sitting duck, you can jump left to get the starburst as soon as you appear (shoot while you do that). You will kill all the flying monsters a lose very little energy. And drop down to hidden 2!
+
+2. After killing the flying monsters, jump left instead of climbing right. Kill the spikes with the lever, then jump the big gap to kill firing heads and get extra spear (if you miss the jump you fall but the spikes are gone)
+
+LEVEL 3
+
+SHOP: if you're coming from level 2, just buy one suriken, and spend all your money on lives, shield, familiar ... since all your weapons will be swooped and you'll be fined 50000 of your gold. But the fine does not affect familiar or other bonuses.
+If you reached level 3 from level selection, don't buy any weapons, and the above advice still applies.
+
+WORLD 1
+
+Enter the room left and walk all the way to the left. The trap doors open to punish you even more. Enter your cell (you don't have much choice right now!). You are now trapped in your cell.
+Don't pick up the flask, and activate the lever several times for the door to open (if you have the flask with you it just won't open).
+Get some weapons by running into other monsters trapped in other cells.
+
+HIDDEN PUZZLES
+
+1. Just after having opened the cell door, pick up the flask for special bonus.
+
+WORLD 2
+
+TBD TBD TBD
+
+HIDDEN PUZZLES
+
+WORLD 3
+
+TBD TBD TBD
+
+HIDDEN PUZZLES
+
+LEVEL 4
+
+SHOP: you can either buy/keep maces or axes as main weapon (always with fireballs). Maces are less powerful, but can break blocks
+more easily. Axes are more powerful, but you must rely on fireballs to break blocks.
+
+WORLD 1
+
+Go down, kill all monsters, activate lever to close trap, then break block to get bonus.
+Go down, open door.
+Go up/kill monsters, continue right/up (down: treasure room, you need to get the treasure key), (1) then climb up after having picked the
+attract monster potion, jump left (2). Get the world key from the thief with attract monster potion, go down, exit.
+
+HIDDEN PUZZLES
+
+1. There are several ways to get treasure key. Depending on your main weapon and its arc, you must be at a certain location
+to break the upper block where the key resides. Breaking the lower block makes the key fall into the spike, thus forcing you
+to get the bombs below (and lose your hunters). On the other hand, if you manage to break the upper block, then go down to
+get the giant jump potion, you'll be able to jump on the lower block and get the key (and get a special bonus)
+
+2. Kill the flying monsters, but not too early, so the invincibility potion is dropped just next to you. Get it, and kill the thief,
+get the key, the speed bonus on the top platform (a lot of diamonds). Then jump hard right and reach the platform just above
+world exit door: you get a lot of bonuses.
+
+3. In the treasure room, which is unusually big, just before exit, you see a pit with several spikes and
+a hint "I wouldn't go down there". Don't. Just reset door lever for a shield, then you can safely proceed down.
+
+WORLD 2
+
+Kill the firing head, jump spike to the left, activate secret button, go right past a small chest, go up, left, open door.
+Jump left, kill upper monster with hunters, activate lever, collect lamp, extra life & key, return (1).
+Go to the left door: you'll see some unreachable items: treasure key, a door key... Break the upper block to get items (2).
+With the door key, you can open the lower room, proceed right. Enter the room at the right. Pressing the secret button gives
+the attract monster potion. The thief steals the pestle+mortar item. Attract him with the potion (3). Return left
+
+Go down the ladder (4), destroy all the blocks & pick bowl, go right. With all 3 items, the block moves. Go up (6), the world key appears.
+Go left. Climb up to world exit.
+
+SHOP: buy spears (you'll need to have spears later on anyway), extra life, fireballs... spend all your money because it's the last shop.
+
+
+HIDDEN PUZZLES
+
+1. Instead of returning, drop down the ledge to reach a hidden breakable platform. Get chest key, break block on the right to get oil lamp and get down.
+
+2. To get the treasure key, don't pick up door key (you can reach the lower room by using the shortcut). Activate upper lever
+without holding the door key to open the trapdoor and release the treasure key. Drop down the open trapdoor (shortcut), activate lever to get bird.
+
+3. Familiar will kill the thief for sure, or you can kill him too. In that case, the pestle+mortar is stuck. Just return left, activate lever, you'll
+get a giant jump potion to get the pestle, and the upper platform contains even more bonuses.
+
+4. "The leap of faith" hint appears. Jump left, you'll get a lot of bonuses. Go down.
+
+5. In the treasure room, collect items, go down, open door, but don't exit. Instead, go left: a secret passage has opened,
+revealing even more bonuses & another exit.
+
+6. Destroy blocks on the right wisely: First trigger the trapped monsters by going left, then do not destroy the two first
+ground ones (by jumping & shooting) so you can climb on them (destroy the upper left block near the fire chrystals too)
+to get chest key and giant jump. Giant jump will allows you to get fire chrystals on the left. Jump right again on the platform
+to get even more bonuses (2 coins)
+
+WORLD 3
+
+Get the door key, open door, go down (1), right. Get the spear from the firing head, go up to part 2.
+
+With the familiar, you can break some blocks and pick up some axes right away, but this is not a good
+idea to confront the boss like that since they are not powerful enough.
+
+Go down, left, get key, go right to part 3 (2). Go left, up, right, activate lever. Depending on whether you have
+the treasure key or not, one or another teleport diamond appears. Each one finally teleports you to the cave where you get the gold key,
+except that if you have the treasure key, you are teleported first in the treasure room (only for points, since there are no more shops).
+
+Once in the cave, the tricky part is first to get the axes at all, and second take as much power increase
+potions AFTER having picked the axes:
+
+I. If you have failed to get the mace, you can take it the hard way by jumping/breaking above blocks with the fireball. Tedious, and
+  only the 2 first axes are reachable (unless maybe you got weapon arc wide, not tested). Then you can increase your firepower by picking up
+  both powerup potions.
+II. If you got the mace, you HAVE to pick up one powerup potion to be able to break the blocks, but it will be faster and you will get ALL the axes.
+  Then you can pick the other powerup potion to get a pretty good firepower.
+III. A third possibility is: pick the power up and the world key, then go left, pick the other power up (you have to) and the wall opens to a passage.
+Go up, pull lever, pick axes. Kill monsters which will yield a power increase.
+IV. Smarter: Go up and break blocks (with fireball or mace - powerup pickup needed), then DO NOT pick axes as the wall below wouldn't open and proceed to III.
+
+The best option would be to break 1 of the blocks with fireball, leaving the other axes, not picking axes, then pick power ups (which will both affect the 2 axes you
+have which is better than none) & gold key, then go right, up, activate lever, collect the rest of the axes, kill monsters to get another power up.
+
+Failing to increase firepower/picking up enough axes will ensure that you fail at the final boss because you won't have time to kill the snake.
+ 
+
+HIDDEN PUZZLES
+
+1. Activate left lever, go left, kill monsters after they crossed the spike to get trap door key. Go right,
+press secret button to make treasure key appear, THEN activate right lever to be able to reach upper platform & treasure key.
+1 (alternate): push secret button quickly so the thief steals the treasure key and brings it to you when you grab the attract monster potion)
+
+2. To get the mace, activate levers from left to right one by one (after having scrolled up), then go down, left, up. Attract the
+thief with the attract monster potion (you can get it below) or the treasure key (simpler).

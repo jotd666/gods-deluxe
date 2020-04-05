@@ -1,0 +1,14 @@
+w1_start_message = der ii. tempel
+w1_giant_jump_advice = wenn mir jemand den hochsprung bringen koennte...
+w2_time_your_kills_advice = plane deine abschuesse zeitlich um einen bonus zu bekommen
+w2_key_up_advice = der tuerschluessel ist da oben
+w2_shortcut = abkuerzung
+w2_put_wine_on_altar = bring den wein zum altar
+w3_candle_advice = finde die kerze um weiter zu kommen
+w3_avoid_excessive_force_advice = weiche der uebertrieben macht aus
+w3_keep_up_levers_up_advice = halte die hebel oben
+w3_study_advice = die studie ist von innen verschlossen, hat aber zwei ausgaenge
+w3_find_lever_advice = finde den hebel fuer diese tuer
+w3_lost_room = ein verlorener raum
+w3_study_message = die studie
+

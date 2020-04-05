@@ -1,0 +1,105 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level1 >
+ < copperbar_class gods.game.copperbar.Classic3 >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 18 >
+  < nb_cols 17 >
+  < row null null null null null null null null null null null null null null null null null >
+  < row null blank blank blank blank blank blank blank blank blank blank blank blank blank tiled_walltop tiled_walltop tiled_walltop >
+  < row null blank blank blank blank blank blank blank blank blank blank blank blank blank dark_wall_end dark_wall_1 dark_wall_1 >
+  < row null blank blank left_platform_3 platform_1 right_platform_3 blank blank blank blank blank blank blank blank shade_wall_end_2 dark_wall_4 dark_wall_4 >
+  < row null blank blank blank blank blank blank blank blank blank blank blank blank blank wall_end_left wall_2 wall_2 >
+  < row null blank blank blank blank blank blank blank blank blank blank blank blank blank wall_end_left blocking_wall_left l_stone_wall_right >
+  < row null blank blank blank blank blank blank blank blank blank blank blank blank blank wall_end_left blocking_wall_left l_stone_wall_right >
+  < row null blank simple_ramp blank simple_ramp blank blank blank blank blank blank blank blank blank wall_end_left blocking_wall_left l_stone_wall_right >
+  < row null blank bottom_simple_ramp blank bottom_simple_ramp blank blank blank blank blank blank blank blank blank wall_end_left blocking_wall_left l_stone_wall_right >
+  < row null blank top_ramp_with_pillar top_ramp top_ramp_with_pillar blank blank blank blank blank blank blank blank left_platform_3 platform_1 blocking_wall_left l_stone_wall_right >
+  < row null blank bottom_ramp_with_pillar bottom_ramp bottom_ramp_with_pillar blank blank blank blank blank blank blank blank blank wall_end_left blocking_wall_left l_stone_wall_right >
+  < row null platform_1 platform_1 platform_1 platform_1 right_platform_3 blank blank blank blank blank blank blank blank wall_end_left blocking_wall_left l_stone_wall_right >
+  < row null dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 dark_right_wall_end_2 blank blank blank blank blank blank blank blank wall_end_left blocking_wall_left l_stone_wall_right >
+  < row null dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 shade_right_wall_end blank left_platform_3 right_platform_3 blank blank blank simple_ramp blank wall_end_left blocking_wall_left l_stone_wall_right >
+  < row null wall_2 wall_2 wall_2 wall_2 wall_end_right blank dark_wall_end dark_right_wall_end_2 blank blank blank bottom_simple_ramp blank wall_end_left blocking_wall_left l_stone_wall_right >
+  < row null wall_2 wall_2 wall_2 wall_2 top_shade_ramp_wall top_shade_ramp top_ramp_wall wall_end_right blank blank moving_platform top_ramp_with_pillar top_ramp top_ramp_wall blocking_wall_left l_stone_wall_right >
+  < row null gray_window_top wall_2 gray_window_top wall_2 bottom_shade_ramp_wall bottom_shade_ramp bottom_ramp_wall wall_end_right blank blank stone_platform bottom_ramp_with_pillar bottom_ramp bottom_ramp_wall blocking_wall_left l_stone_wall_right >
+  < row null platform_1 platform_1 platform_1 platform_1 platform_1 platform_1 platform_1 right_platform_1 closed_trap platform_1 platform_1 platform_1 platform_1 right_platform_1 blocking_wall_left l_stone_wall_right >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 0 >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 3 >
+  < CONTROL_OBJECT
+   < name player_start >
+   < x 346 >
+   < y 192 >
+   < width 32 >
+   < height 48 >
+   < type Restart >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name nme_1 >
+   < x 412 >
+   < y 240 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name nmet_1 >
+   < x 238 >
+   < y 176 >
+   < width 32 >
+   < height 32 >
+   < type Enemy_Trigger >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 0 >
+  < OBJECT_ASSOCIATION
+   < type Trigger_Monster >
+   < nb_objects 2 >
+   < object nmet_1 nme_1 >
+  >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 1 >
+  < HOSTILE_WAVE_PARAMETERS
+   < location nme_1 >
+   < class_name gods.game.characters.hostiles.GroundMonster1 >
+   < frame_set_name ground_monster_1 >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 1 >
+   < direction Left >
+   < attack_distance Always >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Wide >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+ >
+>

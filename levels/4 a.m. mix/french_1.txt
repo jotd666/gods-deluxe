@@ -1,0 +1,11 @@
+w1_return_3_items = ramenez trois objets dans la crypte
+w1_levers_advice = jouez avec les leviers
+w1_hidden_switches = cherchez les boutons caches
+w1_armoury = l'armurerie
+w1_treasure_room = la salle au tresor
+w2_hidden_room = une salle cachee
+w2_crypt = la crypte
+w2_teleport_room = la salle de teleportation
+the door to the armoury = la porte de l'armurerie
+the door to the treasure room = la porte de la salle au tresor
+

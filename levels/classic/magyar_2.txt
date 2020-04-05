@@ -1,0 +1,9 @@
+w3_chapel_print = A kápolna
+w3_candle_avice = találd meg a gyertyát
+w3_illuminate_study = szerezd meg a tudást hogy tovább jussw3_cross_chapel = a keresztet a kápolnába
+w3_study_print = a tanoda
+w3_return_levers_hint = vissza kapcsolót hogy kersztet kapj
+w1_thief_advice = ha hagyod a tolvajok segíthetnek
+w2_start_message = az istenek temploma
+w2_advice_chalice_key = a serlegek egy kulcsot eredményeznekw3_repair_advice = javítsd a mozaikot az istenek örömére
+w2_advice_1 = vidd a serlegeket a hajók terméhez

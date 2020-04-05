@@ -1,0 +1,124 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level2 >
+ < copperbar_class gods.game.copperbar.Classic2 >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 12 >
+  < nb_cols 13 >
+  < row shade_wall_3 shade_wall_4 shade_ladder_7 brick_wall_edge mid_face_closed_door_2 null wall_1 wall_1 bottom_window wall_1 ladder_5 bicolor_wall_3 bicolor_wall_4 >
+  < row carve_2 carve_2 ladder_2 brick_wall_edge null null wall_1 wall_1 wall_1 wall_1 ladder_5 bicolor_wall_1 bicolor_wall_2 >
+  < row geom_pattern geom_pattern dark_ladder_3 platform_2_left platform_3 platform_3 platform_2_right closed_trap block_1 closed_trap platform_left platform_right bicolor_wall_4 >
+  < row geom_pattern_half_shade geom_pattern dark_ladder_3 blocking_wall_geom_pattern bicolor_wall_6 bicolor_wall_6 blocking_wall_shade shade_wall_5 shade_wall_4 shade_wall_5 blocking_wall wall_8 bicolor_wall_2 >
+  < row platform_middle platform_right ladder_6 blocking_wall_3 bicolor_wall_6 blocking_wall_shade shade_wall_4 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_4 bicolor_wall_3 bicolor_wall_4 >
+  < row texture blocking_wall_shade shade_ladder_7 blocking_wall_3 bicolor_wall_6 blocking_wall_shade shdae_wall_5 wall_1 top_window wall_1 wall_7 bicolor_wall_1 texture >
+  < row wall_8 blocking_wall_shade shade_ladder_7 blocking_wall_3 bicolor_wall_6 blocking_wall_shade shdae_wall_5 wall_1 bottom_window wall_1 wall_1 bicolor_wall_3 texture_edge >
+  < row wall_8 blocking_wall_shade shade_ladder_7 above_door shade_wall_11 shade_wall_4 shade_wall_9 wall_1 wall_1 wall_1 wall_1 bicolor_wall_1 texture >
+  < row wall_8 blocking_wall_shade shade_ladder_7 shade_wall_2 shade_wall_2 wall_1 wall_1 wall_1 wall_1 wall_1 wall_1 bicolor_wall_3 texture_edge >
+  < row wall_8 blocking_wall_shade shade_ladder_7 shade_wall_2 shade_wall_2 wall_1 wall_1 platform_left platform_right wall_1 wall_1 bicolor_wall_1 texture >
+  < row wall_8 blocking_wall_shade shade_ladder_7 shade_wall_2 shade_wall_2 wall_1 wall_1 blocking_wall under_platform_right shade_wall_9 wall_1 bicolor_wall_3 texture_edge >
+  < row wall_8 platform_left platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_right texture >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 5 >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 72 >
+   < y 81 >
+   < frame_set magic_axe >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 70 >
+   < y 96 >
+   < frame_set magic_axe >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 72 >
+   < y 59 >
+   < frame_set spear >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 84 >
+   < y 80 >
+   < frame_set spear >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 76 >
+   < y 31 >
+   < frame_set increase_wp_full >
+  >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 2 >
+  < CONTROL_OBJECT
+   < name player_start >
+   < x 64 >
+   < y 128 >
+   < width 32 >
+   < height 48 >
+   < type Restart >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name hhh >
+   < x 244 >
+   < y 108 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 0 >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 1 >
+  < HOSTILE_WAVE_PARAMETERS
+   < location hhh >
+   < class_name gods.game.characters.hostiles.SnakePot >
+   < frame_set_name snake_head >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 18 >
+   < direction Right >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation yes >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+   < objective_balance 100 >
+   < count 1 >
+   < OBJECT_DROPPED
+    < instance_name ? >
+    < class_name ? >
+    < hostile_name ? >
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+ >
+>
+>

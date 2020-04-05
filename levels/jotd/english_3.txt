@@ -1,0 +1,16 @@
+w1_jail_advice_1 = you have been jailed for slaying the dragon
+w1_jail_advice_2 = some inmates own weapons
+w1_jail_advice_3 = reset lever to close traps
+w1_jail_advice_4 = your cell. nothing to do but work out...
+w1_weapons_removed = weapons removed + fine 50000 gold
+w1_find_the_gold_key = find the gold key
+w2_part_3_advice = prepare for a big fight
+w2_teleport_room = teleport room
+w2_the_pit = the pit
+w3_shortcut = shortcut
+w3_useless_corridor = a useless corridor ?
+w3_pull_quickly_advice = reset levels quickly for bonus
+w1_let_sentence_begin = let the sentence begin
+w1_flask_advice = bring down water to the thirsty
+w1_find_the_gold_key = find the gold key
+

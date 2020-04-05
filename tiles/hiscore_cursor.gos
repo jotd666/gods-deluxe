@@ -1,0 +1,40 @@
+< GFX_PALETTE
+ < nb_frame_sets 1 >
+ < FRAME_SET
+  < name cursor >
+  < type other >
+  < nb_frames 4 >
+  < GFX_FRAME
+   < source_x 0 >
+   < source_y 1 >
+   < width 16 >
+   < height 15 >
+  >
+  < GFX_FRAME
+   < source_x 17 >
+   < source_y 1 >
+   < width 16 >
+   < height 15 >
+  >
+  < GFX_FRAME
+   < source_x 34 >
+   < source_y 1 >
+   < width 16 >
+   < height 15 >
+  >
+  < GFX_FRAME
+   < source_x 51 >
+   < source_y 1 >
+   < width 16 >
+   < height 15 >
+  >
+  < PROPERTIES
+
+   < value 0 >
+   < alias ? >
+   < description ? >
+   < animation_type FOREVER >
+   < swap_left_right no >
+  >
+ >
+>

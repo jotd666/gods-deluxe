@@ -1,0 +1,289 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level4 >
+ < copperbar_class gods.game.copperbar.None >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 19 >
+  < nb_cols 17 >
+  < row stalact_11 stalact_11 stalact_11 stalact_11 stalact_11 stalact_12 stalact_13 stalact_2 stalact_11 stalact_2 stalact_11 stalact_12 stalact_13 stalact_11 stalact_11 stalact_11 stalact_11 >
+  < row platform_8 stalact_2 stalact_11 stalact_12 stalact_13 stone_22 stone_19 stalact_12 stalact_13 stalact_12 stalact_13 stone_22 stone_19 stalact_12 stalact_11 stalact_11 stalact_11 >
+  < row wall_2 platform_8 stalact_7 stone_22 stone_19 stone_21 stone_19 stone_19 stone_19 stone_19 stone_19 stone_21 stone_19 stone_1 stalact_2 stalact_2 stalact_2 >
+  < row wall_15 wall_2 platform_8 stone_21 stone_9 stone_16 stone_4 stone_9 stone_4 stone_9 stone_9 stone_11 stone_4 stone_9 stalact_6 stalact_11 stalact_11 >
+  < row wall_13 wall_2 platform_8 stone_12 stone_16 stone_2 stone_5 stone_16 stone_2 stone_16 stone_16 stone_2 stone_5 stone_16 stalact_4 stalact_2 stalact_2 >
+  < row wall_14 wall_14 wall_iron_20 stone_8 block_1 block_2 block_2 block_2 block_2 platform_8 stone_10 stone_17 stone_16 stone_5 stalact_5 stalact_11 stalact_11 >
+  < row wall_15 wall_15 wall_iron_19 stone_8 stone_20 stone_19 stone_19 stone_19 stone_19 stone_19 stone_12 stone_16 stone_6 stone_18 block_1 wall_5 wall_5 >
+  < row wall_13 wall_13 wall_4 stone_12 stone_16 stone_2 stone_5 stone_16 stone_2 stone_4 stone_2 stone_5 block_1 wall_5 wall_1 wall_17 wall_16 >
+  < row wall_14 wall_14 wall_iron_20 stone_8 stone_16 stone_6 stone_6 stone_5 stone_2 stone_17 stone_6 stone_16 stone_20 stone_19 wall_iron_18 wall_10 wall_14 >
+  < row wall_15 wall_15 wall_2 wall_5 wall_5 wall_5 wall_5 wall_5 wall_5 platform_8 stone_10 stone_5 stone_15 stone_13 wall_3 wall_10 wall_15 >
+  < row wall_13 wall_13 wall_iron_20 stone_22 stone_19 stone_19 stone_19 stone_19 stone_19 stone_19 stone_12 stone_2 stone_16 stone_16 wall_iron_21 wall_10 wall_14 >
+  < row wall_14 wall_14 wall_iron_19 stone_8 stone_16 stone_2 stone_5 stone_16 stone_2 stone_4 stone_2 block_1 block_2 block_2 block_2 block_2 block_2 >
+  < row wall_15 wall_15 wall_4 stone_12 block_1 block_2 block_2 block_2 block_2 stone_10 stone_5 stone_20 stone_19 wall_iron_18 wall_17 wall_16 wall_16 >
+  < row wall_13 wall_13 wall_6 stone_8 wall_6 stone_22 null null wall_7 wall_8 stone_10 stone_15 stone_13 wall_3 wall_10 iron_panel_top wall_18 >
+  < row wall_14 wall_iron_20 stone_22 stone_12 block_1 stone_8 null null stone_20 stone_19 stone_12 stone_16 stone_16 wall_iron_21 wall_10 framed_panel_bottom wall_9 >
+  < row wall_15 wall_iron_19 stone_8 stone_6 block_1 stone_12 null null stone_6 stone_5 stone_16 block_1 block_2 block_2 block_2 block_2 block_2 >
+  < row wall_13 wall_4 stone_8 stone_6 block_1 stone_8 null null stone_16 stone_2 stone_17 wall_6 iron_panel_top wall_18 wall_17 wall_16 wall_16 >
+  < row wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_14 wall_8 framed_panel_bottom wall_9 wall_10 wall_14 wall_14 >
+  < row wall_16 wall_16 wall_16 wall_16 wall_6 wall_17 wall_16 wall_16 wall_16 wall_16 wall_16 wall_7 wall_13 wall_8 wall_10 wall_15 wall_15 >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 5 >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 170 >
+   < y 256 >
+   < frame_set hunter >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 204 >
+   < y 256 >
+   < frame_set hunter >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 256 >
+   < y 176 >
+   < frame_set diamond_3 >
+  >
+  < OBJECT
+   < name _unnamed_ >
+   < visible yes >
+   < x 98 >
+   < y 240 >
+   < frame_set pestle >
+  >
+  < OBJECT
+   < name am >
+   < visible yes >
+   < x 356 >
+   < y 224 >
+   < frame_set attract_monster >
+  >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 7 >
+  < CONTROL_OBJECT
+   < name player_start >
+   < x 178 >
+   < y 224 >
+   < width 34 >
+   < height 48 >
+   < type Restart >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name nme1 >
+   < x 384 >
+   < y 144 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name fh >
+   < x 320 >
+   < y 240 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name nme2 >
+   < x 218 >
+   < y 112 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name fmt >
+   < x 250 >
+   < y 232 >
+   < width 32 >
+   < height 32 >
+   < type Enemy_Trigger >
+   < activated no >
+  >
+  < CONTROL_OBJECT
+   < name fm >
+   < x 116 >
+   < y 144 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name thief >
+   < x 74 >
+   < y 240 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 0 >
+  < OBJECT_ASSOCIATION
+   < type Trigger_Monster >
+   < nb_objects 2 >
+   < object fmt fm >
+  >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 5 >
+  < HOSTILE_WAVE_PARAMETERS
+   < location thief >
+   < class_name gods.game.characters.hostiles.GroundThiefCrane >
+   < frame_set_name thief >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 58 >
+   < direction Right >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation yes >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height High >
+   < jump_width Normal >
+   < jump_threshold Close >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location fm >
+   < class_name gods.game.characters.hostiles.FlyingMonster2 >
+   < frame_set_name flying_buddha >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 38 >
+   < direction Right >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location nme1 >
+   < class_name gods.game.characters.hostiles.GroundMonster1 >
+   < frame_set_name hound >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 58 >
+   < direction Right >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location nme2 >
+   < class_name gods.game.characters.hostiles.GroundMonster1 >
+   < frame_set_name hound >
+   < fire_type None >
+   < appearing_delay Normal >
+   < health_points 58 >
+   < direction Right >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 3 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location fh >
+   < class_name gods.game.characters.hostiles.FiringHeadMouth >
+   < frame_set_name firing_head >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 38 >
+   < direction Left >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height Normal >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < NO_OBJECT
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+ >
+>

@@ -1,0 +1,108 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level3 >
+ < copperbar_class gods.game.copperbar.Classic3 >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 18 >
+  < nb_cols 16 >
+  < row null null null null null null null null null null null null null null null null >
+  < row null right_platform_1 dark_wall_5 dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 shade_wall_1 wall_2 wall_2 wall_2 stone_multicolor_1 stone_multicolor_2 stone_multicolor_2 roof roof >
+  < row null dark_wall_5 dark_wall_3 dark_wall_4 dark_wall_4 dark_wall_4 dark_wall_4 open_trap wall_2 wall_2 wall_2 left_platform_1 stone_multicolor_2 stone_multicolor_2 tiled_walltop tiled_walltop >
+  < row null dark_wall_2 shade_wall_1 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 shade_stone_wall_2 blocking_wall_left stone_multicolor_2 bicolor_wall_1 bicolor_wall_2 >
+  < row null dark_wall_2 shade_wall_1 wall_2 wall_2 top_ladder wall_head_up wall_2 wall_head_up wall_2 wall_2 shade_stone_wall_3 blocking_wall_left wall_1 l_stone_wall_left_shade l_stone_wall_right_shade >
+  < row null dark_wall_2 shade_wall_1 wall_2 wall_2 ladder wall_head_down wall_2 wall_head_down wall_2 wall_2 wall_2 left_platform_1 stone_multicolor_2 l_stone_wall_left l_stone_wall_right >
+  < row null platform_1 platform_1 platform_1 right_platform_1 shade_ladder stained_stone_wall wall_2 stained_stone_wall open_trap wall_2 wall_2 shade_stone_wall_2 blocking_wall_left l_stone_wall_left l_stone_wall_right >
+  < row null blocking_wall_right dark_wall_5 dark_wall_5 dark_wall_1 shade_ladder_2 wall_2 wall_2 wall_2 wall_2 wall_2 wall_2 shade_stone_wall_3 blocking_wall_left l_stone_wall_left l_stone_wall_right >
+  < row null blocking_wall_right dark_wall_2 dark_wall_3 dark_wall_4 shade_ladder_1 left_platform_1 platform_1 right_platform_1 shade_stone_wall_1 wall_2 wall_2 wall_2 blocking_wall_left l_stone_wall_left l_stone_wall_right >
+  < row null blocking_wall_right dark_wall_2 shade_wall_1 wall_2 ladder shade_stone_wall_2 dark_wall_1 dark_wall_1 shade_wall_1 wall_2 wall_2 wall_2 blocking_wall_left l_stone_wall_left l_stone_wall_right >
+  < row null blocking_wall_right dark_wall_2 shade_wall_1 wall_2 ladder shade_stone_wall_3 dark_wall_4 dark_wall_4 shade_wall wall_2 left_platform_2 platform_1 platform_1 l_stone_wall_left l_stone_wall_right >
+  < row null blocking_wall_right dark_wall_2 shade_wall_1 wall_2 ladder wall_head_up wall_2 wall_head_up wall_2 wall_2 blocking_wall_left stone_multicolor_2 stone_multicolor_2 l_stone_wall_left l_stone_wall_right >
+  < row null blocking_wall_right dark_wall_2 shade_wall_1 wall_2 ladder wall_head_down wall_2 wall_head_down wall_2 wall_2 blocking_wall_left stone_multicolor_2 stone_multicolor_2 l_stone_wall_left l_stone_wall_right >
+  < row null platform_1 platform_1 platform_1 right_platform_1 shade_ladder stained_stone_wall wall_2 stained_stone_wall wall_2 wall_2 blocking_wall_left stone_multicolor_2 stone_multicolor_2 l_stone_wall_left l_stone_wall_right >
+  < row null dark_wall_1 dark_wall_1 dark_wall_1 dark_wall_1 shade_ladder_2 left_platform_1 platform_1 platform_1 right_platform_2 shade_stone_wall_1 blocking_wall_left stone_multicolor_2 stone_multicolor_2 l_stone_wall_left l_stone_wall_right >
+  < row null wall_2 wall_2 wall_2 wall_2 ladder shade_stone_wall_2 dark_wall_1 stone_multicolor_1 stone_multicolor_3 dark_wall_1 blocking_wall_left stone_multicolor_2 stone_multicolor_2 l_stone_wall_left l_stone_wall_right >
+  < row null wall_2 wall_2 wall_2 wall_2 ladder shade_stone_wall_3 dark_wall_4 stone_multicolor_1 left_platform_2 platform_1 platform_1 platform_1 platform_1 l_stone_wall_left l_stone_wall_right >
+  < row null wall_2 wall_2 wall_2 wall_2 ladder wall_2 wall_2 stone_multicolor_1 blocking_wall_left stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 stone_multicolor_2 l_stone_wall_left l_stone_wall_right >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 0 >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 3 >
+  < CONTROL_OBJECT
+   < name gm1 >
+   < x 78 >
+   < y 176 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name gm1_trigger >
+   < x 70 >
+   < y 52 >
+   < width 32 >
+   < height 32 >
+   < type Enemy_Trigger >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name temp_start >
+   < x 126 >
+   < y 40 >
+   < width 32 >
+   < height 32 >
+   < type Restart >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 0 >
+  < OBJECT_ASSOCIATION
+   < type Trigger_Monster >
+   < nb_objects 2 >
+   < object gm1_trigger gm1 >
+  >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 1 >
+  < HOSTILE_WAVE_PARAMETERS
+   < location gm1 >
+   < class_name gods.game.characters.hostiles.GroundMonster1 >
+   < frame_set_name ground_monster_2 >
+   < fire_type Straight >
+   < appearing_delay None >
+   < health_points 10 >
+   < direction Right >
+   < attack_distance Always >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height High >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+  < objective_balance 100 >
+   < count 1 >
+   < OBJECT_DROPPED
+    < instance_name ? >
+    < class_name diamond_4 >
+    < hostile_name ? >
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+ >
+>

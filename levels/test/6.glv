@@ -1,0 +1,187 @@
+< GODS_LEVEL
+ < level_class gods.game.levels.GodsGenericLevel >
+ < level_music ? >
+ < boss_music ? >
+ < common_tiles gods_sprites_all >
+ < level_tiles gods_sprites_tiles_level2 >
+ < copperbar_class gods.game.copperbar.Classic2 >
+ < hostile_damage_divisor 1 >
+ < shield_level 0 >
+ < TILE_GRID
+  < nb_rows 15 >
+  < nb_cols 12 >
+  < row bicolor_wall_7 wall_8 texture_edge_2 wall_8 texture_edge_2 wall_8 wall_8 texture_edge_2 wall_8 texture_edge_2 wall_8 wall_8 >
+  < row bicolor_wall_3 texture_edge wall_8 texture_edge bicolor_wall_6 bicolor_wall_6 bicolor_wall_6 bicolor_wall_6 bicolor_wall_6 bicolor_wall_6 bicolor_wall_6 texture_edge >
+  < row texture brick_window_top texture_edge_2 bicolor_wall_2 shade_wall_11 shade_wall_4 shade_wall_4 shade_wall_4 shade_wall_4 shade_wall_4 shade_wall_4 bicolor_wall_1 >
+  < row wall_8 brick_window_bottom wall_8 bicolor_wall_2 shdae_wall_5 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 bicolor_wall_1 >
+  < row texture_edge_2 wall_8 bicolor_wall_2 shade_wall_11 open_trap platform_left platform_right wall_shade_13 wall_1 wall_1 wall_1 bicolor_wall_1 >
+  < row wall_8 texture_edge bicolor_wall_4 shdae_wall_5 shade_wall_9 blocking_wall blocking_wall_shade shade_wall_10 above_door_left above_door_right wall_1 bicolor_wall_1 >
+  < row bicolor_wall_1 texture platform_2_left platform_3 platform_2_right shade_wall_11 shade_wall_4 shade_wall_9 up_face_closed_door_2 up_face_closed_door_1 wall_1 bicolor_wall_1 >
+  < row shade_wall_4 bicolor_wall_3 bicolor_wall_6 bicolor_wall_6 bicolor_wall_4 shade_wall_5 shade_wall_8 shade_wall_8 mid_face_closed_door_2 mid_face_closed_door_1 wall_1 bicolor_wall_1 >
+  < row wall_shade_13 shade_wall_3 wall_support shade_wall_4 wall_support shade_ladder_7 wall_1 wall_1 low_face_closed_door_2 carve_2_dark wall_1 bicolor_wall_1 >
+  < row shade_wall_10 wall_7 top_pillar_2 shade_wall_5 top_pillar_2 shade_ladder_7 wall_1 wall_1 platform_left platform_middle platform_right bicolor_wall_1 >
+  < row shdae_wall_5 wall_1 mid_pillar shade_wall_2 mid_pillar shade_ladder_7 platform_left platform_right blocking_wall bicolor_wall_5 blocking_wall_shade bicolor_wall_1 >
+  < row shade_wall_9 wall_1 bottom_pillar platform_left bottom_pillar shade_ladder_7 under_platform_left blocking_wall_shade blocking_wall bicolor_wall_6 blocking_wall_shade bicolor_wall_1 >
+  < row shade_wall_9 wall_1 altar_top platform_left altar_top shade_ladder_7 wall_shade_12 shade_wall_4 shade_wall_4 stone_head shade_wall_4 bicolor_wall_1 >
+  < row wall_1 wall_1 bottom_altar platform_left bottom_altar shade_ladder_7 wall_7 shade_wall_8 shade_wall_8 shade_wall_8 shade_wall_8 bicolor_wall_1 >
+  < row platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_middle platform_right >
+ >
+ < GFX_OBJECT_LAYER
+  < nb_items 2 >
+  < OBJECT
+   < name treasure_key >
+   < visible no >
+   < x 102 >
+   < y 64 >
+   < frame_set treasure_key >
+  >
+  < OBJECT
+   < name herb >
+   < visible yes >
+   < x 156 >
+   < y 192 >
+   < frame_set herb >
+  >
+ >
+ < CONTROL_OBJECT_LAYER
+  < nb_items 6 >
+  < CONTROL_OBJECT
+   < name thief1 >
+   < x 248 >
+   < y 192 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name thief2 >
+   < x 298 >
+   < y 192 >
+   < width 32 >
+   < height 32 >
+   < type Enemy >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name player_start >
+   < x 14 >
+   < y 176 >
+   < width 32 >
+   < height 32 >
+   < type Restart >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name gmt2 >
+   < x 318 >
+   < y 112 >
+   < width 32 >
+   < height 32 >
+   < type Enemy_Trigger >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name key_appears >
+   < x 318 >
+   < y 96 >
+   < width 32 >
+   < height 32 >
+   < type Bonus >
+   < activated yes >
+  >
+  < CONTROL_OBJECT
+   < name xx_1 >
+   < x 124 >
+   < y 16 >
+   < width 220 >
+   < height 16 >
+   < type Background_Block >
+   < activated yes >
+  >
+ >
+ < OBJECT_ASSOCIATION_SET
+  < nb_associations 2 >
+  < OBJECT_ASSOCIATION
+   < type Trigger_Item_Display >
+   < nb_objects 3 >
+   < object key_appears >
+   < object herb >
+   < object treasure_key >
+  >
+  < OBJECT_ASSOCIATION
+   < type Trigger_Monster >
+   < nb_objects 2 >
+   < object gmt2 >
+   < object thief2 >
+  >
+ >
+ < HOSTILE_WAVE_PARAMETER_SET
+  < nb_items 2 >
+  < HOSTILE_WAVE_PARAMETERS
+   < location thief1 >
+   < class_name gods.game.characters.hostiles.GroundThiefWalk >
+   < frame_set_name thief >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 1 >
+   < direction Left >
+   < attack_distance None >
+   < speed Normal >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation yes >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height High >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+   < objective_balance 100 >
+   < count 1 >
+   < OBJECT_DROPPED
+    < instance_name ? >
+    < class_name ? >
+    < hostile_name ? >
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+  < HOSTILE_WAVE_PARAMETERS
+   < location thief2 >
+   < class_name gods.game.characters.hostiles.GroundThiefWalk >
+   < frame_set_name thief >
+   < fire_type None >
+   < appearing_delay None >
+   < health_points 1 >
+   < direction Left >
+   < attack_distance Always >
+   < speed Fast >
+   < shoot_speed Normal >
+   < shoot_frequency Normal >
+   < instant_creation no >
+   < shoot_shield no >
+   < steal_on_the_way no >
+   < jump_height High >
+   < jump_width Normal >
+   < jump_threshold Normal >
+   < avoid_shoot no >
+   < objective_balance 100 >
+   < count 1 >
+   < OBJECT_DROPPED
+    < instance_name ? >
+    < class_name ? >
+    < hostile_name ? >
+   >
+   < HOSTILE_TRAJECTORY
+    < initial_angle 0 >
+    < vertical_oscillation_speed 0 >
+    < nb_segments 0 >
+   >
+  >
+ >
+>
+>
