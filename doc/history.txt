@@ -1,6 +1,12 @@
-- fixed: 4am mix: shopkeeper arrives from right (through the wall)
 
-version 0-9 (27 december 2016): major update owing to Kroah game disassembly analysis
+version 0.9-B (10 july 2020): major update thanks to the addition of a level set
+
+- improved: completely new 4-level set by Rick Grandy
+- fixed: 4am mix: shopkeeper arrives from right (through the wall)
+- higher windows in windowed mode (couldn't see scrolling text)
+- new "joystick.dll" file which is now 64-bit since most JREs are now 64 bit.
+
+version 0.9 (27 december 2016): major update owing to Kroah game disassembly analysis
 
 - fixed: Scoring system huge bug: Not enough points awarded, not possible to reach 80000 at world 3 and open the secret room
 - fixed: adjusted enemies health points and relation between their health and the damage inflicted to the player when colliding

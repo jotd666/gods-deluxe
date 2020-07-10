@@ -28,7 +28,7 @@ public class Joystick {
 		}
 		catch (UnsatisfiedLinkError e)
 		{
-			System.err.println("ctor: joystick.dll not found");
+			System.err.println("error loading shared library joystick.dll/.so: "+e.toString());
 		}
 	}
 	private Joystick(int id) 
@@ -56,7 +56,7 @@ public class Joystick {
 			}
 			catch (UnsatisfiedLinkError e)
 			{
-				System.err.println("create: joystick.dll not found");
+			    System.err.println("error creating joystick instance: "+e.toString());
 				rval = null;
 			}
 		}

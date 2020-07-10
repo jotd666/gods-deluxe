@@ -21,7 +21,6 @@ Joystick support:
 Bugs/Limitations:
 
 - some (few) inaccuracies compared to the original game (see "original game bugs" section for more)
-- incomplete original levels & custom levels
 - Windows 7 & Vista: full screen mode does not work (no display at all)
 
 Title music tunes:
@@ -32,7 +31,8 @@ Levels:
 
 - levels are unlocked only by completion of the previous ones.
 - JOTD level set with 4 complete levels
- 
+- new RDG level set with 4 complete levels, 30 years after game release :)
+
 How to submit a bug:
 
 - First, please read the file "doc/BUGS.txt" before writing me about a bug. It is very likely to be on either of
