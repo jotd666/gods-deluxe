@@ -3,6 +3,7 @@ package gods.sys;
 import gods.base.DirectoryBase;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.TreeMap;
 
 
@@ -80,9 +81,9 @@ public class Localizer
 	{
 		// handling unicode here (weird locale ...)
 		
-		int [] buf = new int[value.length()];
+		StringBuilder replaced = new StringBuilder();
 		
-		for (int i = 0; i < buf.length; i++)
+		for (int i = 0; i < value.length(); i++)
 		{
 			int c = value.codePointAt(i);
 			
@@ -93,16 +94,25 @@ public class Localizer
 					c = LETTERS_REPLACED[j];
 				}
 			}
-			
-			buf[i] = c;
+
+			replaced.append(Character.toChars(c));
 		}
 		
-		return new String(buf,0,buf.length);
+		return replaced.toString();
+	}
+
+	private static BufferedReader load_reader(File locale_file)
+	{
+		try {
+			return new BufferedReader(new InputStreamReader(new FileInputStream(locale_file), StandardCharsets.UTF_8));
+		} catch (FileNotFoundException e) {
+			throw new IllegalArgumentException(e);
+		}
 	}
 
 	private static void load_any(File locale_file)
 	{		
-		try (BufferedReader br = new BufferedReader(new FileReader(locale_file)))
+		try (BufferedReader br = load_reader(locale_file))
 		{
 			String s = br.readLine();
 			while (s != null)
@@ -114,7 +124,7 @@ public class Localizer
 					{
 						String keyword = tokens[0].trim();
 						String value = tokens[1].trim().replaceAll("\\\\n", "\n");
-						if (value.length() == 0) // translation empty: same as keyword
+						if (value.isEmpty()) // translation empty: same as keyword
 						{
 							value = keyword;
 						}
@@ -145,47 +155,28 @@ public class Localizer
 	{
 		if (locale_file != null)
 		{
-			try
+			try (BufferedReader br = load_reader(locale_file))
 			{
-				BufferedReader br = new BufferedReader(new FileReader(locale_file));
-				int line = 0;
-
-				try
+				String s = br.readLine();
+				while (s != null)
 				{
-					while (true)
+					String [] tokens = s.split("=");
+
+                    if (tokens.length == 1 || tokens.length == 2)
 					{
-						line++;
-						String s = br.readLine();
-						String [] tokens = s.split("=");
-
-						switch(tokens.length)
-						{
-						case 2:
-						{
-							String keyword = tokens[0].trim();
-							m_kv.remove(keyword);
-							break;
-						}
-						case 1:
-						{
-							String keyword = tokens[0].trim();
-							m_kv.remove(keyword);
-						}
-						break;
-						}
-					}
-				}
-				catch (IOException e)
-				{
-					br.close();
+                        String keyword = tokens[0].trim();
+                        m_kv.remove(keyword);
+                    }
+					s = br.readLine();
 				}
 			}
 			catch (Exception e)
 			{
-
+				e.printStackTrace();
 			}
 		}
 	}
+
 	public static final String value(String key)
 	{
 		return value(key,false);
