@@ -1,4 +1,4 @@
-window title = Gods -Deluxe- codé par JOTD
+window title = Gods -Deluxe- codÃ© par JOTD
 version =
 JOTD =
 PRESENTS = PRESENTE

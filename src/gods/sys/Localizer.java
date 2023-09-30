@@ -99,41 +99,20 @@ public class Localizer
 		
 		return new String(buf,0,buf.length);
 	}
-	private static void load_any(File locale_file)
-	{
-		boolean is_unicode = false;
-		
-		try
-		{
-			BufferedReader br = new BufferedReader(new FileReader(locale_file));
-			int line = 0;
-			br.mark(2);
-			int first_char = br.read();
-			int second_char = br.read();
-			is_unicode = (first_char == 254) && (second_char == 255);
-			
-			if (!is_unicode)
-			{
-				br.reset();
-			}
-			
-			try
-			{
-				while (true)
-				{
-					line++;
-					String s = br.readLine();
-					String [] tokens = s.split("=");
 
-					switch(tokens.length)
-					{
+	private static void load_any(File locale_file)
+	{		
+		try (BufferedReader br = new BufferedReader(new FileReader(locale_file)))
+		{
+			String s = br.readLine();
+			while (s != null)
+			{
+				String [] tokens = s.split("=");
+				switch(tokens.length)
+				{
 					case 2:
 					{
 						String keyword = tokens[0].trim();
-						if (is_unicode)
-						{
-							keyword = keyword.replaceAll("\000","");
-						}
 						String value = tokens[1].trim().replaceAll("\\\\n", "\n");
 						if (value.length() == 0) // translation empty: same as keyword
 						{
@@ -152,19 +131,16 @@ public class Localizer
 						m_kv.put(keyword,keyword); // old value is replaced if found
 					}
 					break;
-					}
 				}
-			}
-			catch (IOException e)
-			{
-				br.close();
+				s = br.readLine();
 			}
 		}
 		catch (Exception e)
 		{
-
+			e.printStackTrace();
 		}
 	}
+	
 	public static void unload(File locale_file)
 	{
 		if (locale_file != null)
