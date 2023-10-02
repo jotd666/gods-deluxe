@@ -1,0 +1,56 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.jotd666</groupId>
+    <artifactId>gods-deluxe</artifactId>
+    <version>0.9.0-SNAPSHOT</version>
+
+    <description>Gods -Deluxe- Remake</description>
+    <url>https://jotd.pagesperso-orange.fr/gods/</url>
+
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>de.congrace</groupId>
+            <artifactId>exp4j</artifactId>
+            <version>0.2.9</version>
+            <!-- scope>system</scope>
+            <systemPath>${project.basedir}/lib/exp4j-0.2.9.jar</systemPath -->
+        </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>./src</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.6.0</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>gods.game.GodsGame</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

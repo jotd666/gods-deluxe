@@ -3,6 +3,7 @@ package gods.sys;
 import gods.base.DirectoryBase;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.TreeMap;
 
 
@@ -80,9 +81,9 @@ public class Localizer
 	{
 		// handling unicode here (weird locale ...)
 		
-		int [] buf = new int[value.length()];
+		StringBuilder replaced = new StringBuilder();
 		
-		for (int i = 0; i < buf.length; i++)
+		for (int i = 0; i < value.length(); i++)
 		{
 			int c = value.codePointAt(i);
 			
@@ -93,49 +94,37 @@ public class Localizer
 					c = LETTERS_REPLACED[j];
 				}
 			}
-			
-			buf[i] = c;
+
+			replaced.append(Character.toChars(c));
 		}
 		
-		return new String(buf,0,buf.length);
+		return replaced.toString();
 	}
-	private static void load_any(File locale_file)
-	{
-		boolean is_unicode = false;
-		
-		try
-		{
-			BufferedReader br = new BufferedReader(new FileReader(locale_file));
-			int line = 0;
-			br.mark(2);
-			int first_char = br.read();
-			int second_char = br.read();
-			is_unicode = (first_char == 254) && (second_char == 255);
-			
-			if (!is_unicode)
-			{
-				br.reset();
-			}
-			
-			try
-			{
-				while (true)
-				{
-					line++;
-					String s = br.readLine();
-					String [] tokens = s.split("=");
 
-					switch(tokens.length)
-					{
+	private static BufferedReader load_reader(File locale_file)
+	{
+		try {
+			return new BufferedReader(new InputStreamReader(new FileInputStream(locale_file), StandardCharsets.UTF_8));
+		} catch (FileNotFoundException e) {
+			throw new IllegalArgumentException(e);
+		}
+	}
+
+	private static void load_any(File locale_file)
+	{		
+		try (BufferedReader br = load_reader(locale_file))
+		{
+			String s = br.readLine();
+			while (s != null)
+			{
+				String [] tokens = s.split("=");
+				switch(tokens.length)
+				{
 					case 2:
 					{
 						String keyword = tokens[0].trim();
-						if (is_unicode)
-						{
-							keyword = keyword.replaceAll("\000","");
-						}
 						String value = tokens[1].trim().replaceAll("\\\\n", "\n");
-						if (value.length() == 0) // translation empty: same as keyword
+						if (value.isEmpty()) // translation empty: same as keyword
 						{
 							value = keyword;
 						}
@@ -152,64 +141,42 @@ public class Localizer
 						m_kv.put(keyword,keyword); // old value is replaced if found
 					}
 					break;
-					}
 				}
-			}
-			catch (IOException e)
-			{
-				br.close();
+				s = br.readLine();
 			}
 		}
 		catch (Exception e)
 		{
-
+			e.printStackTrace();
 		}
 	}
+	
 	public static void unload(File locale_file)
 	{
 		if (locale_file != null)
 		{
-			try
+			try (BufferedReader br = load_reader(locale_file))
 			{
-				BufferedReader br = new BufferedReader(new FileReader(locale_file));
-				int line = 0;
-
-				try
+				String s = br.readLine();
+				while (s != null)
 				{
-					while (true)
+					String [] tokens = s.split("=");
+
+                    if (tokens.length == 1 || tokens.length == 2)
 					{
-						line++;
-						String s = br.readLine();
-						String [] tokens = s.split("=");
-
-						switch(tokens.length)
-						{
-						case 2:
-						{
-							String keyword = tokens[0].trim();
-							m_kv.remove(keyword);
-							break;
-						}
-						case 1:
-						{
-							String keyword = tokens[0].trim();
-							m_kv.remove(keyword);
-						}
-						break;
-						}
-					}
-				}
-				catch (IOException e)
-				{
-					br.close();
+                        String keyword = tokens[0].trim();
+                        m_kv.remove(keyword);
+                    }
+					s = br.readLine();
 				}
 			}
 			catch (Exception e)
 			{
-
+				e.printStackTrace();
 			}
 		}
 	}
+
 	public static final String value(String key)
 	{
 		return value(key,false);

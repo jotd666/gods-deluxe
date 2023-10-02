@@ -69,13 +69,14 @@ final class SynthesisFilter
    * (raw pcm samples are in [-1.0, 1.0], if no violations occur).
    */
   public SynthesisFilter(int channelnumber, float factor, float[] eq0)
-  {  	 
-	  if (d==null)
+  {  	
+	// File doesn't exists: avoid annoying logs 
+	/* if (d==null)
 	  {
 			d = load_d();
 			d16 = splitArray(d, 16);
 	  }
-	  
+	*/
 	  v1 = new float[512];
 	 v2 = new float[512];
 	 samples = new float[32];

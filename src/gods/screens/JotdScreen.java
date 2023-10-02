@@ -16,7 +16,7 @@ public class JotdScreen extends WhiteFontScreen {
 		} catch (InterruptedException e) {
 			
 		}
-		m_game.load_music("gods.mod");
+		m_game.load_music("Gods.mod");
 	}
 	 protected GameState get_next_default_screen()
 	 {
