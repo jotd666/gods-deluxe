@@ -16,11 +16,14 @@
 
     <dependencies>
         <dependency>
-            <groupId>de.congrace</groupId>
+            <groupId>net.objecthunter</groupId>
             <artifactId>exp4j</artifactId>
-            <version>0.2.9</version>
-            <!-- scope>system</scope>
-            <systemPath>${project.basedir}/lib/exp4j-0.2.9.jar</systemPath -->
+            <version>0.4.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.soundlibs</groupId>
+            <artifactId>jlayer</artifactId>
+            <version>1.0.1.4</version>
         </dependency>
     </dependencies>
 

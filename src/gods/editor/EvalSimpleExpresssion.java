@@ -1,12 +1,14 @@
 package gods.editor;
-import de.congrace.exp4j.PostfixExpression;
+
+
+import net.objecthunter.exp4j.Expression;
+import net.objecthunter.exp4j.ExpressionBuilder;
 
 public class EvalSimpleExpresssion {
 
-	@SuppressWarnings("deprecation")
-	static public int evaluate(String e) throws Exception
+	public static int evaluate(String e) throws Exception
 	{
-		int rval = (int)(PostfixExpression.fromInfix(e).calculate());
-		return rval;
+		Expression expression = new ExpressionBuilder(e).build();
+		return (int)expression.evaluate();
 	}
 }

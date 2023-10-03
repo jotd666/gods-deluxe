@@ -1,11 +1,9 @@
 package gods.sys;
 
+import javazoom.jl.player.Player;
+
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-
-import javazoom.jl.decoder.JavaLayerException;
-import javazoom.jl.player.Player;
 
 public class Mp3Play implements Runnable
 {
@@ -30,11 +28,7 @@ public class Mp3Play implements Runnable
 	 {
 		 return instance().is_music_playing();
 	 }
-	 
-	 public static void set_repeat(boolean rpt)
-	 {
-		 instance().m_repeat = rpt;
-	 }
+
 	 public static void play(String mp3_name, boolean repeat)
 	 {
 		 stop();
@@ -79,23 +73,18 @@ public class Mp3Play implements Runnable
 		 m_play_thread = null;
 		 }
 	 }
-	 
-	public void run() 
+
+	public void run()
 	{
-		
-		 try 
-		 {
-			FileInputStream is = new FileInputStream(m_mp3_name);
-			 BufferedInputStream bis = new BufferedInputStream(is);
-			 m_player = new Player(bis);
-			 
-			 m_player.play();
-		} 
-		 catch (FileNotFoundException e) {
-			
-		} catch (JavaLayerException e) {
-			
+		try (FileInputStream fileStream = new FileInputStream(m_mp3_name);
+			 BufferedInputStream bufferedStream = new BufferedInputStream(fileStream))
+		{
+			m_player = new Player(bufferedStream);
+			m_player.play();
 		}
-		
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
 	}
 }
