@@ -1,7 +1,7 @@
 *.class
 *~
 *.ser
-*.mp3
+*.gods_settings
 #*#
 bin/
 
