@@ -5,6 +5,7 @@ import java.awt.image.BufferedImage;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 
 import gods.base.DirectoryBase;
 import gods.base.GameOptions;
@@ -364,39 +365,42 @@ public abstract class GameState
  		
  	 try
  	 {
- 		 File snapshot_dir = new File(DirectoryBase.get_root() + "snapshots");
- 		 String [] filelist = snapshot_dir.list();
- 		 int index = 0;
- 		 if (filelist.length > 0)
- 		 {
- 			 String last_item = filelist[filelist.length - 1];
- 			 int dotidx = last_item.lastIndexOf('.');
- 			 int uscidx = last_item.lastIndexOf('_');
- 			 try
- 			 {
- 				 String s = last_item.substring(uscidx+1,dotidx);
- 				 index = Integer.parseInt(s) + 1;
- 			 }
- 			 catch (Exception e)
- 			 {
- 				 
- 			 }
- 		 }
- 		 String idx = "0"+index;
- 		 
- 		 while (idx.length() < 4)
- 		 {
- 			 idx = "0" + idx;
- 		 }
- 		 
- 		 ImageLoadSave.save_png(snapshot_image,snapshot_dir.getPath()+
- 				 File.separator+suffix+"_"+idx+".png");
+ 		File snapshots_dir = get_snapshots_dir();
+		// Calculate max snapshot count by listing current files
+ 		String [] filelist = snapshots_dir.list((file, name) -> name.startsWith(suffix));
+		int index = filelist.length;
+		if (filelist.length > 0)
+		{
+			Arrays.sort(filelist);
+			String last_item = filelist[filelist.length - 1];
+			int dotidx = last_item.lastIndexOf('.');
+			int uscidx = last_item.lastIndexOf('_');
+			try
+			{
+				String s = last_item.substring(uscidx+1,dotidx);
+				index = Integer.parseInt(s) + 1;
+			}
+			catch (Exception e)
+			{
+				e.printStackTrace();
+			}
+		}
+		// Pad snapshot count
+ 		String idx = "0"+index;
+ 		while (idx.length() < 4)
+ 		{
+ 			idx = "0" + idx;
+ 		}
+
+ 		ImageLoadSave.save_png(snapshot_image,snapshots_dir.getPath()+
+ 			File.separator+suffix+"_"+idx+".png");
  	 }
  	 catch (Exception e)
  	 {
- 		 
+ 		 e.printStackTrace();
  	 }
   }
+
   public GameState update(long elapsed)
   {
 	  m_elapsed_time = elapsed;
@@ -443,7 +447,6 @@ public abstract class GameState
 	  g.setColor(Color.BLACK);
 	  g.fillRect(0,0,getWidth(),getHeight());
   }
-  
   
   protected void set_color_ratio(float percent)
   {
@@ -545,4 +548,13 @@ public abstract class GameState
     }
   }
 
+  private File get_snapshots_dir()
+  {
+	File snapshots_dir = new File(DirectoryBase.get_data_path() + "snapshots");
+	if (!snapshots_dir.exists())
+	{
+		snapshots_dir.mkdirs();
+	}
+	return snapshots_dir;
+  }
 }

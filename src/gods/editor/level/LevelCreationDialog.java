@@ -170,11 +170,6 @@ public class LevelCreationDialog extends JDialog implements DataModifier<LevelDa
 	{
 		this(null,null,null,true);
 	}
-	
-	
-	/**
-	 * @param owner
-	 */
 		
 	public LevelCreationDialog(Frame owner, Observer obs, LevelData levelData,boolean new_level) 
 	{
@@ -189,10 +184,10 @@ public class LevelCreationDialog extends JDialog implements DataModifier<LevelDa
 	
 	private ImageIcon load_icon(String name)
 	{
-		String image_path = DirectoryBase.get_root() + File.separator + "icons"
-				+ File.separator + name;
+		String image_path = DirectoryBase.get_icons_path() + name;
 		return new ImageIcon(image_path);
 	}
+
 	/**
 	 * This method initializes this
 	 * 

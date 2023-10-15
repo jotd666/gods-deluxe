@@ -129,8 +129,7 @@ public abstract class GodsEditor extends JFrame implements Observer
 
 	static protected ImageIcon load_icon(String name)
 	{
-		String image_path = DirectoryBase.get_root() + File.separator + "icons"
-				+ File.separator + name;
+		String image_path = DirectoryBase.get_icons_path() + name;
 		return new ImageIcon(image_path);
 	}
 

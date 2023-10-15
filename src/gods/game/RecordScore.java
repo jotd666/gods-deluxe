@@ -57,7 +57,7 @@ public class RecordScore
 	}
 	public String get_score_file_name()
 	{
-		return DirectoryBase.get_root()+"hiscores_"+GameOptions.instance().get_current_level_set_name();
+		return DirectoryBase.get_data_path()+"hiscores_"+GameOptions.instance().get_current_level_set_name();
 	}
 	public void save()
 	{

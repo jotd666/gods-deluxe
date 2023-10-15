@@ -38,7 +38,7 @@ public class Localizer
 	
 	private static String get_locale_dir()
 	{
-		return DirectoryBase.get_root() + "locale";
+		return DirectoryBase.get_assets_path() + "locale";
 	}
 	
 	private static int [] LETTERS_TO_REPLACE = null;
