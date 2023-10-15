@@ -1,10 +1,8 @@
-                         GODS DELUXE
-                        -------------
+# Gods Deluxe
 
-Status: Beta
+**Status**: Beta
 
-Features:
-
+### Features
 - true color display
 - reworked graphics
 - (trying to be) extremely faithful to the Amiga/Sega original levels
@@ -12,31 +10,26 @@ Features:
 - advanced programming API for complex level design
 - localized (french, english, german & hungarian languages)
 
-Joystick support:
-
+### Joystick support
 - only available on windows
 - depending on your JRE (32 or 64 bit) rename the "joystick_xxx.dll" file in the "bin" directory with "joystick.dll"
   (note: there's a 2-button control option, so joystick button 2 jumps when this control is set)
   
-Bugs/Limitations:
-
+### Bugs/Limitations
 - some (few) inaccuracies compared to the original game (see "original game bugs" section for more)
 - Windows 7 & Vista: full screen mode does not work (no display at all)
 
-Title music tunes:
+### Title music tunes
+Extract the music pack in "music" sub-directory to get a random tune in the menu screen
 
-- extract the music pack in "music" sub-directory to get a random tune in the menu screen
-
-Levels:
-
+### Levels
 - levels are unlocked only by completion of the previous ones.
 - JOTD level set with 4 complete levels
 - new RDG level set with 4 complete levels, 30 years after game release :)
 
-How to submit a bug:
-
-- First, please read the file "doc/BUGS.txt" before writing me about a bug. It is very likely to be on either of
-the list
+### How to submit a bug
+- First, please read the file "doc/BUGS.txt" before writing me about a bug. It is very likely to be on
+  either of the list
 - If the bug is not on the list, please report it
 - If you witness any difference of behaviour with the original (example: difference in the puzzles),
   don't hesitate to report it. The exception being the monster AI,  because it is different from the
@@ -52,30 +45,27 @@ the list
 
 Contact me at: jotd (at) orange.fr
 
-How to start:
-
+### How to start
 - Windows: Just run the Gods bat commands files located in the main directory
 
-Options:
+### Options
+There are preset:
 
-There are preset 
--full-screen: runs the game in full screen
--no-intro: skips introduction
--direct-game: runs with last selected level
--wh: forces window/screen height (default: windowed: 400, fullscreen: 480)
+| Option            | Description                                                           |
+| :---------------- | :-------------------------------------------------------------------- |
+| `-full-screen`    | runs the game in full screen                                          |
+| `-no-intro`       | skips introduction                                                    |
+| `-direct-game`    | runs with last selected level                                         |
+| `-wh`             | forces window/screen height (default: windowed: 400, fullscreen: 480) |
 
-Documentation:
+### Documentation
+Check documents, history, bugs ... in the "doc" folder
 
-- check documents,history,bugs ... in the "doc" folder
-
-Requirements:
-
-- Java Runtime 1.6 ... 1.8 is recommended 
-- Java Runtime 1.5 (5.0) also works but you cannot run the editor, and the game only works in windowed mode
+### Requirements
+- Java Runtime 1.8 or higher
 - Windows, Linux or MacOS X (use .bat files on Windows, .sh files on Linux / MacOS X)
 
-Controls:
-
+### Controls
 - Arrows (or joystick, Windows only) control player
 - Control keys: fire/inventory/activate levers
 - Shift keys: jump (in 2-button style control)
@@ -84,8 +74,7 @@ Controls:
 - F1:  screen snapshot
 - F10: quit the game brutally.
 
-Credits:
-
+### Credits
 - JOTD: Java coding, gfx rework, original level re-design and new levels design
 - Bitmap Bros: original game design
 - Nation XII / John Foxx: original music
@@ -96,8 +85,7 @@ Credits:
 - Old Shark: a few reworked tiles
 - Qube: rip of 4 a.m. mix demo level map data
 
-Music Credits
-
+### Music Credits
 - PowerTrace: Title [GODSHardCopy] (my favourite remix)
 - Bluejooz: Gods 2001 & 2005 remix
 - Mental Illusion: another Gods remix
@@ -113,8 +101,7 @@ Contributors are very welcome for:
 - submitting new levels using level editor (check editor_howto.txt file)
 - submitting bugs (check the BUGS.txt file before doing so!)
 
-Thanks:
-
+### Thanks
 - Bitmap Bros for the cunning level & game design.
 - MaVado from EAB for Gods gfx rips (where is the level 3 boss big fireball BTW?) - without them, no remake
 - Brian Wheeler: detailed bug reports on levels & small fixes
@@ -124,7 +111,6 @@ Thanks:
 - People on Gods Country forums for hints and small subtleties I had missed
 - People on EAB, RetroRemakes & AmigaChapterOne forums for their feedback
 
-Original game bugs/features:
-
-check file "doc/original game bugs.txt"
+### Original game bugs/features
+Check file "doc/original game bugs.txt"
 
