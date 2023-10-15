@@ -884,18 +884,18 @@ public abstract class GodsLevel extends GameState
 		
 	}
 
-	
 	private void play_music()
 	{
 		if (GameOptions.instance().get_music_state())
 		{
 			if (m_current_music_file != null)
 			{
-				
-				File f = new File(DirectoryBase.get_mp3_path() + m_current_music_file);
-				if (f.isFile())
-				{
+				String normalizedFile = m_current_music_file.replace("\\", File.separator);
+				File f = new File(DirectoryBase.get_mp3_path() + normalizedFile);
+				if (f.isFile())	{
 					Mp3Play.play(f.getAbsolutePath());
+				} else {
+					System.out.println("Cannot find music file " + m_current_music_file);
 				}
 			}
 		}
@@ -1611,7 +1611,7 @@ public abstract class GodsLevel extends GameState
 		if (m_progressive_scroll)
 		{
 			// si petit delta, essayer de ratrapper en 2 coups, sinon scroll
-			// régulier
+			// rï¿½gulier
 			
 			int dx = m_targeted_view_bounds.x - m_view_bounds.x;
 			int x_sign = dx < 0 ? -1 : 1;
@@ -1698,7 +1698,7 @@ public abstract class GodsLevel extends GameState
 		if (m_progressive_scroll)
 		{
 			// si petit delta, essayer de ratrapper en 2 coups, sinon scroll
-			// régulier
+			// rï¿½gulier
 			
 			int dx = m_targeted_view_bounds.x - m_view_bounds.x;
 			int dy = m_targeted_view_bounds.y - m_view_bounds.y;
