@@ -3,101 +3,126 @@ package gods.base;
 import java.io.File;
 
 /**
- * <p>Titre : </p>
- * <p>Description : </p>
- * <p>Copyright : Copyright (c) 2005</p>
- * <p>Société : </p>
- * @author non attribuable
- * @version 1.0
+ * Manage base directories paths.
  */
-
 public class DirectoryBase 
 {
-  public static final String ROOT_DIR_VARIABLE = "ROOT_DIR";
-  private static String m_root = null;
-  private static final String m_user = ""+System.getProperty("user.dir");
+  private static final String USER_DIR = "" + System.getProperty("user.dir");
   public static final String GFX_OBJECT_SET_EXTENSION = ".gos";
   public static final String LEVEL_EXTENSION = ".glv";
+
+  private static String m_root = USER_DIR;
+  private static String assets_path = m_root + File.separator;
+  private static String data_path = m_root + File.separator + "data" + File.separator;
   
   static public String get_user_path()
   {
-	  return m_user + File.separator;
+	  return USER_DIR + File.separator;
   }
   
   static public String get_level_class_name()
   {
 	  return "gods.game.levels";
   }
-  static public String get_level_class_path()
+    
+  public static String get_icons_path()
   {
-	  return get_root() + "bin" + File.separator + "gods" + File.separator + "game" + 
-	  File.separator + "levels";
+    return get_assets_path() + "icons" + File.separator;
   }
   
   static public String get_images_path()
   {
-    return get_root() + "images" + File.separator;
+    return get_assets_path() + "images" + File.separator;
   }
+  
   static private String get_music_path()
   {
-    return get_root() + "music" + File.separator;
+    return get_assets_path() + "music" + File.separator;
   }
+  
   static public String get_mp3_path()
   {
     return get_music_path() + File.separator + "mp3" + File.separator;
   }
+  
   static public String get_mod_path()
   {
     return get_music_path() + File.separator + "mod" + File.separator;
   }
+  
   static public String get_sound_path()
   {
-    return get_root() + "sound" + File.separator;
+    return get_assets_path() + "sound" + File.separator;
   }
   
   static public String get_tiles_path()
   {
-    return get_root() + "tiles" + File.separator;
+    return get_assets_path() + "tiles" + File.separator;
   }
+
   static public String get_snapshot_path()
   {
-    return get_root() + "snapshots" + File.separator;
+    return get_data_path() + "snapshots" + File.separator;
   }
   
-   static public void env_check() throws Exception
-   {
-       if (get_root() == null)
-	   {
-	       throw new Exception(ROOT_DIR_VARIABLE+" has not been set");
-	   }
-       File r = new File(get_root());
-       if (!r.exists())
-       {
-	       throw new Exception(ROOT_DIR_VARIABLE+" directory "+get_root()+" does not exist, should equal ${project_loc}" );
-    	   
-       }
-       
-   }
-   
-  
-  static public String get_root()
+  static public void check_paths() throws Exception
   {
-	  if (m_root == null)
-	  {
-		  m_root = System.getProperty(ROOT_DIR_VARIABLE) + File.separator;
-	  }
+    File r = new File(get_root());
+    if (!r.exists())
+    {
+      throw new Exception("Directory "+ get_root() +" does not exist.");
+    }
+    
+    String envAssetsDir = System.getProperty("GODS_ASSETS_DIR");
+    if (envAssetsDir != null)
+    {
+      File assetsDir = new File(envAssetsDir);
+      assets_path = assetsDir.getAbsolutePath() + File.separator;
+    }
+    
+    String envDataDir = System.getProperty("GODS_DATA_DIR");
+    if (envDataDir != null)
+    {
+      data_path = envDataDir;
+    }
+    File dataDir = new File(data_path);
+    if (!dataDir.exists())
+    {
+      dataDir.mkdirs();
+    }
+    if (!dataDir.canWrite())
+    {
+      System.out.println("Cannot write data to " + data_path);
+      System.exit(1);
+    }
+    data_path = dataDir.getAbsolutePath() + File.separator;
+    System.out.println("Using assets path: " + assets_path);
+    System.out.println("Using data path: " + data_path);
+  }
+
+  public static String get_root()
+  {
     return m_root;
   }
 
+  public static String get_assets_path()
+  {
+	  return assets_path;
+  }
+
+  public static String get_data_path()
+  {
+	  return data_path;
+  }
   
   static public String get_font_path()
   {
-	  return get_root() + "fonts" + File.separator;
+	  return get_assets_path() + "fonts" + File.separator;
   }
   
   static public String get_levels_path()
   {
-	  return get_root() + "levels" + File.separator;
+	  return get_assets_path() + "levels" + File.separator;
   }
   
   public static String cut_extension(String s)

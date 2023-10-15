@@ -1,9 +1,8 @@
 *.class
 *~
 *.ser
-*.gods_settings
-#*#
 bin/
+data/
 
 HELP.md
 target/

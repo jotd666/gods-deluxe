@@ -117,19 +117,7 @@ public class GameOptions
 	}
 	
 	
-	protected GameOptions()
-	{
-		File localedir = new File(DirectoryBase.get_root() + "locale");
-		LANGUAGES = localedir.list();
-		for (int i = 0; i < LANGUAGES.length; i++)
-		{
-			LANGUAGES[i] = LANGUAGES[i].split("\\.")[0];
-		}
-	
-		load_settings();
-		
-		
-	}
+	protected GameOptions()	{}
 	
 	public void prev_language()
 	{
@@ -177,7 +165,7 @@ public class GameOptions
 	{
 		try
 		{
-			ParameterParser fr = ParameterParser.create(DirectoryBase.get_user_path()+".gods_settings");
+			ParameterParser fr = ParameterParser.create(get_settings_file_path());
 
 			fr.startBlockWrite("GODS_LEVELS");
 			
@@ -217,21 +205,25 @@ public class GameOptions
 		}
 		catch (Exception e)
 		{
-			
+			e.printStackTrace();
 		}		
-		
-
 	}
 
-
-	private void load_settings()
+	public void load_settings()
 	{
 		int level_set_index = 1;  // if no settings: classic
 		int level_index = 1;
 		
 		try
 		{
-			ParameterParser fr = ParameterParser.open(DirectoryBase.get_user_path()+".gods_settings");
+			File localedir = new File(DirectoryBase.get_assets_path() + "locale");
+			LANGUAGES = localedir.list();
+			for (int i = 0; i < LANGUAGES.length; i++)
+			{
+				LANGUAGES[i] = LANGUAGES[i].split("\\.")[0];
+			}
+
+			ParameterParser fr = ParameterParser.open(get_settings_file_path());
 			
 			fr.startBlockVerify("GODS_LEVELS");
 			
@@ -275,7 +267,7 @@ public class GameOptions
 		}
 		catch (Exception e)
 		{
-			
+			e.printStackTrace();
 		}
 		
 		m_level_set_container = new LevelSetContainer(level_set_index);
@@ -527,5 +519,8 @@ public class GameOptions
     	return m_level_set_container;
     }
 
-
+	private String get_settings_file_path()
+	{
+		return DirectoryBase.get_data_path() + "gods_settings";
+	}
 }
