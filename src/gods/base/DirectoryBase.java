@@ -81,9 +81,10 @@ public class DirectoryBase
     }
     
     String envDataDir = System.getProperty("GODS_DATA_DIR");
-    if (envDataDir != null)
-    {
+    if (envDataDir != null) {
       data_path = envDataDir;
+    } else {
+      data_path = assets_path + File.separator + "data" + File.separator;
     }
     File dataDir = new File(data_path);
     if (!dataDir.exists())

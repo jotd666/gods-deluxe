@@ -62,10 +62,8 @@ public class GodsGame extends GameEngine
 
 	  }
 	  setup(window_bounds,useful_bounds,Localizer.value("window title")+
-		" - "+Localizer.value("version")+" "+Version.STRING_VALUE,
-		KeyEvent.VK_F10,
-		Color.BLACK,
-		full_screen,double_buffering,double_display); 
+		" - "+Localizer.value("version")+" "+Version.current(),
+		KeyEvent.VK_F10, Color.BLACK, full_screen,double_buffering,double_display); 
 	  
 		java.util.List<Image> icons = new java.util.ArrayList<Image>();
 		File s32 = new File(DirectoryBase.get_images_path()+"helmet32x32.png");
@@ -241,7 +239,7 @@ public class GodsGame extends GameEngine
 		System.out.println("   -no-intro: skips introduction");
 		System.out.println("   -direct-game: runs with last selected level");
 		System.out.println("   -double-display: runs in a double-sized scale2x window (fast CPU/gfx board required)");
-		System.out.println("   -wh: forces window/screen height (default: windowed: 400, fullscreen: 480");  
+		System.out.println("   -wh: forces window/screen height (default: windowed: 400, fullscreen: 480)");  
 	}
 
    	public static void main(String[] args) throws Exception

@@ -2,5 +2,8 @@ package gods.game;
 
 public class Version
 {
-	public static final String STRING_VALUE = "0.9-B";
+	public static String current() {
+		String version = Version.class.getPackage().getImplementationVersion();
+        return version == null ? "<missing manifest>" : version;
+	}
 }

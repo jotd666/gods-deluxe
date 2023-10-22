@@ -1,2 +1,2 @@
 @echo off
-call scripts\gods_loader.bat gods.game.GodsGame -wh 410
+call scripts\gods_loader.bat -wh 410
