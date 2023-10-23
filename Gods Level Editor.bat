@@ -1,3 +1,5 @@
 @echo off
 set DEBUG=xxx
-call scripts\gods_loader.bat gods.editor.level.GodsLevelEditor
+set GODS_ROOT_DIR=%~dp0
+
+java -cp "%GODS_ROOT_DIR%bin\gods-deluxe.jar" gods.editor.level.GodsLevelEditor

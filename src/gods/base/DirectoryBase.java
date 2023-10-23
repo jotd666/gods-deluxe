@@ -14,17 +14,7 @@ public class DirectoryBase
   private static String m_root = USER_DIR;
   private static String assets_path = m_root + File.separator;
   private static String data_path = m_root + File.separator + "data" + File.separator;
-  
-  static public String get_user_path()
-  {
-	  return USER_DIR + File.separator;
-  }
-  
-  static public String get_level_class_name()
-  {
-	  return "gods.game.levels";
-  }
-    
+
   public static String get_icons_path()
   {
     return get_assets_path() + "icons" + File.separator;

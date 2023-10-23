@@ -272,21 +272,16 @@ public class GodsLevelEditor extends GodsEditor {
 		add_main_menu(jMenuView);
 		
 	}
-	
+
 	public static void main(String[] args) {
-		  try {
+		try {
+			DirectoryBase.check_paths();
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
 		new GodsLevelEditor();
-		
 	}
-	public void update(Observable arg0, Object arg1) 
-	{
-		
-		
-	}	
+
+	public void update(Observable arg0, Object arg1) {}
 }

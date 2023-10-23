@@ -143,10 +143,14 @@ public abstract class GodsEditor extends JFrame implements Observer
 		return button;
 	}
 
+	private String resolveRecentFile()
+	{
+		 return DirectoryBase.get_data_path() + m_recent_prefix + ".recent";
+	}
 
 	private void load_recent_files()
 	{
-		String recent_file = DirectoryBase.get_user_path() + m_recent_prefix+".recent";
+		String recent_file = resolveRecentFile();
 	
 		try
 		{
@@ -164,12 +168,13 @@ public abstract class GodsEditor extends JFrame implements Observer
 		}
 		catch(IOException e)
 		{
-			
+			e.printStackTrace();
 		}
 	}
+
 	private void save_recent_files()
 	{
-		String recent_file = DirectoryBase.get_user_path() + m_recent_prefix+".recent";
+		String recent_file = resolveRecentFile();
 	
 		try
 		{
@@ -188,10 +193,9 @@ public abstract class GodsEditor extends JFrame implements Observer
 		}
 		catch(IOException e)
 		{
-			
+			e.printStackTrace();
 		}
 	}
-	
 
 	protected void add_main_menu(JMenu j)
 	{
@@ -536,8 +540,7 @@ public abstract class GodsEditor extends JFrame implements Observer
 	}
 	
 
-	class ToolbarActionAdapter implements
-			java.awt.event.ActionListener
+	class ToolbarActionAdapter implements java.awt.event.ActionListener
 	{
 		private GodsEditor.MenuActionType action;
 		
@@ -551,7 +554,6 @@ public abstract class GodsEditor extends JFrame implements Observer
 			toolbar_action(action);
 		}
 	}
-	
 
 }
 
