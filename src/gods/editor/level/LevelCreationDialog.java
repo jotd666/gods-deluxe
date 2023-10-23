@@ -1,25 +1,29 @@
 package gods.editor.level;
 
-import gods.base.*;
-import gods.sys.*;
-import gods.editor.*;
+import gods.base.DirectoryBase;
+import gods.base.EditableData;
+import gods.base.LevelData;
+import gods.editor.DataModifier;
+import gods.editor.GfxObjectSetFileFilter;
+import gods.sys.MiscUtils;
+import gods.sys.ParameterParser;
 
-import javax.swing.filechooser.*;
-import javax.swing.ImageIcon;
-import javax.swing.JFileChooser;
-import javax.swing.JPanel;
-import java.awt.Frame;
-import javax.swing.JDialog;
-import java.awt.Dimension;
-import javax.swing.JTextField;
-import java.awt.Rectangle;
+import javax.swing.*;
+import javax.swing.filechooser.FileFilter;
+import java.awt.*;
 import java.io.File;
+import java.io.IOException;
+import java.net.JarURLConnection;
+import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Enumeration;
+import java.util.HashSet;
 import java.util.Observable;
 import java.util.Observer;
-
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JComboBox;
+import java.util.Set;
+import java.util.jar.JarEntry;
+import java.util.jar.JarFile;
 
 public class LevelCreationDialog extends JDialog implements DataModifier<LevelData>
 {
@@ -449,33 +453,17 @@ public class LevelCreationDialog extends JDialog implements DataModifier<LevelDa
 			}
 		}
 	}
+
 	private void load_combo_with_classes(JComboBox cb, String package_name, boolean recurse)
 	{
 		// load it with classes
+		Set<String> classes = findAllClassesByPackage(package_name, recurse);
 		
-		String bin_dir = DirectoryBase.get_root()+"bin";
-		String class_dir = bin_dir+File.separator+package_name.replace('.', File.separatorChar);
-		
-		File [] classes = new File(class_dir).listFiles();
-		
-		for (File c : classes)
-		{
-			String s = package_name+"."+c.getName();
-			
-			if ((recurse) && (c.isDirectory()))
-			{
-				load_combo_with_classes(cb,s,true);
-			}
-			else
-			{
-				if (!s.contains("$"))
-				{
-					int dotindex = s.lastIndexOf('.');
-					cb.addItem(s.substring(0,dotindex));
-				}
-			}
+		for (String c : classes) {
+			cb.addItem(c);
 		}
 	}
+
 	/**
 	 * This method initializes jCopperBarComboBox	
 	 * 	
@@ -487,7 +475,6 @@ public class LevelCreationDialog extends JDialog implements DataModifier<LevelDa
 			jCopperBarComboBox.setBounds(new Rectangle(109, 190, 260, 26));
 			
 			load_combo_with_classes(jCopperBarComboBox,"gods.game.copperbar",false);
-			
 		}
 		return jCopperBarComboBox;
 	}
@@ -504,7 +491,6 @@ public class LevelCreationDialog extends JDialog implements DataModifier<LevelDa
 
 			load_combo_with_classes(jLevelClassComboBox,"gods.game.levels",true);
 		}
-		
 
 		return jLevelClassComboBox;
 	}
@@ -586,6 +572,54 @@ public class LevelCreationDialog extends JDialog implements DataModifier<LevelDa
 			load_combo_with_files(jBossMusicComboBox,".",true);
 		}
 		return jBossMusicComboBox;
+	}
+
+	private static Set<String> findAllClassesByPackage(String packageName, boolean recourse) {
+		String packageFileName = packageName.replace('.','/');
+		URL packageURL = ClassLoader.getSystemClassLoader().getResource(packageFileName);
+		System.out.println("Loading classes from " + packageURL);
+		String packagePath = packageURL.toString();
+
+		Set<String> classes = new HashSet<>();
+		if (packagePath.startsWith("jar")) {
+			try {
+				JarURLConnection connection = (JarURLConnection)packageURL.openConnection();
+				JarFile jarFile = connection.getJarFile();
+				int pl = packageFileName.length();
+				for (Enumeration<JarEntry> e = jarFile.entries(); e.hasMoreElements();) {
+					JarEntry entry = e.nextElement();
+					String n = entry.getName();
+					if (!entry.isDirectory() && n.startsWith(packageFileName)) {
+						Path p = Paths.get(n);
+						String f = p.getFileName().toString();
+						boolean isChild = (pl + f.length() + 1) == n.length();
+						if (isChild || recourse) {
+							addClass(classes, f);
+						}
+					}
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		} else {
+			File packageDir = new File(packageURL.getFile());
+			for (File f : packageDir.listFiles()) {
+				if (f.isDirectory() && recourse) {
+					classes.addAll(findAllClassesByPackage(packageName + "." + f.getName(), true));
+				} else {
+					addClass(classes, f.getName());
+				}
+			}
+		}
+
+		return classes;
+	}
+
+	private static void addClass(Set<String> classes, String fileName) {
+		if (fileName.endsWith(".class") && !fileName.contains("$")) {
+			int dotIndex = fileName.lastIndexOf('.');
+			classes.add(fileName.substring(0,dotIndex));
+		}
 	}
 
 }  //  @jve:decl-index=0:visual-constraint="23,10"

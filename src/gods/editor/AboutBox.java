@@ -47,7 +47,7 @@ public class AboutBox extends JDialog implements ActionListener {
   }
   //Initialiser le composant
   private void jbInit() throws Exception  {
-    image1 = new ImageIcon(DirectoryBase.get_root()+"icons/jotd.png");
+    image1 = new ImageIcon(DirectoryBase.get_icons_path() + "jotd.png");
     imageLabel.setIcon(image1);
     this.setTitle("About");
     panel1.setLayout(borderLayout1);

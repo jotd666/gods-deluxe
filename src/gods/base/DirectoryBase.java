@@ -14,17 +14,7 @@ public class DirectoryBase
   private static String m_root = USER_DIR;
   private static String assets_path = m_root + File.separator;
   private static String data_path = m_root + File.separator + "data" + File.separator;
-  
-  static public String get_user_path()
-  {
-	  return USER_DIR + File.separator;
-  }
-  
-  static public String get_level_class_name()
-  {
-	  return "gods.game.levels";
-  }
-    
+
   public static String get_icons_path()
   {
     return get_assets_path() + "icons" + File.separator;
@@ -81,9 +71,10 @@ public class DirectoryBase
     }
     
     String envDataDir = System.getProperty("GODS_DATA_DIR");
-    if (envDataDir != null)
-    {
+    if (envDataDir != null) {
       data_path = envDataDir;
+    } else {
+      data_path = assets_path + File.separator + "data" + File.separator;
     }
     File dataDir = new File(data_path);
     if (!dataDir.exists())

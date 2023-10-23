@@ -163,10 +163,10 @@ public class LevelImportDialog extends JDialog implements DataModifier<LevelData
 	
 	private ImageIcon load_icon(String name)
 	{
-		String image_path = DirectoryBase.get_root() + File.separator + "icons"
-				+ File.separator + name;
+		String image_path = DirectoryBase.get_icons_path() + name;
 		return new ImageIcon(image_path);
 	}
+
 	/**
 	 * This method initializes this
 	 * 
