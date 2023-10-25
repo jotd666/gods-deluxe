@@ -9,12 +9,12 @@
     <files>
         <file>
             <source>target/${project.artifactId}-${project.version}-jar-with-dependencies.jar</source>
-            <outputDirectory>bin/</outputDirectory>
+            <outputDirectory>bin</outputDirectory>
             <destName>${project.artifactId}.jar</destName>
         </file>
         <file>
             <source>exploit/joystick.dll</source>
-            <outputDirectory>bin/</outputDirectory>
+            <outputDirectory>bin</outputDirectory>
         </file>
     </files>
     <fileSets> 
@@ -48,6 +48,13 @@
             <directory>locale</directory>
             <includes>
                 <include>**/*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>delivery/metadata</directory>
+            <outputDirectory>metadata</outputDirectory>
+            <includes>
+                <include>*</include>
             </includes>
         </fileSet>
         <fileSet>

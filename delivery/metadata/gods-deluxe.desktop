@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Gods Deluxe
+Comment=A remake of the platform game
+Exec=gods-deluxe.sh
+Terminal=false
+Type=Application
+Categories=Game;
+Icon=io.github.jotd666.gods-deluxe

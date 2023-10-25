@@ -96,10 +96,10 @@ Check documents, history, bugs ... in the "doc" folder
 
 The music files can be installed separately or removed.
 
-Contributors are very welcome for:
-
+### Contributing
+The game is not under active development, but contributors are very welcome for:
 - submitting new levels using level editor (check editor_howto.txt file)
-- submitting bugs (check the BUGS.txt file before doing so!)
+- submitting patches (check the BUGS.txt file before doing so!)
 
 ### Thanks
 - Bitmap Bros for the cunning level & game design.

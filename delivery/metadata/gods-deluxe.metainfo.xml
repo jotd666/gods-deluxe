@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.jotd666.gods-deluxe</id>
+  <launchable type="desktop-id">io.github.jotd666.gods-deluxe.desktop</launchable>
+  <name>Gods Deluxe</name>
+  <summary>A remake of the platform game</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <developer_name>JOTD</developer_name>
+  <url type="homepage">https://github.com/jotd666/gods-deluxe</url>
+  <url type="bugtracker">https://github.com/jotd666/gods-deluxe/issues</url>
+  <url type="help">https://github.com/jotd666/gods-deluxe/#readme</url>
+  <description>
+    <p>
+      Gods -Deluxe- is a remake of the excellent Bitmap Brothers platform game.
+      All classic levels are complete and working, and there are 4 extra full levels from the author.
+    </p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://camo.githubusercontent.com/0130a9cb36257cd10f6958683a36f52a89c3bf43ac247556d8873cd01aa2df14/68747470733a2f2f692e696d6775722e636f6d2f6e5357425355422e706e67</image>
+    </screenshot>
+    <screenshot>
+      <image>https://camo.githubusercontent.com/d8c5814599a39e2c92ca173327570387c47babcb1e6edd2ebf95262d3c3f8c20/68747470733a2f2f692e696d6775722e636f6d2f44715445627a552e6a7067</image>
+    </screenshot>
+    <screenshot>
+      <image>https://camo.githubusercontent.com/1fd977c3755fa8fae540a02107fc173c03ea5f4df888d98938fe51b91fd72351/68747470733a2f2f6d656469612e6d6f6464622e636f6d2f696d616765732f6d6f64732f312f35302f34393233312f7262646f6f6d2d332d6266672d32303231303430392d3232313834322d3030312e706e67</image>
+    </screenshot>
+    <screenshot>
+      <image>https://camo.githubusercontent.com/c3bc989ee55e580819552b46766a38a6779c670331d9435d19f58bf0237d5574/68747470733a2f2f692e696d6775722e636f6d2f444b6f426150362e706e67</image>
+    </screenshot>
+  </screenshots>
+  <update_contact>jotd_AT_orange.fr</update_contact>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-fantasy">moderate</content_attribute>
+    <content_attribute id="violence-realistic">moderate</content_attribute>
+    <content_attribute id="violence-bloodshed">moderate</content_attribute>
+  </content_rating>
+  <releases>
+    <release version="0.9.0" date="2022-03-06">
+      <url>https://github.com/jotd666/gods-deluxe/releases/tag/0.9.0</url>
+    </release>
+  </releases>
+  <provides>
+    <binary>gods-deluxe</binary>
+  </provides>
+</component>
