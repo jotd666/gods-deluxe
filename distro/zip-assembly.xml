@@ -51,7 +51,7 @@
             </includes>
         </fileSet>
         <fileSet>
-            <directory>delivery/metadata</directory>
+            <directory>distro/metadata</directory>
             <outputDirectory>metadata</outputDirectory>
             <includes>
                 <include>*</include>
