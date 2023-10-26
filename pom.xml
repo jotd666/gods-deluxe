@@ -3,10 +3,10 @@
 
     <groupId>io.github.jotd666</groupId>
     <artifactId>gods-deluxe</artifactId>
-    <version>0.9.0-SNAPSHOT</version>
+    <version>0.9.0</version>
 
     <description>Gods -Deluxe- Remake</description>
-    <url>https://jotd.pagesperso-orange.fr/gods/</url>
+    <url>https://github.com/jotd666/gods-deluxe</url>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>

@@ -37,7 +37,7 @@
     <content_attribute id="violence-bloodshed">moderate</content_attribute>
   </content_rating>
   <releases>
-    <release version="0.9.0" date="2022-03-06">
+    <release version="0.9.0" date="2023-10-26">
       <url>https://github.com/jotd666/gods-deluxe/releases/tag/0.9.0</url>
     </release>
   </releases>
