@@ -1,2 +1,2 @@
 @echo off
-call scripts\gods_loader.bat -wh 410 -direct-game
+call gods.bat -wh 410 -direct-game

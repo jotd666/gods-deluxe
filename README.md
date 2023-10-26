@@ -46,7 +46,7 @@ Extract the music pack in "music" sub-directory to get a random tune in the menu
 Contact me at: jotd (at) orange.fr
 
 ### How to start
-- Windows: Just run the Gods bat commands files located in the main directory
+Just run the *.bat (Windows) or *.sh (Linux/MacOS) commands files located in the main directory.
 
 ### Options
 There are preset:

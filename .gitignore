@@ -3,6 +3,7 @@
 *.ser
 bin/
 data/
+*.launch
 
 HELP.md
 target/

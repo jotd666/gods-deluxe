@@ -1,2 +1,2 @@
 @echo off
-call scripts\gods_loader.bat -full-screen -no-intro
+call gods.bat -full-screen -no-intro
