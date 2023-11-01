@@ -46,7 +46,10 @@ Extract the music pack in "music" sub-directory to get a random tune in the menu
 Contact me at: jotd (at) orange.fr
 
 ### How to start
-Just run the *.bat (Windows) or *.sh (Linux/MacOS) commands files located in the main directory.
+Download [latest release](https://github.com/jotd666/gods-deluxe/releases) and unpack it.
+Then, just run the *.bat (Windows) or *.sh (Linux/MacOS) commands files located in the main directory.
+
+Linux user can install and run it via [Flatpak](https://flathub.org/it/apps/io.github.jotd666.gods-deluxe).
 
 ### Options
 There are preset:
@@ -58,8 +61,7 @@ There are preset:
 | `-direct-game`    | runs with last selected level                                         |
 | `-wh`             | forces window/screen height (default: windowed: 400, fullscreen: 480) |
 
-### Documentation
-Check documents, history, bugs ... in the "doc" folder
+**Warning**: full screen mode could not work properly on recent platforms.
 
 ### Requirements
 - Java Runtime 1.8 or higher
@@ -73,6 +75,9 @@ Check documents, history, bugs ... in the "doc" folder
 - P:   pauses the game.
 - F1:  screen snapshot
 - F10: quit the game brutally.
+
+### Documentation
+Check documents, history, bugs ... in the "doc" folder
 
 ### Credits
 - JOTD: Java coding, gfx rework, original level re-design and new levels design
