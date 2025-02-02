@@ -1,36 +1,47 @@
 package gods.sys;
 
-import gods.base.DirectoryBase;
-
-import java.awt.*;
+import java.awt.AlphaComposite;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Container;
+import java.awt.Cursor;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Insets;
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.awt.Toolkit;
+import java.awt.Window;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+import java.awt.event.KeyEvent;
+import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
-import java.awt.image.VolatileImage;
 
-import javax.imageio.ImageIO;
-
-import java.io.File;
-import java.io.IOException;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.JComponent;
+import javax.swing.JFrame;
 
 public abstract class GameEngine 
 {
-	private int m_max_fps = 50;
-	private static final int WAIT_MILLIS = 10;
+	private static final int WAIT_MILLIS = 20;
+	private static final int MIN_FPS = 25;
+	private static final int MAX_FPS = 50;
 	
-	private Frame m_window;
-	private Canvas m_canvas;
+	private int m_max_fps = MAX_FPS;
+	private JFrame m_window;
+	private GameView m_canvas;
 	private Rectangle m_useful_bounds;
-	private Rectangle m_actual_useful_bounds;
 	private Graphics2D m_graphics;
-	private Graphics m_screen_graphics;
-	private VolatileImage m_buffer;
-	private int m_width,m_height;
+	private BufferedImage m_buffer;
 	private boolean m_cursor_state = true;
 	private UserInputListener m_key_listener = null;
 	private int m_exit_key;
 	private int m_old_key_code = 0;
-	
-	private static final GraphicsDevice GD = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
-	private static final GraphicsConfiguration GC = GD.getDefaultConfiguration();
+	private double m_scale_factor = 0.0;
+	private boolean m_window_resize = false;
 	
 	public abstract void initResources();
 
@@ -116,169 +127,53 @@ public abstract class GameEngine
 	{
 		return m_window;
 	}
+	
 	/**
-	 * setup the screen
-	 * not very good because full screen & windowed mode are quite different
-	 * and making them both work is not an easy task
-	 * (example: in fullscreen mode, adding a canvas worked with 
-	 * Windows XP but not on Vista/W7!!!)
-	 * 
-	 * @param window_bounds
-	 * @param useful_bounds
-	 * @param title
-	 * @param exit_key
-	 * @param background
-	 * @param full_screen_requested
-	 * @param double_buffering
+	 * Setup the screen
 	 */
-	public void setup(Rectangle window_bounds, Rectangle useful_bounds, String title, int exit_key, 
-			Color background, boolean full_screen_requested, boolean double_buffering, boolean double_display)
+	public void setup(Rectangle useful_bounds, String title, int exit_key, 
+			Color background, boolean full_screen_requested, int screenNumber, boolean double_display)
 	{
-		boolean full_screen = full_screen_requested && GD.isFullScreenSupported();
-		
 		m_exit_key = exit_key;
+		m_useful_bounds = new Rectangle(useful_bounds.width, useful_bounds.height);
+		Dimension initSize = new Dimension(m_useful_bounds.width,m_useful_bounds.height);
 		
-		m_useful_bounds = useful_bounds;
-		m_actual_useful_bounds = new Rectangle(useful_bounds);
-		
-		m_width = window_bounds.width;
-		m_height = window_bounds.height;
-				
-		m_window = new Frame(title,GC);
-		
-		m_key_listener = new UserInputListener();
-		
-		int actual_height = m_height;
-		int actual_width = m_width;
-		if (double_display)
-		{
-			actual_height*=2;
-			actual_width*=2;
-			m_actual_useful_bounds.height *= 2;
-			m_actual_useful_bounds.width *= 2;
-			
-			
-		}
-		if (!full_screen)
-		{
-			m_canvas = new Canvas(GC);	
-
-			m_canvas.setSize(actual_height,actual_width);
-
-			
-			m_canvas.setIgnoreRepaint(true);
-			m_canvas.setBackground(background);
-			m_canvas.addKeyListener(m_key_listener);
-		}
-		
-		m_window.setIgnoreRepaint(true);
-		
-		if (!full_screen)
-		{
-			m_window.add(m_canvas);
-		}
-
-
+		m_window = new JFrame(title);
 		m_window.addWindowListener(new WindowCloseListener());
-
+		m_window.setBackground(background);
+		m_window.setVisible(false);
 		
-		if (full_screen)
-		{		      
-			m_window.setBackground(background);
-			m_window.addKeyListener(m_key_listener);
-			m_window.setUndecorated(true);
-			//m_window.dispose();
-			GD.setFullScreenWindow(m_window);
-			if(!GD.isDisplayChangeSupported())
-			{
-				GD.setFullScreenWindow(null);
-				m_window.setUndecorated(false);
-				full_screen = false;
-				throw new RuntimeException("Cannot set full screen mode");
-			}
-			else
-			{
-				// find best display mode matching resolution
-				
-				DisplayMode [] dms = GD.getDisplayModes();
-				DisplayMode best_dm = null;
-				
-				for (DisplayMode dm : dms)
-				{
-					if ((dm.getHeight() == actual_height) && (dm.getWidth() == actual_width))
-					{
-						if ((best_dm == null) || (dm.getBitDepth() > best_dm.getBitDepth()))
-						{
-							best_dm = dm;
-						}								
-					}						
-				}
-				if (best_dm != null)
-				{
-					GD.setDisplayMode(best_dm);
-				}
-			}
-		}
+		// Create canvas for rendering
+		m_key_listener = new UserInputListener();
+		m_canvas = new GameView();
+		m_canvas.setBackground(background);
+		m_canvas.setIgnoreRepaint(true);
+		m_canvas.addKeyListener(m_key_listener);
+		m_canvas.setAlignmentX(Component.CENTER_ALIGNMENT);
+		m_canvas.setAlignmentY(Component.CENTER_ALIGNMENT);
+		m_canvas.resize(double_display ? 2.0 : 1.0);
+		
+        // Center the content inside the frame
+ 		Container rootPane = m_window.getRootPane();
+ 		rootPane.setMinimumSize(initSize);
+ 		rootPane.setBackground(background);
+ 		rootPane.setLayout(new BoxLayout(rootPane, BoxLayout.Y_AXIS));
+ 		rootPane.add(m_canvas);
+ 		rootPane.add(Box.createVerticalGlue());
+        
+		// Show game window in the middle of screen
+		m_window.setMinimumSize(initSize);
+		m_window.pack();
+		m_window.setLocationRelativeTo(null);
 		m_window.setVisible(true);
-		
-		if (!full_screen)
-		{
-			Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
-			Insets insets = m_window.getInsets();
-			m_window.setVisible(false);
-
-			m_window.setSize(actual_width + insets.left,actual_height + insets.top);
-			m_window.setResizable(false);
-
-			Dimension frameSize = m_window.getSize();
-			
-			if (frameSize.height > screenSize.height) 				
-			{
-				frameSize.height = screenSize.height;
-			}
-			
-			if (frameSize.width > screenSize.width) 
-			{
-				frameSize.width = screenSize.width;
-			}
-			m_window.setLocation((screenSize.width - frameSize.width) / 2, (screenSize.height - frameSize.height) / 2);
-			
-			
-		}
-
-		m_window.setVisible(true);
+		// Create buffered image for rendering
+		m_buffer = m_window.getGraphicsConfiguration()
+				.createCompatibleImage(m_useful_bounds.width,m_useful_bounds.height,BufferedImage.TYPE_INT_RGB);
+		m_graphics = m_buffer.createGraphics();
 		
-		
-		if (double_buffering)
-		{
-			m_buffer = GC.createCompatibleVolatileImage(m_actual_useful_bounds.width,m_actual_useful_bounds.height);
-			
-			m_graphics = (Graphics2D)m_buffer.getGraphics();
-		}
-		else
-		{
-			if (full_screen)
-			{
-				m_graphics = (Graphics2D)m_window.getGraphics();
-			}
-			else
-			{
-				m_graphics = (Graphics2D)m_canvas.getGraphics();
-			}
-		}
-	    
-		
-		if (full_screen)
-		{
-			m_screen_graphics = m_window.getGraphics();
-			m_window.requestFocus();
-		}
-		else
-		{
-			m_screen_graphics = m_canvas.getGraphics();
-			m_canvas.requestFocus();
-		}
+		m_window.addComponentListener(new GameFrameListener());
+		m_canvas.requestFocus();
 	}
 
     public void start()
@@ -311,23 +206,26 @@ public abstract class GameEngine
     		update(elapsed_time);
     		
     		if (accumulated >= 0)
-    		{
+    		{	
     			// reset all alpha channel & clip properties before calling
     			// custom render
-    			
     			m_graphics.setComposite(AlphaComposite.SrcOver);
-    			m_graphics.setClip(m_actual_useful_bounds);
+    			m_graphics.setClip(m_useful_bounds);
    			
     			// call custom render method
-    			
      			render(m_graphics);
-
-    			if (m_buffer != null)
-    			{
-    				// draw the buffer on the screen
-    				m_screen_graphics.drawImage(m_buffer,0,0,null);
-     			}
+     			
+     			// Do not refresh during resize
+     			if (m_window_resize) {
+        			m_window.revalidate();
+    				m_window.pack();
+    				m_window.repaint();
+    				m_window_resize = false;
+    			} else {
+    				m_canvas.drawBuffer(m_buffer);
+    			}
     		}
+
     		
     		clock2 = System.currentTimeMillis();
     		
@@ -335,21 +233,19 @@ public abstract class GameEngine
     		
      		accumulated -= elapsed_time;
     		
-    		
-       		try 
-    		{
-        		if (accumulated > WAIT_MILLIS)
-        		{
-        			Thread.sleep(WAIT_MILLIS);
-        			accumulated -= WAIT_MILLIS;
-        		}
-    		} 
-    		catch (InterruptedException e) 
-    		{
-
-
+     		if (accumulated > WAIT_MILLIS) {
+    			try {
+    				Thread.sleep(WAIT_MILLIS);
+				} catch (InterruptedException e) {
+					System.out.println(e);
+				}
     		}
-       		clock2 = System.currentTimeMillis();
+     		
+     		long millis = System.currentTimeMillis();
+     		
+     		accumulated -= millis - clock2;
+       		
+     		clock2 = millis;
        		
        		elapsed_time = clock2 - clock1;
        		
@@ -364,5 +260,157 @@ public abstract class GameEngine
        		}
 
     	}
+    }
+    
+    class GameFrameListener extends ComponentAdapter {
+
+    	@Override
+    	public void componentResized(ComponentEvent evt) {
+    		Dimension winSize = evt.getComponent().getSize();
+    		Insets winInsets = m_window.getInsets();
+    		Dimension availableSize = new Dimension(winSize.width - winInsets.left - winInsets.right,
+    				winSize.height - winInsets.top - winInsets.bottom);
+    		double scaleWidth = (double)availableSize.width / m_useful_bounds.width;
+    		double scaleHeight = (double)availableSize.height / m_useful_bounds.height;
+    		m_canvas.resize(Math.min(scaleWidth, scaleHeight));
+    	}
+    }
+    
+    /**
+     * Manage game view rendering.
+     */
+    class GameView extends JComponent {
+    	
+    	private static final long serialVersionUID = 1L;
+    	
+    	private Dimension viewSize;
+    	private Rectangle viewBounds;
+    	private AffineTransform scaleTransform;
+    	
+		@Override
+    	public void paint(Graphics graphics) {
+			super.paint(graphics);
+			drawBuffer((Graphics2D)graphics, m_buffer);
+    	}
+		
+		void drawBuffer(BufferedImage image) {
+			drawBuffer((Graphics2D)getGraphics(), image);
+		}
+		
+		private void drawBuffer(Graphics2D graphics, BufferedImage image) {
+			if (scaleTransform != null) {
+				// scale and draw the buffer
+				graphics.drawImage(image, scaleTransform, null);
+			} else {
+				// draw the buffer on the screen
+				graphics.drawImage(image, 0, 0, null);
+ 			}
+		}
+		
+		boolean resize(double actualScale) {
+			if (actualScale == m_scale_factor) {
+				return false;
+			}
+			int actualWidth = m_useful_bounds.width;
+			int actualHeight = m_useful_bounds.height;			
+			if (actualScale > 1.0) {
+				actualWidth = (int)(m_useful_bounds.width * actualScale);
+				actualHeight = (int)(m_useful_bounds.height * actualScale);
+				scaleTransform = AffineTransform.getScaleInstance(actualScale, actualScale);
+				m_max_fps = Math.max(MIN_FPS, MAX_FPS - (int)(5 * actualScale));
+			} else {
+				scaleTransform = null;
+				m_max_fps = MAX_FPS;
+			}
+			
+			m_scale_factor = actualScale;
+			setPreferredSize(new Dimension(actualWidth, actualHeight));
+			revalidate();
+			System.out.println("Game size: " + getWidth() + "x" + getHeight() +
+					" - Scaling factor: " + m_scale_factor + " - Max FPS: " + m_max_fps);
+			return true;
+		}
+		
+		void zoom(double delta) {
+			double actualScale = m_scale_factor + delta;
+			
+			// Adjust scaling
+			m_window_resize = resize(actualScale < 1.0 ? 1.0 : actualScale);
+	    }
+		
+		/**
+	     * Manages zoom key combinations:
+	     * 
+	     * 		[Shift] [+] 	zoom in
+	     * 		[Shift] [-] 	zoom out
+	     * 		[Shift] [=] 	reset zoom (same as [Shift] [0])
+	     */
+		@Override
+		protected void processKeyEvent(KeyEvent evt) {
+			if (!(evt.getID() == KeyEvent.KEY_RELEASED) || !evt.isShiftDown() || evt.isConsumed()
+					|| m_window_resize || m_window.getExtendedState() == JFrame.MAXIMIZED_BOTH) {
+				super.processKeyEvent(evt);
+				return;
+			}
+			evt.consume();
+			double delta = 0.0;
+			if (evt.getKeyCode() == KeyEvent.VK_PLUS || evt.getKeyCode() == KeyEvent.VK_ADD) {
+				// Zoom in
+				delta = 0.25;
+			} else if (evt.getKeyCode() == KeyEvent.VK_MINUS || evt.getKeyCode() == KeyEvent.VK_SUBTRACT) {
+				// Zoom out
+				delta = -0.25;
+			} else if (evt.getKeyCode() == KeyEvent.VK_EQUALS || evt.getKeyCode() == KeyEvent.VK_0) {
+				// Restore default size
+				delta = 1.0 - m_scale_factor;
+			}
+			m_canvas.zoom(delta);
+		}
+		
+		@Override
+		public boolean isOptimizedDrawingEnabled() {
+			return true;
+		}
+		
+		@Override
+		public void setPreferredSize(Dimension size) {
+			viewSize = size;
+			viewBounds = new Rectangle(size.width, size.height);
+		}
+		
+		@Override
+		public Dimension getSize() {
+			return viewSize;
+		}
+		
+		@Override
+		public Dimension getMaximumSize() {
+			return viewSize;
+		}
+		
+		@Override
+		public Dimension getMinimumSize() {
+			return viewSize;
+		}
+		
+		@Override
+		public Dimension getPreferredSize() {
+			return viewSize;
+		}
+		
+		@Override
+		public Rectangle getBounds() {
+			return viewBounds;
+		}
+		
+		@Override
+		public int getHeight() {
+			return viewSize.height;
+		}
+		
+		@Override
+		public int getWidth() {
+			return viewSize.width;
+		}
     }
 }

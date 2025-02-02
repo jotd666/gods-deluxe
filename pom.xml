@@ -3,14 +3,14 @@
 
     <groupId>io.github.jotd666</groupId>
     <artifactId>gods-deluxe</artifactId>
-    <version>0.9.0</version>
+    <version>0.9.1-SNAPSHOT</version>
 
     <description>Gods -Deluxe- Remake</description>
     <url>https://github.com/jotd666/gods-deluxe</url>
 
     <properties>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
         <maven-assembly-plugin.version>3.6.0</maven-assembly-plugin.version>
         <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
     </properties>

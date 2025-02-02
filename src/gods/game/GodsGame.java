@@ -3,35 +3,31 @@ package gods.game;
 //import com.golden.gamedev.*;
 //import com.golden.gamedev.engine.*;
 
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferInt;
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import micromod.*;
 import gods.base.DebugOptions;
 import gods.base.DirectoryBase;
 import gods.base.GameOptions;
-import gods.sys.*;
-import gods.screens.*;
+import gods.screens.GodsMainMenuScreen;
+import gods.screens.JotdScreen;
+import gods.sys.GameEngine;
+import gods.sys.Localizer;
+import micromod.MicromodPlayer;
 
 
 public class GodsGame extends GameEngine
 {
 	private MicromodPlayer m_player = null;
 	private GameState m_state = null;
-	private int m_screen_height;
-	private int m_screen_width;
-	private boolean m_double_display;
 	
-	// used for double screen scaling
-	private BufferedImage m_temp_render = null;
-	private BufferedImage m_double_image = null;
-	private RawScale2x m_scaler;
-
 	public void finish()
 	{
 		GameOptions.instance().save();
@@ -39,31 +35,10 @@ public class GodsGame extends GameEngine
 		super.finish();
 	}
 	
-	public GodsGame(Rectangle window_bounds, Rectangle useful_bounds, boolean full_screen, 
-			boolean double_buffering,boolean double_display) throws Exception
-  	{
-
-		
-	  m_screen_height = window_bounds.height;
-	  m_screen_width = window_bounds.width;
-	  
-	  m_double_display = double_display;
-	  if (double_display)
-	  {
-
-		  m_screen_height *= 2;
-		  m_screen_width *= 2;
-
-		  m_temp_render = new BufferedImage(useful_bounds.width, useful_bounds.height, BufferedImage.TYPE_INT_RGB);
-		  m_double_image = new BufferedImage(useful_bounds.width*2,useful_bounds.height*2,BufferedImage.TYPE_INT_RGB);
-		  int[] imgData = ((DataBufferInt)m_temp_render.getRaster().getDataBuffer()).getData();
-
-		  m_scaler = new RawScale2x(imgData,useful_bounds.width,useful_bounds.height);
-
-	  }
-	  setup(window_bounds,useful_bounds,Localizer.value("window title")+
-		" - "+Localizer.value("version")+" "+Version.current(),
-		KeyEvent.VK_F10, Color.BLACK, full_screen,double_buffering,double_display); 
+	public GodsGame(Rectangle window_bounds, Rectangle useful_bounds, boolean full_screen, int screenNumber, boolean double_display) throws Exception
+  	{	  
+	  setup(useful_bounds,Localizer.value("window title")+" - "+Localizer.value("version")+" "+Version.current(),
+		KeyEvent.VK_F10, Color.BLACK, full_screen, screenNumber, double_display); 
 	  
 		java.util.List<Image> icons = new java.util.ArrayList<Image>();
 		File s32 = new File(DirectoryBase.get_images_path()+"helmet32x32.png");
@@ -77,7 +52,6 @@ public class GodsGame extends GameEngine
 			e.printStackTrace();
 		}
 		get_window().setIconImages(icons);
-
   	}
 	
 	public int get_music_pos()
@@ -181,29 +155,7 @@ public class GodsGame extends GameEngine
 
   public void render(Graphics2D g)
   {
-	  if (m_screen_height > 0)
-	  {
-		  // first time
-		  g.setColor(Color.BLACK);
-		  g.fillRect(0,0,m_screen_width,m_screen_height);
-		  m_screen_height = 0;
-	  }
-	  if (m_double_display)
-	  {
-		  int width=m_temp_render.getWidth(),height=m_temp_render.getHeight();
-		  
-		  // render in temp buffer
-		  m_state.render((Graphics2D)m_temp_render.getGraphics());
-
-		  //m_temp_render.getRGB(0,0,width,height,m_src_data,0,width);              
-		  m_double_image.setRGB(0,0,width*2,height*2,m_scaler.getScaledData(),0,width*2);
-
-		  g.drawImage(m_double_image,0,0,null);
-	  }
-	  else
-	  {
-		  m_state.render(g);
-	  }
+	  m_state.render(g);
   }
 
   public void update(long elapsed)
@@ -245,12 +197,12 @@ public class GodsGame extends GameEngine
    	public static void main(String[] args) throws Exception
    	{
 		GameOptions opts = GameOptions.instance();
-		boolean double_buffering = true;
 		boolean double_display = false;
 		Rectangle useful_bounds = new Rectangle(640,400);
 		Rectangle window_bounds = (Rectangle)useful_bounds.clone();
 
 		int y_res = 0;
+		int screenNumber = 0;
 
 		int i = 0;
 		while (i < args.length)
@@ -279,7 +231,12 @@ public class GodsGame extends GameEngine
 				else if (arg.equalsIgnoreCase("-full-screen"))
 				{
 					opts.full_screen = true;
-					window_bounds.height = 480;
+					try	{
+						screenNumber = Integer.parseInt(nextarg);
+						i++;
+					} catch (NumberFormatException e)	{
+						System.out.println("No valid screen found: assuming " + screenNumber);
+					}
 				}
 				else if (arg.equalsIgnoreCase("-no-intro"))
 				{
@@ -301,7 +258,6 @@ public class GodsGame extends GameEngine
 				else if (arg.equalsIgnoreCase("-double-display"))
 				{
 					double_display = true;
-					double_buffering = false; // the way double display is handled means double buffered
 				}
 				else
 				{
@@ -320,7 +276,7 @@ public class GodsGame extends GameEngine
 		DirectoryBase.check_paths();
 		opts.load_settings();
 
-		GodsGame scgame = new GodsGame(window_bounds,useful_bounds,opts.full_screen,double_buffering,double_display);
+		GodsGame scgame = new GodsGame(window_bounds,useful_bounds,opts.full_screen,screenNumber,double_display);
 
 		scgame.start();
 	}

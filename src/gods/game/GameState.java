@@ -41,7 +41,6 @@ public abstract class GameState
 	protected Color m_background_color;
 	private String m_error_message = null;
 	private boolean m_error_displayed = false;
-	private boolean m_first_render = true;
 	private float m_color_percent;
 	protected OptionControls m_controls = new OptionControls();
 	protected Rectangle m_display_bounds;
@@ -466,13 +465,6 @@ public abstract class GameState
   
   public void render(Graphics2D g) 
   {
-	  if (m_first_render)
-	  {
-		  g.setColor(Color.BLACK);
-		  g.fillRect(0,0,getWidth(),getHeight());	
-		  m_first_render = false;
-	  }
-	  		 	  
     if (m_error_message == null) 
     {
    	
