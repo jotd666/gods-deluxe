@@ -266,7 +266,7 @@ public class HeroWeaponSet implements Renderable
 				}
 				
 			}
-			System.out.println("weapon power adjusted diff level "+rval+" difficulty "+m_difficulty_level);
+			//System.out.println("weapon power adjusted diff level "+rval+" difficulty "+m_difficulty_level);
 			return rval;
 		}
 		

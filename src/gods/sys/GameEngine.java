@@ -131,8 +131,7 @@ public abstract class GameEngine
 	/**
 	 * Setup the screen
 	 */
-	public void setup(Rectangle useful_bounds, String title, int exit_key, 
-			Color background, boolean full_screen_requested, int screenNumber, boolean double_display)
+	public void setup(Rectangle useful_bounds, String title, int exit_key, Color background, boolean double_display)
 	{
 		m_exit_key = exit_key;
 		m_useful_bounds = new Rectangle(useful_bounds.width, useful_bounds.height);
@@ -161,9 +160,9 @@ public abstract class GameEngine
  		rootPane.add(m_canvas);
  		rootPane.add(Box.createVerticalGlue());
         
-		// Show game window in the middle of screen
-		m_window.setMinimumSize(initSize);
+ 		// Bigger than necessary, will be resized
 		m_window.pack();
+		// Show game window in the middle of screen
 		m_window.setLocationRelativeTo(null);
 		m_window.setVisible(true);
 
@@ -172,7 +171,7 @@ public abstract class GameEngine
 				.createCompatibleImage(m_useful_bounds.width,m_useful_bounds.height,BufferedImage.TYPE_INT_RGB);
 		m_graphics = m_buffer.createGraphics();
 		
-		m_window.addComponentListener(new GameFrameListener());
+		m_window.addComponentListener(new GameWindowListener());
 		m_canvas.requestFocus();
 	}
 
@@ -217,7 +216,7 @@ public abstract class GameEngine
      			
      			// Do not refresh during resize
      			if (m_window_resize) {
-        			m_window.revalidate();
+     				m_window.revalidate();
     				m_window.pack();
     				m_window.repaint();
     				m_window_resize = false;
@@ -226,7 +225,6 @@ public abstract class GameEngine
     			}
     		}
 
-    		
     		clock2 = System.currentTimeMillis();
     		
     		elapsed_time = clock2 - clock1;
@@ -262,7 +260,7 @@ public abstract class GameEngine
     	}
     }
     
-    class GameFrameListener extends ComponentAdapter {
+    class GameWindowListener extends ComponentAdapter {
 
     	@Override
     	public void componentResized(ComponentEvent evt) {
@@ -277,7 +275,7 @@ public abstract class GameEngine
     }
     
     /**
-     * Manage game view rendering.
+     * Manage game view rendering and resizing.
      */
     class GameView extends JComponent {
     	
@@ -286,13 +284,12 @@ public abstract class GameEngine
     	private Dimension viewSize;
     	private Rectangle viewBounds;
     	private AffineTransform scaleTransform;
-    	
-		@Override
-    	public void paint(Graphics graphics) {
-			super.paint(graphics);
-			drawBuffer((Graphics2D)graphics, m_buffer);
-    	}
 		
+    	@Override
+    	public void paint(Graphics g) {
+    		drawBuffer((Graphics2D)g, m_buffer);
+    	}
+    	
 		void drawBuffer(BufferedImage image) {
 			drawBuffer((Graphics2D)getGraphics(), image);
 		}
@@ -319,22 +316,27 @@ public abstract class GameEngine
 				scaleTransform = AffineTransform.getScaleInstance(actualScale, actualScale);
 				m_max_fps = Math.max(MIN_FPS, MAX_FPS - (int)(5 * actualScale));
 			} else {
+				// Minimum size allowed
+				actualScale = 1.0;
 				scaleTransform = null;
 				m_max_fps = MAX_FPS;
+				Insets winInsets = m_window.getInsets();
+	    		m_window.setMinimumSize(new Dimension(actualWidth + winInsets.left + winInsets.right,
+	    				actualHeight + winInsets.top + winInsets.bottom));
 			}
 			
 			m_scale_factor = actualScale;
 			setPreferredSize(new Dimension(actualWidth, actualHeight));
 			revalidate();
-			System.out.println("Game size: " + getWidth() + "x" + getHeight() +
-					" - Scaling factor: " + m_scale_factor + " - Max FPS: " + m_max_fps);
+//			System.out.println("Game size: " + getWidth() + "x" + getHeight() +
+//					" - Scaling factor: " + m_scale_factor + " - Max FPS: " + m_max_fps);
 			return true;
 		}
 		
 		void zoom(double delta) {
 			double actualScale = m_scale_factor + delta;
 			
-			// Adjust scaling
+			// Adjust window size if needed
 			m_window_resize = resize(actualScale < 1.0 ? 1.0 : actualScale);
 	    }
 		
@@ -370,6 +372,11 @@ public abstract class GameEngine
 		@Override
 		public boolean isOptimizedDrawingEnabled() {
 			return true;
+		}
+		
+		@Override
+		public boolean isDoubleBuffered() {
+			return false;
 		}
 		
 		@Override

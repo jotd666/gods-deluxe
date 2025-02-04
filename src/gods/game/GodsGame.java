@@ -35,10 +35,10 @@ public class GodsGame extends GameEngine
 		super.finish();
 	}
 	
-	public GodsGame(Rectangle window_bounds, Rectangle useful_bounds, boolean full_screen, int screenNumber, boolean double_display) throws Exception
+	public GodsGame(Rectangle useful_bounds, boolean double_display) throws Exception
   	{	  
 	  setup(useful_bounds,Localizer.value("window title")+" - "+Localizer.value("version")+" "+Version.current(),
-		KeyEvent.VK_F10, Color.BLACK, full_screen, screenNumber, double_display); 
+		KeyEvent.VK_F10, Color.BLACK, double_display); 
 	  
 		java.util.List<Image> icons = new java.util.ArrayList<Image>();
 		File s32 = new File(DirectoryBase.get_images_path()+"helmet32x32.png");
@@ -187,11 +187,9 @@ public class GodsGame extends GameEngine
 	{
 		System.out.println("Gods -Deluxe- valid public options: ");
 		System.out.println("");
-		System.out.println("   -full-screen: runs the game in full screen");
 		System.out.println("   -no-intro: skips introduction");
 		System.out.println("   -direct-game: runs with last selected level");
 		System.out.println("   -double-display: runs in a double-sized scale2x window (fast CPU/gfx board required)");
-		System.out.println("   -wh: forces window/screen height (default: windowed: 400, fullscreen: 480)");  
 	}
 
    	public static void main(String[] args) throws Exception
@@ -199,44 +197,17 @@ public class GodsGame extends GameEngine
 		GameOptions opts = GameOptions.instance();
 		boolean double_display = false;
 		Rectangle useful_bounds = new Rectangle(640,400);
-		Rectangle window_bounds = (Rectangle)useful_bounds.clone();
-
-		int y_res = 0;
-		int screenNumber = 0;
 
 		int i = 0;
 		while (i < args.length)
 		{
 			String arg = args[i];
-			String nextarg = (i < args.length - 1 ? args[i+1] : "");
 			if (arg.charAt(0) == '-')
 			{
 				if (arg.equalsIgnoreCase("-direct-game"))
 				{
 					opts.with_intro = false;
 					opts.direct_game = true;
-				}
-				else if (arg.equalsIgnoreCase("-wh"))
-				{
-					try
-					{
-						y_res = Integer.parseInt(nextarg);
-						i++;
-					}
-					catch (Exception e)
-					{
-						System.out.println("Invlaid height " + nextarg);
-					}
-				}
-				else if (arg.equalsIgnoreCase("-full-screen"))
-				{
-					opts.full_screen = true;
-					try	{
-						screenNumber = Integer.parseInt(nextarg);
-						i++;
-					} catch (NumberFormatException e)	{
-						System.out.println("No valid screen found: assuming " + screenNumber);
-					}
 				}
 				else if (arg.equalsIgnoreCase("-no-intro"))
 				{
@@ -268,15 +239,10 @@ public class GodsGame extends GameEngine
 			i++;
 		}
 		
-		if (y_res > 0)
-		{
-			window_bounds.height = y_res;
-		}
-		
 		DirectoryBase.check_paths();
 		opts.load_settings();
 
-		GodsGame scgame = new GodsGame(window_bounds,useful_bounds,opts.full_screen,screenNumber,double_display);
+		GodsGame scgame = new GodsGame(useful_bounds,double_display);
 
 		scgame.start();
 	}
