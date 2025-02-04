@@ -15,9 +15,13 @@
 - depending on your JRE (32 or 64 bit) rename the "joystick_xxx.dll" file in the "bin" directory with "joystick.dll"
   (note: there's a 2-button control option, so joystick button 2 jumps when this control is set)
   
+### Resizable window
+ - Use `[Shift]`+`[+]` or `[Shift]`+`[-]` keys to zooom-in and zoom-out
+ - Use `[Shift]`+`[0]` or `[Shift]`+`[=]` keys to reset zoom
+ - Resize or maximize the window manually
+  
 ### Bugs/Limitations
 - some (few) inaccuracies compared to the original game (see "original game bugs" section for more)
-- Windows 7 & Vista: full screen mode does not work (no display at all)
 
 ### Title music tunes
 Extract the music pack in "music" sub-directory to get a random tune in the menu screen
@@ -54,17 +58,13 @@ Linux user can install and run it via [Flatpak](https://flathub.org/it/apps/io.g
 ### Options
 There are preset:
 
-| Option            | Description                                                           |
-| :---------------- | :-------------------------------------------------------------------- |
-| `-full-screen`    | runs the game in full screen                                          |
-| `-no-intro`       | skips introduction                                                    |
-| `-direct-game`    | runs with last selected level                                         |
-| `-wh`             | forces window/screen height (default: windowed: 400, fullscreen: 480) |
-
-**Warning**: full screen mode could not work properly on recent platforms.
+| Option          | Description                      |
+|:----------------|:---------------------------------|
+| `-no-intro`      | skips introduction               |
+| `-direct-game`   | runs with last selected level    |
 
 ### Requirements
-- Java Runtime 1.8 or higher
+- Java Runtime 11 or higher
 - Windows, Linux or MacOS X (use .bat files on Windows, .sh files on Linux / MacOS X)
 
 ### Controls

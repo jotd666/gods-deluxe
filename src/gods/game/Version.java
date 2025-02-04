@@ -4,6 +4,6 @@ public class Version
 {
 	public static String current() {
 		String version = Version.class.getPackage().getImplementationVersion();
-        return version == null ? "<missing manifest>" : version;
+        return version == null ? "<unpacked>" : version;
 	}
 }
