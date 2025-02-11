@@ -26,9 +26,11 @@ import javax.swing.JFrame;
 
 public abstract class GameEngine 
 {
-	private static final int WAIT_MILLIS = 20;
-	private static final int MIN_FPS = 25;
-	private static final int MAX_FPS = 50;
+	private static final int CPUS = Runtime.getRuntime().availableProcessors();
+	private static final int WAIT_MILLIS = 10;
+	private static final int MAX_ELAPSED = WAIT_MILLIS * 16;
+	private static final int MAX_FPS = 50 + (CPUS * 2);
+	private static final int MIN_FPS = MAX_FPS / 2;
 	
 	private int m_max_fps = MAX_FPS;
 	private JFrame m_window;
@@ -173,6 +175,9 @@ public abstract class GameEngine
 		
 		m_window.addComponentListener(new GameWindowListener());
 		m_canvas.requestFocus();
+		
+		System.out.println("Game size: " + m_canvas.getWidth() + "x" + m_canvas.getHeight() + " - Scaling factor: " + m_scale_factor 
+				+ " - CPUs: " + CPUS + " - Max FPS: " + m_max_fps);
 	}
 
     public void start()
@@ -251,9 +256,9 @@ public abstract class GameEngine
        		
        		// safety to avoid too much delay between 2 updates
        		
-       		if (elapsed_time > WAIT_MILLIS * 20)
+       		if (elapsed_time > MAX_ELAPSED)
        		{
-       			elapsed_time = WAIT_MILLIS * 20;
+       			elapsed_time = MAX_ELAPSED;
        			accumulated = 0;
        		}
 
@@ -314,7 +319,7 @@ public abstract class GameEngine
 				actualWidth = (int)(m_useful_bounds.width * actualScale);
 				actualHeight = (int)(m_useful_bounds.height * actualScale);
 				scaleTransform = AffineTransform.getScaleInstance(actualScale, actualScale);
-				m_max_fps = Math.max(MIN_FPS, MAX_FPS - (int)(5 * actualScale));
+				m_max_fps = Math.max(MIN_FPS, MAX_FPS - (int)((CPUS/2) * actualScale));
 			} else {
 				// Minimum size allowed
 				actualScale = 1.0;
@@ -354,7 +359,6 @@ public abstract class GameEngine
 				super.processKeyEvent(evt);
 				return;
 			}
-			evt.consume();
 			double delta = 0.0;
 			if (evt.getKeyCode() == KeyEvent.VK_PLUS || evt.getKeyCode() == KeyEvent.VK_ADD) {
 				// Zoom in
@@ -367,16 +371,12 @@ public abstract class GameEngine
 				delta = 1.0 - m_scale_factor;
 			}
 			m_canvas.zoom(delta);
+			super.processKeyEvent(evt);
 		}
 		
 		@Override
 		public boolean isOptimizedDrawingEnabled() {
 			return true;
-		}
-		
-		@Override
-		public boolean isDoubleBuffered() {
-			return false;
 		}
 		
 		@Override

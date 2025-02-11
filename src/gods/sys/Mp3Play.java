@@ -70,11 +70,10 @@ public class Mp3Play implements Runnable
 
 	public void run()
 	{
-		try (FileInputStream fileStream = new FileInputStream(m_mp3_name);
-				BufferedInputStream bufferedStream = new BufferedInputStream(fileStream))
+		try (FileInputStream fileStream = new FileInputStream(m_mp3_name))
 		{
 			System.out.println("Start playing " + m_mp3_name);
-			m_player = new Player(bufferedStream);
+			m_player = new Player(fileStream);
 			m_player.play();
 		}
 		catch (Exception e)
