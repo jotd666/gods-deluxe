@@ -8,8 +8,6 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -22,10 +20,8 @@ import javax.sound.sampled.SourceDataLine;
 
 class WavDataPlayer implements Runnable
 {
-	static final int MAX_LINE = Math.max(4, Math.min(Runtime.getRuntime().availableProcessors()-1, 7));
-	static final int MAX_LINE_PER_TYPE = MAX_LINE - 2;
 	
-	static final ExecutorService soundService = Executors.newFixedThreadPool(MAX_LINE);
+	static final int MAX_LINES_PER_TYPE = SoundService.MAX_LINES / 2;
 	static final Map<Integer, Queue<SourceDataLine>> soundLines = new ConcurrentHashMap<>();
 	
 	byte[] data = null;
@@ -101,7 +97,7 @@ class WavDataPlayer implements Runnable
 	
 	private void releaseLine(SourceDataLine line) {
 		Queue<SourceDataLine> queue = soundLines.get(info_id);
-		if (queue.size() < MAX_LINE_PER_TYPE) {
+		if (queue.size() < MAX_LINES_PER_TYPE) {
 			// Keep line in queue
 			//debug("offer");
 			queue.offer(line);
@@ -124,7 +120,7 @@ class WavDataPlayer implements Runnable
 			sdl.start();
 			
 			int buffer_size = sdl.getBufferSize();
-			int pos = seek(0);
+			int pos = (loop ? sample_position.get() : seek(0));
 			
 			do {
 				forward(buffer_size);
@@ -134,7 +130,8 @@ class WavDataPlayer implements Runnable
 			releaseLine(sdl);	
 		}
 		catch (Exception e) {
-			System.err.println("error: playing - " + name + " : " + e);
+			System.err.println("error: playing - " + name);
+			e.printStackTrace();
 		}
 		finally {
 			running.set(false);
@@ -168,7 +165,7 @@ class WavDataPlayer implements Runnable
 	void start(boolean loop) {
 		//debug("start");
 		this.loop = loop;
-		soundService.execute(this);
+		SoundService.execute(this);
 	}
 	
 	void rewind() {
@@ -197,9 +194,5 @@ class WavDataPlayer implements Runnable
 	void debug(String action) {
 		System.out.println(action + " " + name + "[" + info_id + "] - pos: " + sample_position.get() +
 				" loop: " + loop + " thread: " + Thread.currentThread());
-	}
-	
-	static void shutdown() {
-		soundService.shutdown();
 	}
 }

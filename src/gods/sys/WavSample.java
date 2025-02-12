@@ -37,7 +37,7 @@ public class WavSample extends WavSound
 		sound.stop();
 		System.out.println(new Date());
 		
-		WavDataPlayer.shutdown();
+		SoundService.shutdown();
 		System.out.println(new Date());
 	}		
 }

@@ -20,6 +20,7 @@ import gods.screens.GodsMainMenuScreen;
 import gods.screens.JotdScreen;
 import gods.sys.GameEngine;
 import gods.sys.Localizer;
+import gods.sys.SoundService;
 import micromod.MicromodPlayer;
 
 
@@ -92,7 +93,7 @@ public class GodsGame extends GameEngine
 			  m_player = new MicromodPlayer(new File(path).toURI().toURL());
 			  m_player.setloop(loop);
 			  m_player.set_start_offset(initial_position);
-			  new Thread(m_player).start();
+			  SoundService.execute(m_player);
 		  }
 		  catch (Exception e)
 		  {
