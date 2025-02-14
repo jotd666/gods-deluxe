@@ -1,107 +1,47 @@
 package gods.sys;
 
-import javax.sound.sampled.*;
-
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 
-public abstract class WavSound implements Runnable
+public abstract class WavSound
 {
-	protected class Data
-	{
-		public byte [] data = null;
-		public double sound_length;
-		public volatile int sample_position;
-		
-		Data(String file_prefix)
-		{
-			try
-			{
-
-				File fileIn = new File(file_prefix);
-				if (!fileIn.exists())
-				{ System.err.println("error: file does not exist: "+fileIn); }
-				else
-				{
-				AudioInputStream audioInputStream = 
-					AudioSystem.getAudioInputStream(fileIn);
-				long frameLength = audioInputStream.getFrameLength();
-				AudioFormat audioFormat = audioInputStream.getFormat();
-				
-				// source data line is the same for all samples of the group
-				
-				if (sdl == null)
-				{
-					sdl = AudioSystem.getSourceDataLine(audioFormat);
-				}
-				// in a .wav file, this is the length 
-				// of the audio data in bytes
-
-				data = new byte[(int)frameLength * audioFormat.getFrameSize()];
-				sdl.open(audioFormat,data.length);
-
-				audioInputStream.read(data);
-
-
-				frame_size = sdl.getFormat().getFrameSize();
-				
-				sound_length = (audioInputStream.getFrameLength() / audioFormat.getSampleRate());
-				}
-			}
-			catch (Exception ex)
-			{
-				data = null;
-			}	
-		}
-	}
-	
-	protected Data [] sound_array;
-	protected Data current = null;
-	
-	protected volatile Thread play_thread;
-	private SourceDataLine sdl = null;
-	private int frame_size;
-
-	protected SourceDataLine get_sdl()
-	{
-		return sdl;
-	}
-	
-	public int get_max_sample_position()
-	{
-		return current.data.length;
-	}
-	synchronized int get_sample_position()
-	{
-		return current.sample_position;
-	}
-	
-	synchronized void set_sample_position(int sp)
-	{
-		if (current.data != null)
-		{
-			// round it
-			current.sample_position = (sp / frame_size) * frame_size;
-		}
-	}
+	protected WavDataPlayer[] sound_array;
+	protected WavDataPlayer current = null;
 	
 	public WavSound(String file_prefix)
 	{
-		this(file_prefix,1.0);
-	}
-	public WavSound(String file_prefix, double volume)
-	{
 		File dir_tried = new File(file_prefix);
+		
 		if (dir_tried.isDirectory())
 		{
-			String [] files = dir_tried.list();
+			List<CompletableFuture<WavDataPlayer>> files = new ArrayList<>();
+			try {
+				// Load folder files in parallel
+				files = Files.list(dir_tried.toPath())
+					.filter(f -> f.toFile().getName().endsWith(".wav"))
+					.sorted()
+					.map(f -> CompletableFuture.supplyAsync(() -> new WavDataPlayer(f.toFile())))
+					.toList();
+			}
+			catch (IOException e) {
+				e.printStackTrace();
+			}
 			
-			if (files.length > 0)
+			if (files.size() > 0)
 			{
-				sound_array = new Data[files.length];
-
+				sound_array = new WavDataPlayer[files.size()];
 				for (int i = 0; i < sound_array.length; i++)
-				{
-					sound_array[i] = new Data(dir_tried.getPath() + File.separator + files[i]);
+				{	
+					try {
+						sound_array[i] = files.get(i).get();
+					} catch (InterruptedException | ExecutionException e) {
+						e.printStackTrace();
+					}
 				}
 				
 				current = sound_array[0];
@@ -110,36 +50,31 @@ public abstract class WavSound implements Runnable
 		}
 		else
 		{
-			sound_array = new Data[1];
-			sound_array[0] = new Data(file_prefix+".wav");
+			sound_array = new WavDataPlayer[]{ new WavDataPlayer(new File(file_prefix+".wav")) };
 			current = sound_array[0];
 		}
-	
-		play_thread = new Thread(this);
-
-		play_thread.start();
-
-		Thread.yield();
-
 	}
 	
-
+	public int get_max_sample_position()
+	{
+		return current.data.length;
+	}
+	
+	public void set_sample_position(int sp)
+	{
+		current.seek(sp);
+	}
 	
 	public void end()
 	{
-		play_thread = null;
 		for (int i = 0; i < sound_array.length; i++)
 		{
 			sound_array[i] = null;
 		}
 		sound_array = null;
 		current.data = null;
-		
-		synchronized(this)
-		{
-			notify();
-		}
 	}
+	
 	
 	public void play(int index)
 	{
@@ -159,40 +94,35 @@ public abstract class WavSound implements Runnable
 	
 	public void play()
 	{	
-		if (current.data != null)
-		{
-			set_sample_position(0);
-
-			synchronized(this)
-			{
-				notify();
+		final WavDataPlayer actual = current;
+		if (actual.data != null) {
+			if (actual.runnable()) {
+				// The data line is free to play
+				actual.start(false);
+			}
+			else {
+				// Reuse the running line
+				actual.rewind();
 			}
 		}
-	}
-	
-	public void play_offset(int index)
-	{	
-		set_sample_position(index);
-		
-		synchronized(this)
-		{
-			notify();
+		else {
+			System.err.println("error: no clip to play - " + actual.name);
 		}
 	}
-	
-	protected synchronized void close()
+
+	public void stop()
 	{
-		if (sdl != null)
-		{
-			sdl.stop();
-			sdl.flush();
-			sdl.close();
-			sdl = null;
-		}		
-	}
-	protected void write(byte [] data, int offset, int len)
-	{
-		sdl.write(data,offset,len);
+		for (int i = 0; i < sound_array.length; i++) {
+			WavDataPlayer actual = sound_array[i];
+			actual.stop();
+		}
 	}
 
+	protected void close()
+	{
+		for (int i = 0; i < sound_array.length; i++) {
+			WavDataPlayer actual = sound_array[i];
+			actual.close();
+		}
+	}
 }
