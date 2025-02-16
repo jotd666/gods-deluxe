@@ -24,15 +24,14 @@ class WavDataPlayer implements Runnable
 	static final int MAX_LINES_PER_TYPE = SoundService.MAX_LINES / 2;
 	static final Map<Integer, Queue<SourceDataLine>> soundLines = new ConcurrentHashMap<>();
 	
-	byte[] data = null;
-	final AtomicInteger sample_position = new AtomicInteger(0);
-	DataLine.Info info;
-	int info_id;
+	byte[] data;
 	String name;
-	int frame_size;
-	int rewind_mark;
-	final AtomicBoolean running = new AtomicBoolean(false);
-	boolean loop = false;
+	private final AtomicInteger sample_position = new AtomicInteger(0);
+	private DataLine.Info info;
+	private int info_id;
+	private int frame_size;
+	private final AtomicBoolean running = new AtomicBoolean(false);
+	private boolean loop = false;
 	
 	WavDataPlayer(File fileIn)
 	{
@@ -62,8 +61,6 @@ class WavDataPlayer implements Runnable
 			    data = buffer.toByteArray();
 			    
 				frame_size = audioFormat.getFrameSize();
-				rewind_mark = data.length / 2;
-				//System.out.println("clip "+ name + " rewind: " + rewind_mark + " total: " + data.length + " frame: " + frame_size);
 			}
 			catch (Exception e) {
 				e.printStackTrace();
@@ -71,7 +68,6 @@ class WavDataPlayer implements Runnable
 		}
 		catch (Exception ex) {
 			System.err.println("error: on loading sound - " + ex);
-			data = null;
 		}	
 	}
 	
