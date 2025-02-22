@@ -17,6 +17,7 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.KeyEvent;
 import java.awt.geom.AffineTransform;
+import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
 
 import javax.swing.Box;
@@ -37,12 +38,13 @@ public abstract class GameEngine
 	private GameView m_canvas;
 	private Rectangle m_useful_bounds;
 	private Graphics2D m_graphics;
-	private BufferedImage m_buffer;
+	private BufferedImage m_frame;
 	private boolean m_cursor_state = true;
 	private UserInputListener m_key_listener = null;
 	private int m_exit_key;
 	private int m_old_key_code = 0;
 	private double m_scale_factor = 0.0;
+	private boolean m_antialiasing = false;
 	private boolean m_window_resize = false;
 	
 	public abstract void initResources();
@@ -133,15 +135,17 @@ public abstract class GameEngine
 	/**
 	 * Setup the screen
 	 */
-	public void setup(Rectangle useful_bounds, String title, int exit_key, Color background, boolean double_display)
+	public void setup(Rectangle useful_bounds, String title, int exit_key, Color background, boolean double_display, boolean antialiasing)
 	{
 		m_exit_key = exit_key;
+		m_antialiasing = antialiasing;
 		m_useful_bounds = new Rectangle(useful_bounds.width, useful_bounds.height);
 		Dimension initSize = new Dimension(m_useful_bounds.width,m_useful_bounds.height);
 		
 		m_window = new JFrame(title);
 		m_window.addWindowListener(new WindowCloseListener());
 		m_window.setBackground(background);
+		m_window.setIgnoreRepaint(true);
 		m_window.setVisible(false);
 		
 		// Create canvas for rendering
@@ -158,6 +162,7 @@ public abstract class GameEngine
  		Container rootPane = m_window.getRootPane();
  		rootPane.setMinimumSize(initSize);
  		rootPane.setBackground(background);
+ 		rootPane.setIgnoreRepaint(true);
  		rootPane.setLayout(new BoxLayout(rootPane, BoxLayout.Y_AXIS));
  		rootPane.add(m_canvas);
  		rootPane.add(Box.createVerticalGlue());
@@ -168,10 +173,10 @@ public abstract class GameEngine
 		m_window.setLocationRelativeTo(null);
 		m_window.setVisible(true);
 
-		// Create buffered image for rendering
-		m_buffer = m_window.getGraphicsConfiguration()
+		// Create double buffered frame for rendering
+		m_frame = m_window.getGraphicsConfiguration()
 				.createCompatibleImage(m_useful_bounds.width,m_useful_bounds.height,BufferedImage.TYPE_INT_RGB);
-		m_graphics = m_buffer.createGraphics();
+		m_graphics = m_frame.createGraphics();
 		
 		m_window.addComponentListener(new GameWindowListener());
 		m_canvas.requestFocus();
@@ -226,7 +231,7 @@ public abstract class GameEngine
     				m_window.repaint();
     				m_window_resize = false;
     			} else {
-    				m_canvas.drawBuffer(m_buffer);
+    				m_canvas.renderFrame(m_frame);
     			}
     		}
 
@@ -288,24 +293,35 @@ public abstract class GameEngine
     	
     	private Dimension viewSize;
     	private Rectangle viewBounds;
-    	private AffineTransform scaleTransform;
+    	private AffineTransformOp scaleTransform;
 		
     	@Override
     	public void paint(Graphics g) {
-    		drawBuffer((Graphics2D)g, m_buffer);
+    		renderFrame((Graphics2D)g, m_frame);
     	}
     	
-		void drawBuffer(BufferedImage image) {
-			drawBuffer((Graphics2D)getGraphics(), image);
+    	@Override
+    	public boolean isOptimizedDrawingEnabled() {
+    		return true;
+    	}
+    	
+    	void renderFrame(BufferedImage frame) {
+			 renderFrame((Graphics2D)getGraphics(), frame);
 		}
 		
-		private void drawBuffer(Graphics2D graphics, BufferedImage image) {
+		private void renderFrame(Graphics2D graphics, BufferedImage frame) {
 			if (scaleTransform != null) {
-				// scale and draw the buffer
-				graphics.drawImage(image, scaleTransform, null);
-			} else {
-				// draw the buffer on the screen
-				graphics.drawImage(image, 0, 0, null);
+				// Scale and draw the buffer
+				if (m_antialiasing) {
+					graphics.drawImage(frame, scaleTransform, 0, 0);
+				}
+				else {
+					graphics.drawImage(frame, scaleTransform.getTransform(), null);
+				}
+			}
+			else {
+				// Draw the buffer on the screen
+				graphics.drawImage(frame, 0, 0, null);
  			}
 		}
 		
@@ -318,7 +334,8 @@ public abstract class GameEngine
 			if (actualScale > 1.0) {
 				actualWidth = (int)(m_useful_bounds.width * actualScale);
 				actualHeight = (int)(m_useful_bounds.height * actualScale);
-				scaleTransform = AffineTransform.getScaleInstance(actualScale, actualScale);
+				scaleTransform = new AffineTransformOp(AffineTransform.getScaleInstance(actualScale, actualScale),
+						AffineTransformOp.TYPE_BILINEAR);
 				m_max_fps = Math.max(MIN_FPS, MAX_FPS - (int)((CPUS/2) * actualScale));
 			} else {
 				// Minimum size allowed
@@ -372,11 +389,6 @@ public abstract class GameEngine
 			}
 			m_canvas.zoom(delta);
 			super.processKeyEvent(evt);
-		}
-		
-		@Override
-		public boolean isOptimizedDrawingEnabled() {
-			return true;
 		}
 		
 		@Override

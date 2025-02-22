@@ -58,10 +58,12 @@ Linux user can install and run it via [Flatpak](https://flathub.org/it/apps/io.g
 ### Options
 There are preset:
 
-| Option          | Description                      |
-|:----------------|:---------------------------------|
-| `-no-intro`      | skips introduction               |
-| `-direct-game`   | runs with last selected level    |
+| Option			| Description                      			|
+|:------------------|:------------------------------------------|
+| `-no-intro`			| skips introduction               			|
+| `-direct-game`		| runs with last selected level				|
+| `-double-display`	| runs in a double-sized scale2x window		|
+| `-antialiasing`		| applies bilinear antialiasing on scaling	|
 
 ### Requirements
 - Java Runtime 11 or higher

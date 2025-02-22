@@ -10,6 +10,8 @@ import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.imageio.ImageIO;
 
@@ -36,12 +38,12 @@ public class GodsGame extends GameEngine
 		super.finish();
 	}
 	
-	public GodsGame(Rectangle useful_bounds, boolean double_display) throws Exception
+	public GodsGame(Rectangle useful_bounds, boolean double_display, boolean antialiasing) throws Exception
   	{	  
 	  setup(useful_bounds,Localizer.value("window title")+" - "+Localizer.value("version")+" "+Version.current(),
-		KeyEvent.VK_F10, Color.BLACK, double_display); 
+		KeyEvent.VK_F10, Color.BLACK, double_display, antialiasing); 
 	  
-		java.util.List<Image> icons = new java.util.ArrayList<Image>();
+		List<Image> icons = new ArrayList<Image>();
 		File s32 = new File(DirectoryBase.get_images_path()+"helmet32x32.png");
 		File s16 = new File(DirectoryBase.get_images_path()+"helmet16x16.png");
 		try {
@@ -191,6 +193,7 @@ public class GodsGame extends GameEngine
 		System.out.println("   -no-intro: skips introduction");
 		System.out.println("   -direct-game: runs with last selected level");
 		System.out.println("   -double-display: runs in a double-sized scale2x window (fast CPU/gfx board required)");
+		System.out.println("   -antialiasing: applies bilinear antialiasing on scaling (fast CPU/gfx board required)");
 	}
 
    	public static void main(String[] args) throws Exception
@@ -198,6 +201,7 @@ public class GodsGame extends GameEngine
 		GameOptions opts = GameOptions.instance();
 		boolean double_display = false;
 		Rectangle useful_bounds = new Rectangle(640,400);
+		boolean antialiasing = false;
 
 		int i = 0;
 		while (i < args.length)
@@ -231,6 +235,10 @@ public class GodsGame extends GameEngine
 				{
 					double_display = true;
 				}
+				else if (arg.equalsIgnoreCase("-antialiasing"))
+				{
+					antialiasing = true;
+				}
 				else
 				{
 					usage();
@@ -243,7 +251,7 @@ public class GodsGame extends GameEngine
 		DirectoryBase.check_paths();
 		opts.load_settings();
 
-		GodsGame scgame = new GodsGame(useful_bounds,double_display);
+		GodsGame scgame = new GodsGame(useful_bounds,double_display,antialiasing);
 
 		scgame.start();
 	}
