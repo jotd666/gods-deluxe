@@ -4,6 +4,7 @@ import gods.base.DirectoryBase;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.TreeMap;
 
 
@@ -20,10 +21,10 @@ public class Localizer
 		return m_language;
 	}
 
-	public static String [] get_available_languages()
+	public static String[] get_available_languages()
 	{
 		String [] rval = new File(get_locale_dir()).list();
-		
+		Arrays.sort(rval);
 		for (int i = 0; i < rval.length; i++)
 		{
 			int idx = rval[i].lastIndexOf('.');
