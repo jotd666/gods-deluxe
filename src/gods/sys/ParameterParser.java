@@ -279,13 +279,14 @@ public class ParameterParser {
         File file = new File(m_nomFichier);
         if (!m_isOutput) {
         	if (!file.exists()) {
-        		// Read from default settings
-            	InputStream defaults = getClass().getClassLoader().getResourceAsStream(file.getName());
-            	m_entree = new BufferedReader(new InputStreamReader(defaults));
+        		// Read from default from resources, if any
+            	InputStream defaults = getClass().getClassLoader().getResourceAsStream("default/" + file.getName());
+            	if (defaults != null) {
+            		m_entree = new BufferedReader(new InputStreamReader(defaults));
+            		return;
+            	}
             }
-        	else {
-        		m_entree = new BufferedReader(new FileReader(file));
-        	}
+        	m_entree = new BufferedReader(new FileReader(file));
         }
         else {
             m_outstream = new BufferedWriter(new FileWriter(file));

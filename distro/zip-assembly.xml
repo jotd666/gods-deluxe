@@ -39,9 +39,8 @@
         <fileSet>
             <directory>levels</directory>
             <excludes>
-                <exclude>boss/**</exclude>
                 <exclude>*sample/**</exclude>
-                <exclude>test/**</exclude>
+                <exclude>test*/**</exclude>
             </excludes>
         </fileSet>
         <fileSet>
