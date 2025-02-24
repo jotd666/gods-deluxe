@@ -1,6 +1,7 @@
 package gods.base;
 
 import java.io.File;
+import java.util.Arrays;
 import java.util.Vector;
 
 public class LevelSetContainer 
@@ -63,13 +64,14 @@ public class LevelSetContainer
 	public LevelSetContainer(int current_level_set_index)
 	{
 		File dir = new File(DirectoryBase.get_levels_path());
-		File [] level_list = dir.listFiles();
-
+		String[] level_list = dir.list();
+		Arrays.sort(level_list);
+		
 		int i = 0;
 		
-		for (File l : level_list)
-		{
-			LevelSet ls = LevelSet.create(l.getName(),i);
+		for (String l : level_list)
+		{	
+			LevelSet ls = LevelSet.create(l,i);
 			if (ls != null)
 			{
 				m_levels.add(ls); 

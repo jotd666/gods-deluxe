@@ -275,12 +275,21 @@ public class ParameterParser {
         m_nomFichier = nomFichier;
         m_estDansCommentaire = false;
         m_isOutput = isOutput;
-
+        
+        File file = new File(m_nomFichier);
         if (!m_isOutput) {
-            m_entree = new BufferedReader(new FileReader(m_nomFichier));
+        	if (!file.exists()) {
+        		// Read from default from resources, if any
+            	InputStream defaults = getClass().getClassLoader().getResourceAsStream("default/" + file.getName());
+            	if (defaults != null) {
+            		m_entree = new BufferedReader(new InputStreamReader(defaults));
+            		return;
+            	}
+            }
+        	m_entree = new BufferedReader(new FileReader(file));
         }
         else {
-            m_outstream = new BufferedWriter(new FileWriter(m_nomFichier));
+            m_outstream = new BufferedWriter(new FileWriter(file));
         }
     }
 

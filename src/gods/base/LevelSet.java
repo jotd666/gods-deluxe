@@ -1,6 +1,7 @@
 package gods.base;
 
 import java.io.File;
+import java.util.Arrays;
 
 public class LevelSet 
 {
@@ -30,7 +31,8 @@ public class LevelSet
 			rval.name = name;
 			rval.index = index;
 
-			String [] files = f.list();
+			String[] files = f.list();
+			Arrays.sort(files);
 			rval.nb_levels = 0;
 			for (String s : files)
 			{

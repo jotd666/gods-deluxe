@@ -1,6 +1,5 @@
 package gods.base;
 
-import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -131,9 +130,7 @@ public class GameOptions
 	}
 	public void next_language()
 	{
-		current_language_index++;
-		
-		 if (current_language_index == LANGUAGES.length)
+		 if (++current_language_index == LANGUAGES.length)
 		 {
 			 current_language_index = 0;
 		 }
@@ -216,12 +213,7 @@ public class GameOptions
 		
 		try
 		{
-			File localedir = new File(DirectoryBase.get_assets_path() + "locale");
-			LANGUAGES = localedir.list();
-			for (int i = 0; i < LANGUAGES.length; i++)
-			{
-				LANGUAGES[i] = LANGUAGES[i].split("\\.")[0];
-			}
+			LANGUAGES = Localizer.get_available_languages();
 
 			ParameterParser fr = ParameterParser.open(get_settings_file_path());
 			
@@ -470,7 +462,7 @@ public class GameOptions
     	
     	boolean rval = level_set.next_level();
 
-    	MaximumLevel ml = m_unlocked_levels.get(level_set);
+    	MaximumLevel ml = m_unlocked_levels.get(level_set.get_name());
 
     	int max_level = level_set.get_level_index();
 

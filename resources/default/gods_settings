@@ -1,0 +1,14 @@
+< GODS_LEVELS
+ < nb_level_sets 0 >
+>
+< GODS_SETTINGS
+ < language 0 >
+ < audio FULL_SOUND >
+ < gfx ORIGINAL >
+ < difficulty_level NORMAL >
+ < level_set_index 1 >
+ < level_index 1 >
+ < hero_type BLUE >
+ < tileset_type JOTD >
+ < control_type UP >
+>
