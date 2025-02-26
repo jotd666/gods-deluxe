@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
+import java.util.stream.Collectors;
 
 public abstract class WavSound
 {
@@ -26,7 +27,7 @@ public abstract class WavSound
 					.filter(f -> f.toFile().getName().endsWith(".wav"))
 					.sorted()
 					.map(f -> CompletableFuture.supplyAsync(() -> new WavDataPlayer(f.toFile())))
-					.toList();
+					.collect(Collectors.toList());
 			}
 			catch (IOException e) {
 				e.printStackTrace();
